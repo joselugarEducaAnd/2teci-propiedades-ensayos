@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 290" font-family="Helvetica,Arial,sans-serif" role="img" aria-label="Fases del Análisis de Ciclo de Vida de un material">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#453f93"/></marker>
+    <marker id="ahg" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#2e7d32"/></marker>
+  </defs>
+  <text x="430" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#453f93">El ciclo de vida de un material</text>
+  <g>
+    <rect x="20"  y="60" width="175" height="72" rx="10" fill="#eceaf5" stroke="#453f93" stroke-width="2"/>
+    <text x="107" y="90"  text-anchor="middle" font-size="15" font-weight="bold" fill="#222">1. Extracción</text>
+    <text x="107" y="112" text-anchor="middle" font-size="13" fill="#555">materias primas</text>
+    <rect x="235" y="60" width="175" height="72" rx="10" fill="#eceaf5" stroke="#453f93" stroke-width="2"/>
+    <text x="322" y="90"  text-anchor="middle" font-size="15" font-weight="bold" fill="#222">2. Producción</text>
+    <text x="322" y="112" text-anchor="middle" font-size="13" fill="#555">y fabricación</text>
+    <rect x="450" y="60" width="175" height="72" rx="10" fill="#eceaf5" stroke="#453f93" stroke-width="2"/>
+    <text x="537" y="90"  text-anchor="middle" font-size="15" font-weight="bold" fill="#222">3. Uso</text>
+    <text x="537" y="112" text-anchor="middle" font-size="13" fill="#555">vida útil</text>
+    <rect x="665" y="60" width="175" height="72" rx="10" fill="#eceaf5" stroke="#453f93" stroke-width="2"/>
+    <text x="752" y="90"  text-anchor="middle" font-size="15" font-weight="bold" fill="#222">4. Fin de vida</text>
+    <text x="752" y="112" text-anchor="middle" font-size="13" fill="#555">residuo o reciclaje</text>
+    <line x1="197" y1="96" x2="233" y2="96" stroke="#453f93" stroke-width="2.5" marker-end="url(#ah)"/>
+    <line x1="412" y1="96" x2="448" y2="96" stroke="#453f93" stroke-width="2.5" marker-end="url(#ah)"/>
+    <line x1="627" y1="96" x2="663" y2="96" stroke="#453f93" stroke-width="2.5" marker-end="url(#ah)"/>
+    <path d="M752,132 C752,210 322,210 322,134" fill="none" stroke="#2e7d32" stroke-width="2.5" stroke-dasharray="7,5" marker-end="url(#ahg)"/>
+    <rect x="360" y="188" width="240" height="30" rx="15" fill="#e6f4ea" stroke="#2e7d32" stroke-width="1.5"/>
+    <text x="480" y="208" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">Reciclaje y reutilización</text>
+  </g>
+  <text x="430" y="262" text-anchor="middle" font-size="13" fill="#555" font-style="italic">El Análisis de Ciclo de Vida (ACV) valora los impactos sumando las cuatro fases.</text>
+</svg>

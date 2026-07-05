@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es" class="js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vista previa — Estilo IES El Majuelo (eXeLearning 4)</title>
+<style>
+/* ---- Subconjunto representativo del tema BASE de eXeLearning 4 ---- */
+*{box-sizing:border-box}
+body.exe-export{padding:1em 0;font-size:16px;line-height:1.5;margin:0}
+body.exe-web-site{padding:0}
+.exe-content{color:#333;background:#fff;font-family:sans-serif}
+.exe-web-site .exe-content{box-shadow:inset 300px 0 0 0 #f6f6f6, inset 301px 0 0 0 #f0f0f0;min-height:100vh}
+#siteNav{float:left;background:#f6f6f6;width:300px;padding:24px 8px}
+#siteNav ul{margin:0;padding:0;list-style:none}
+#siteNav li{margin:0 0 5px 0}
+#siteNav a{color:#000;display:block;padding:8px 15px;border-radius:8px;max-width:280px;text-decoration:none;transition:background-color .3s}
+#siteNav a.active{background:#fff;color:#d76b4a}
+#siteNav a:hover{background:#f2f2f2}
+#siteNav ul ul a{padding-left:35px;font-size:.95em}
+.exe-web-site main.page{padding:1.5em 20px 2em 320px}
+.exe-content .page-title{color:#078e8e;font-size:1.7rem;text-align:left;margin:.2em 0 .8em}
+.exe-content h2{font-size:1.4rem}
+.exe-content h3{font-size:1.15rem}
+.exe-content a{color:#d76b4a}
+.exe-content .box{margin:28px 0}
+.exe-content .box-title{color:#054d4d;font-size:1.5rem;margin:.2em 0}
+.exe-export .box .box-content{background:#f9f9f9;border:1px solid #ddd;padding:20px;border-radius:8px}
+.exe-content .btn-primary{display:inline-block;color:#fff;background:#066d6d;border:1px solid #066d6d;padding:10px 22px;border-radius:6px;text-decoration:none;font-weight:bold}
+table{width:auto}
+
+/* ================== OVERRIDE MAJUELO (zzz-majuelo.css) ================== */
+.exe-content{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+.exe-content a{color:#453f93}
+.exe-content a:hover,.exe-content a:focus{color:#332d6e}
+.exe-content .package-title{color:#453f93}
+.exe-content .page-title{color:#004a99;font-weight:700;border-left:6px solid #453f93;padding-left:.5em}
+.exe-content h1,.exe-content h2,.exe-content h3,.exe-content h4,.exe-content h5{color:#004a99;font-weight:700}
+#siteNav{background:#f8f9fa}
+.exe-web-site .exe-content{box-shadow:inset 300px 0 0 0 #f8f9fa, inset 301px 0 0 0 #dee2e6}
+#siteNav a{color:#333}
+#siteNav a.active{color:#453f93;background:#fff}
+#siteNav a:hover{background:#efeafc}
+.exe-content .box-title{color:#453f93}
+.exe-export .box .box-content{border-color:#e1d9f5}
+.exe-content .btn-primary{background:#004a99;border-color:#003366}
+.exe-content .btn-primary:hover{background:#003366;border-color:#003366}
+.exe-content table{border-collapse:collapse}
+.exe-content table th{background:#453f93;color:#fff;font-weight:600}
+.exe-content table th,.exe-content table td{border:1px solid #dee2e6;padding:.4em .7em}
+.exe-content table tbody tr:nth-child(even){background:#f6f4ff}
+/* marcos semánticos */
+.exe-content .marco{border:1px solid;border-radius:8px;margin:1.2em 0;padding:10px 14px}
+.exe-content .marco .marco-titulo{font-weight:600;margin:-10px -14px 10px;padding:6px 14px}
+.exe-content .marco>:last-child{margin-bottom:0}
+.exe-content .marco-teoria{border-color:#e1d5e7;border-left:6px solid #453f93;background:#f3f1ff}
+.exe-content .marco-teoria .marco-titulo{background:#efeafc;color:#4a2b70}
+.exe-content .marco-actividad{border-color:#d6eaf8;border-left:6px solid #3498db;background:#ebf5fb}
+.exe-content .marco-actividad .marco-titulo{background:#dcecf8;color:#21618c}
+.exe-content .marco-formula{border-color:#f6e2c4;border-left:6px solid #e67e22;background:#fffde7}
+.exe-content .marco-formula .marco-titulo{background:#feefc3;color:#8a5e11}
+.exe-content .marco-nota{border-color:#cdeadb;border-left:6px solid #2a7d4f;background:#effaf2}
+.exe-content .marco-nota .marco-titulo{background:#ddf2e5;color:#1e5c3a}
+.marco-titulo{margin-top:0}
+</style>
+</head>
+<body class="exe-export exe-web-site js">
+  <div id="node-content-container" class="exe-content">
+    <nav id="siteNav">
+      <p class="package-title">Circuitos de CC</p>
+      <ul>
+        <li><a class="active" href="#">Introducción a los circuitos</a></li>
+        <li><a href="#">1. La carga eléctrica</a>
+          <ul><li><a href="#">Actividad: repaso</a></li></ul>
+        </li>
+        <li><a href="#">2. Ley de Ohm</a></li>
+        <li><a href="#">3. Asociación de resistencias</a></li>
+      </ul>
+    </nav>
+    <main class="page">
+      <h1 class="page-title">Introducción a los circuitos</h1>
+      <div class="page-content">
+        <h2>La carga eléctrica</h2>
+        <p>La corriente eléctrica es el flujo de carga a través de un conductor.
+        Consulta el <a href="#">material complementario</a> del departamento.</p>
+        <h3>Magnitudes básicas</h3>
+        <table>
+          <thead><tr><th>Magnitud</th><th>Símbolo</th><th>Unidad (SI)</th></tr></thead>
+          <tbody>
+            <tr><td>Intensidad</td><td>I</td><td>amperio (A)</td></tr>
+            <tr><td>Tensión</td><td>V</td><td>voltio (V)</td></tr>
+            <tr><td>Resistencia</td><td>R</td><td>ohmio (Ω)</td></tr>
+          </tbody>
+        </table>
+        <div class="box">
+          <h3 class="box-title">Actividad</h3>
+          <div class="box-content">
+            <p>Calcula la intensidad que circula por una resistencia de 220&nbsp;Ω
+            conectada a 5&nbsp;V.</p>
+          </div>
+        </div>
+        <p><a class="btn-primary" href="#">Descargar PDF</a></p>
+
+        <h2>Marcos semánticos</h2>
+        <div class="marco marco-teoria">
+          <p class="marco-titulo">Teoría</p>
+          <p>La resistividad ρ es una propiedad característica de cada material.</p>
+        </div>
+        <div class="marco marco-actividad">
+          <p class="marco-titulo">Actividad</p>
+          <p>Calcula la intensidad que circula por una resistencia de 220 Ω a 5 V.</p>
+        </div>
+        <div class="marco marco-formula">
+          <p class="marco-titulo">Fórmula</p>
+          <p>R = ρ · L / S</p>
+        </div>
+        <div class="marco marco-nota">
+          <p class="marco-titulo">Nota</p>
+          <p>Recuerda expresar todas las magnitudes en unidades del SI.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

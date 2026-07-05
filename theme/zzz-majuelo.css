@@ -1,0 +1,179 @@
+/* ============================================================
+   ESTILO IES EL MAJUELO — override para eXeLearning 4
+   ------------------------------------------------------------
+   Se carga DESPUÉS de style.css (orden alfabético: "zzz-" va al
+   final), así que sus reglas ganan sin tocar el tema Base.
+   Recolorea los selectores reales del tema Base a la paleta del
+   centro y alinea tipografía/tablas con los materiales Quarto.
+
+   PALETA
+     Morado corporativo  #453f93   (enlaces, nav activo, botones nav)
+     Morado oscuro       #332d6e   (hover)
+     Morado claro (fondo)#efeafc / #f6f4ff
+     Azul IES            #004a99   (títulos, botón PDF)
+     Azul oscuro         #003366
+     Sidebar gris        #f8f9fa   borde #dee2e6
+   ============================================================ */
+
+/* --- Tipografía del contenido (igual que las tablas del Quarto) --- */
+.exe-content {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* --- Enlaces --- */
+.exe-content a { color: #453f93; }
+.exe-content a:hover,
+.exe-content a:focus { color: #332d6e; }
+
+/* --- Títulos de página y de paquete --- */
+.exe-content .package-title { color: #453f93; }
+.exe-content .page-title {
+  color: #004a99;
+  font-weight: 700;
+  border-left: 6px solid #453f93;   /* franja morada tipo banner Quarto */
+  padding-left: 0.5em;
+}
+
+/* --- Encabezados dentro del contenido (look Quarto) --- */
+.exe-content h1,
+.exe-content h2,
+.exe-content h3,
+.exe-content h4,
+.exe-content h5 {
+  color: #004a99;
+  font-weight: 700;
+}
+
+/* --- Menú lateral (siteNav) --- */
+#siteNav { background: #f8f9fa; }
+.exe-web-site .exe-content {
+  box-shadow:
+    inset 300px 0 0 0 #f8f9fa,
+    inset 301px 0 0 0 #dee2e6;
+}
+#siteNav a { color: #333; }
+#siteNav a.active { color: #453f93; background: #fff; }
+#siteNav a.highlighted-link { color: #453f93; background: #efeafc; }
+#siteNav a.highlighted-link:hover,
+#siteNav a.highlighted-link:focus { background: #fff; }
+#siteNav a:hover { background: #efeafc; }
+
+@media (max-width: 767.98px) {
+  .exe-web-site .exe-content {
+    box-shadow:
+      inset 251px 0 0 0 #f8f9fa,
+      inset 252px 0 0 0 #dee2e6;
+  }
+}
+
+/* --- Botones de navegación, togglers y búsqueda (Base usa turquesa) --- */
+.nav-buttons .nav-button,
+button.toggler,
+#exe-client-search-submit { background-color: #453f93; }
+.nav-buttons a:hover,
+.nav-buttons a:focus,
+button.toggler:hover,
+button.toggler:focus,
+#exe-client-search-submit:hover,
+#exe-client-search-submit:focus { background-color: #332d6e; }
+
+/* --- Cajas de iDevice (con cabecera) --- */
+.exe-content .box-title { color: #453f93; }
+.exe-export .box .box-content { border-color: #e1d9f5; }
+
+/* --- Botones Bootstrap primarios → azul IES (como el botón «Descargar PDF» del Quarto) --- */
+.exe-content .btn-primary {
+  background-color: #004a99;
+  border-color: #003366;
+}
+.exe-content .btn-primary:hover,
+.exe-content .btn-primary:focus {
+  background-color: #003366;
+  border-color: #003366;
+}
+
+/* --- Interruptor de modo profesor --- */
+#teacher-mode-toggler.form-check-input:checked {
+  background-color: #453f93;
+  border-color: #453f93;
+}
+
+/* --- Tablas al estilo de los materiales Quarto --- */
+.exe-content table { border-collapse: collapse; }
+.exe-content table th {
+  background: #453f93;
+  color: #fff;
+  font-weight: 600;
+}
+.exe-content table th,
+.exe-content table td {
+  border: 1px solid #dee2e6;
+  padding: 0.4em 0.7em;
+}
+.exe-content table tbody tr:nth-child(even) { background: #f6f4ff; }
+
+/* --- Imágenes: esquinas suaves (marco discreto como en Quarto) --- */
+.exe-content .page-content img { border-radius: 6px; }
+
+/* ============================================================
+   MARCOS SEMÁNTICOS (una clase por tipo)
+   Mismos colores que los callouts del Quarto del centro, para
+   unificar eXeLearning y Quarto. Sustituyen a las cajas con
+   estilo inline. Convención de color:
+     .marco-teoria    → morado   (contenido teórico / explicación)
+     .marco-actividad → azul     (actividades / tareas / ejercicios)
+     .marco-formula   → naranja  (fórmulas / recuadros a recordar)
+     .marco-nota      → verde    (notas / avisos / consejos)
+
+   USO en el editor (vista HTML del iDevice de texto):
+     <div class="marco marco-teoria">
+       <p class="marco-titulo">Teoría</p>
+       <p>Texto del contenido…</p>
+     </div>
+   El título (.marco-titulo) es OPCIONAL: si no lo pones, queda
+   solo la caja de color.
+   ============================================================ */
+.exe-content .marco {
+  border: 1px solid;
+  border-radius: 8px;
+  margin: 1.2em 0;
+  padding: 10px 14px;
+}
+.exe-content .marco .marco-titulo {
+  font-weight: 600;
+  margin: -10px -14px 10px;   /* extiende la cabecera a los bordes */
+  padding: 6px 14px;
+}
+.exe-content .marco > :last-child { margin-bottom: 0; }
+
+/* Teoría — morado */
+.exe-content .marco-teoria {
+  border-color: #e1d5e7;
+  border-left: 6px solid #453f93;
+  background: #f3f1ff;
+}
+.exe-content .marco-teoria .marco-titulo { background: #efeafc; color: #4a2b70; }
+
+/* Actividad — azul */
+.exe-content .marco-actividad {
+  border-color: #d6eaf8;
+  border-left: 6px solid #3498db;
+  background: #ebf5fb;
+}
+.exe-content .marco-actividad .marco-titulo { background: #dcecf8; color: #21618c; }
+
+/* Fórmula — naranja */
+.exe-content .marco-formula {
+  border-color: #f6e2c4;
+  border-left: 6px solid #e67e22;
+  background: #fffde7;
+}
+.exe-content .marco-formula .marco-titulo { background: #feefc3; color: #8a5e11; }
+
+/* Nota — verde */
+.exe-content .marco-nota {
+  border-color: #cdeadb;
+  border-left: 6px solid #2a7d4f;
+  background: #effaf2;
+}
+.exe-content .marco-nota .marco-titulo { background: #ddf2e5; color: #1e5c3a; }
