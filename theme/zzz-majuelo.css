@@ -99,7 +99,11 @@
 /* ============================================================
    MENÚ LATERAL
    ============================================================ */
-#siteNav { background: var(--chrome-tinte); }
+#siteNav {
+  background: url("img/logo-majuelo.png") top 14px center / 132px auto no-repeat,
+              var(--chrome-tinte);
+  padding-top: 170px;   /* hueco para el logo (132px + gap) sobre el menú */
+}
 .exe-web-site .exe-content {
   box-shadow: inset 300px 0 0 0 var(--chrome-tinte), inset 301px 0 0 0 var(--chrome-linea);
 }
@@ -113,6 +117,14 @@
 @media (max-width: 767.98px) {
   .exe-web-site .exe-content {
     box-shadow: inset 251px 0 0 0 var(--chrome-tinte), inset 252px 0 0 0 var(--chrome-linea);
+  }
+  /* Sidebar más estrecha en móvil: logo más pequeño y menos hueco.
+     ⚠️ Pendiente de revisar sobre un export real (no rompe el drawer,
+     pero confirmar que no empuja el menú fuera de la vista). */
+  #siteNav {
+    background: url("img/logo-majuelo.png") top 10px center / 100px auto no-repeat,
+                var(--chrome-tinte);
+    padding-top: 128px;
   }
 }
 
