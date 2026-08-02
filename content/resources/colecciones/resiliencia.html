@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Problemas de ensayo Charpy con resultados y soluciones verificadas.">
+
+<title>Colección de problemas de resiliencia – Colecciones de ensayos de materiales</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./dureza.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-41af781fe36c276ddc5fcfdaf7dd39d9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-41af781fe36c276ddc5fcfdaf7dd39d9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-41af781fe36c276ddc5fcfdaf7dd39d9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background: #453f93;
+      }
+</style>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./resiliencia.html">Colección de problemas de resiliencia</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Colección de problemas de resiliencia</h1>
+                  <div>
+        <div class="description">
+          Problemas de ensayo Charpy con resultados y soluciones verificadas.
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-body">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Colecciones de ensayos de materiales</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./estructura_interna.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Colección de problemas de estructura interna</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./traccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Colección de problemas de tracción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dureza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Colección de problemas de dureza</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resiliencia.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Colección de problemas de resiliencia</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">1.</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2.</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">3.</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">4.</a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">5.</a></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">6.</a></li>
+  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">7.</a></li>
+  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">8.</a></li>
+  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8">9.</a></li>
+  <li><a href="#section-9" id="toc-section-9" class="nav-link" data-scroll-target="#section-9">10.</a></li>
+  <li><a href="#section-10" id="toc-section-10" class="nav-link" data-scroll-target="#section-10">11.</a></li>
+  <li><a href="#section-11" id="toc-section-11" class="nav-link" data-scroll-target="#section-11">12.</a></li>
+  <li><a href="#section-12" id="toc-section-12" class="nav-link" data-scroll-target="#section-12">13.</a></li>
+  <li><a href="#section-13" id="toc-section-13" class="nav-link" data-scroll-target="#section-13">14.</a></li>
+  <li><a href="#section-14" id="toc-section-14" class="nav-link" data-scroll-target="#section-14">15.</a></li>
+  <li><a href="#section-15" id="toc-section-15" class="nav-link" data-scroll-target="#section-15">16.</a></li>
+  <li><a href="#section-16" id="toc-section-16" class="nav-link" data-scroll-target="#section-16">17.</a></li>
+  <li><a href="#section-17" id="toc-section-17" class="nav-link" data-scroll-target="#section-17">18.</a></li>
+  <li><a href="#section-18" id="toc-section-18" class="nav-link" data-scroll-target="#section-18">19.</a></li>
+  <li><a href="#section-19" id="toc-section-19" class="nav-link" data-scroll-target="#section-19">20.</a></li>
+  <li><a href="#section-20" id="toc-section-20" class="nav-link" data-scroll-target="#section-20">21.</a></li>
+  <li><a href="#section-21" id="toc-section-21" class="nav-link" data-scroll-target="#section-21">23.</a></li>
+  <li><a href="#section-22" id="toc-section-22" class="nav-link" data-scroll-target="#section-22">24.</a></li>
+  <li><a href="#section-23" id="toc-section-23" class="nav-link" data-scroll-target="#section-23">25.</a></li>
+  <li><a href="#section-24" id="toc-section-24" class="nav-link" data-scroll-target="#section-24">26.</a></li>
+  <li><a href="#section-25" id="toc-section-25" class="nav-link" data-scroll-target="#section-25">27.</a></li>
+  <li><a href="#section-26" id="toc-section-26" class="nav-link" data-scroll-target="#section-26">30.</a></li>
+  <li><a href="#section-27" id="toc-section-27" class="nav-link" data-scroll-target="#section-27">31.</a></li>
+  <li><a href="#section-28" id="toc-section-28" class="nav-link" data-scroll-target="#section-28">2024</a>
+  <ul class="collapse">
+  <li><a href="#section-29" id="toc-section-29" class="nav-link" data-scroll-target="#section-29">22.</a></li>
+  <li><a href="#section-30" id="toc-section-30" class="nav-link" data-scroll-target="#section-30">28.</a></li>
+  <li><a href="#section-31" id="toc-section-31" class="nav-link" data-scroll-target="#section-31">29.</a></li>
+  </ul></li>
+  <li><a href="#section-32" id="toc-section-32" class="nav-link" data-scroll-target="#section-32">2026</a>
+  <ul class="collapse">
+  <li><a href="#section-33" id="toc-section-33" class="nav-link" data-scroll-target="#section-33">32.</a></li>
+  <li><a href="#section-34" id="toc-section-34" class="nav-link" data-scroll-target="#section-34">33.</a></li>
+  <li><a href="#section-35" id="toc-section-35" class="nav-link" data-scroll-target="#section-35">34.</a></li>
+  <li><a href="#section-36" id="toc-section-36" class="nav-link" data-scroll-target="#section-36">35.</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="resiliencia.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="resiliencia.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
+
+
+
+
+
+<!-- item: id=charpy_maza_25kg_120cm ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_maza_25kg_120cm" class="problema">
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section">1.</h2>
+<div class="enunciado">
+<p>En un ensayo Charpy, se deja caer una maza de 25 kg desde una altura de 1,20 m. Después de romper la probeta el péndulo asciende una altura de 50 cm. Datos: La probeta es de sección cuadrada de 10 mm de lado y presenta una entalla de 2 mm de profundidad. Se pide:</p>
+<ol type="a">
+<li><p>Calcular la energía empleada en la rotura.</p></li>
+<li><p>Dibujar un esquema del ensayo y calcular la resiliencia del material de la probeta.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_maza_25kg_120cm" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 1">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 1
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><msub><mi>h</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>25</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>20</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>50</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>171</mn><mo>,</mo><mn>67</mn></mrow><annotation encoding="application/x-tex">E=mg(h_0-h_f)=25·9,81·(1,20-0,50)=171,67</annotation></semantics></math> J. La sección efectiva es <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=10(10-2)=80</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">=0,80</annotation></semantics></math> cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>E</mi><mi>/</mi><mi>S</mi><mo>=</mo><mn>171</mn><mo>,</mo><mn>67</mn><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>214</mn><mo>,</mo><mn>59</mn></mrow><annotation encoding="application/x-tex">\rho=E/S=171,67/0,80=214,59</annotation></semantics></math> J/cm². El esquema Charpy debe rotular eje, brazo, maza, alturas <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>f</mi></msub><annotation encoding="application/x-tex">h_f</annotation></semantics></math>, y la probeta apoyada con la entalla opuesta al impacto.</p>
+</div>
+<div id="resultado-charpy_maza_25kg_120cm" class="resultado">
+<p><strong>1.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>171</mn><mo>,</mo><mn>67</mn></mrow><annotation encoding="application/x-tex">E=171,67</annotation></semantics></math> J; b) esquema Charpy rotulado y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>214</mn><mo>,</mo><mn>59</mn></mrow><annotation encoding="application/x-tex">\rho=214,59</annotation></semantics></math> J/cm².</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_maza_30kg_100cm ce=CE2.1 dificultad=baja puntos=2.5 -->
+<div id="prob-charpy_maza_30kg_100cm" class="problema">
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1">2.</h2>
+<div class="enunciado">
+<p>En un ensayo Charpy la maza de 30 kg ha caído desde una altura de 100 cm y, después de romper la probeta de sección cuadrada de 10 mm de lado y 2 mm de profundidad de la entalla, se ha elevado hasta una altura de 60 cm.</p>
+<ol type="a">
+<li><p>Dibujar el esquema del ensayo y calcular la energía empleada en la rotura.</p></li>
+<li><p>Calcular la resiliencia del material de la probeta.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_maza_30kg_100cm" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 2">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><msub><mi>h</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>60</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>117</mn><mo>,</mo><mn>72</mn></mrow><annotation encoding="application/x-tex">E=mg(h_0-h_f)=30·9,81·(1,00-0,60)=117,72</annotation></semantics></math> J. La sección efectiva es <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=10(10-2)=80</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">=0,80</annotation></semantics></math> cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>E</mi><mi>/</mi><mi>S</mi><mo>=</mo><mn>117</mn><mo>,</mo><mn>72</mn><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">\rho=E/S=117,72/0,80=147,15</annotation></semantics></math> J/cm². El esquema Charpy debe rotular eje, brazo, maza, alturas <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>f</mi></msub><annotation encoding="application/x-tex">h_f</annotation></semantics></math>, y la probeta apoyada con la entalla opuesta al impacto.</p>
+</div>
+<div id="resultado-charpy_maza_30kg_100cm" class="resultado">
+<p><strong>2.</strong> a) esquema Charpy rotulado y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>117</mn><mo>,</mo><mn>72</mn></mrow><annotation encoding="application/x-tex">E=117,72</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">\rho=147,15</annotation></semantics></math> J/cm².</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_seccion_08cm2 ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_seccion_08cm2" class="problema">
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2">3.</h2>
+<div class="enunciado">
+<p>En un ensayo Charpy se deja caer un péndulo con una masa de 30 kg, desde una altura de 1m, impactando sobre una probeta de 0,8 cm² de sección. Si, tras la rotura, el péndulo se eleva hasta 60 cm, se pide:</p>
+<ol type="a">
+<li><p>Calcular la energía absorbida en la rotura.</p></li>
+<li><p>Calcular la resiliencia del material.</p></li>
+<li><p>Explicar el tipo de ensayo realizado y la finalidad del mismo.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_seccion_08cm2" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 3">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 3
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>60</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>117</mn><mo>,</mo><mn>72</mn></mrow><annotation encoding="application/x-tex">E=30·9,81·(1,00-0,60)=117,72</annotation></semantics></math> J. Con <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=0,80</annotation></semantics></math> cm², <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">\rho=147,15</annotation></semantics></math> J/cm². Es un ensayo dinámico Charpy: cuantifica la energía absorbida y la resiliencia frente a impacto.</p>
+</div>
+<div id="resultado-charpy_seccion_08cm2" class="resultado">
+<p><strong>3.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>117</mn><mo>,</mo><mn>72</mn></mrow><annotation encoding="application/x-tex">E=117,72</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">\rho=147,15</annotation></semantics></math> J/cm²; c) ensayo dinámico Charpy de resistencia al impacto.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_maza_30kg_50cm ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_maza_30kg_50cm" class="problema">
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3">4.</h2>
+<div class="enunciado">
+<p>En un ensayo Charpy, la maza de 30kg de masa ha caído desde una altura de 1m y, después de romper la probeta de sección cuadrada de 10mm de lado y entalla de 2mm de profundidad, ha subido a una altura de 50cm. Calcular:</p>
+<ol type="a">
+<li><p>La energía empleada en la rotura.</p></li>
+<li><p>La resiliencia del material de la probeta.</p></li>
+<li><p>Explicar para qué se realiza este ensayo.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_maza_30kg_50cm" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 4">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 4
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><msub><mi>h</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>50</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">E=mg(h_0-h_f)=30·9,81·(1,00-0,50)=147,15</annotation></semantics></math> J. La sección efectiva es <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=10(10-2)=80</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">=0,80</annotation></semantics></math> cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>E</mi><mi>/</mi><mi>S</mi><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>183</mn><mo>,</mo><mn>94</mn></mrow><annotation encoding="application/x-tex">\rho=E/S=147,15/0,80=183,94</annotation></semantics></math> J/cm². Es un ensayo dinámico Charpy que mide la resistencia a la rotura por impacto.</p>
+</div>
+<div id="resultado-charpy_maza_30kg_50cm" class="resultado">
+<p><strong>4.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">E=147,15</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>183</mn><mo>,</mo><mn>94</mn></mrow><annotation encoding="application/x-tex">\rho=183,94</annotation></semantics></math> J/cm²; c) mide la resistencia a la rotura por impacto.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_resiliencia_kgfm ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_resiliencia_kgfm" class="problema">
+<section id="section-4" class="level2">
+<h2 class="anchored" data-anchor-id="section-4">5.</h2>
+<div class="enunciado">
+<p>Para medir la resiliencia de un material mediante el ensayo Charpy se ha utilizado una probeta de sección cuadrada de 10x10 mm, con entalla en forma de V y 2 mm de profundidad. La resiliencia obtenida fue de 28,5 kgm/cm², utilizando un martillo de 30 kg desde una altura de 140 cm. Se pide:</p>
+<ol type="a">
+<li><p>Dibujar un esquema ilustrativo del ensayo.</p></li>
+<li><p>Calcular la altura a la que se elevará el martillo después de golpear y romper la probeta.</p></li>
+<li><p>Si el martillo hubiera sido de 20 kg y se hubiera lanzado desde 2 m de altura, determinar la resiliencia que se hubiera obtenido y la energía sobrante tras el impacto.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_resiliencia_kgfm" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 5">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 5
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>28</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\rho=28,5</annotation></semantics></math> kgf·m/cm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>279</mn><mo>,</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">=279,6</annotation></semantics></math> J/cm² y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=0,80</annotation></semantics></math> cm²; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>ρ</mi><mi>S</mi><mo>=</mo><mn>223</mn><mo>,</mo><mn>67</mn></mrow><annotation encoding="application/x-tex">E=\rho S=223,67</annotation></semantics></math> J. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>40</mn><mo>−</mo><mi>E</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>64</mn></mrow><annotation encoding="application/x-tex">h_f=1,40-E/(30·9,81)=0,64</annotation></semantics></math> m. Con 20 kg desde 2 m, la misma probeta absorbe la misma energía: queda <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>s</mi></msub><mo>=</mo><mn>20</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mn>2</mn><mo>−</mo><mi>E</mi><mo>=</mo><mn>168</mn><mo>,</mo><mn>73</mn></mrow><annotation encoding="application/x-tex">E_s=20·9,81·2-E=168,73</annotation></semantics></math> J. El esquema Charpy debe rotular eje, brazo, maza, alturas <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>f</mi></msub><annotation encoding="application/x-tex">h_f</annotation></semantics></math>, y la probeta apoyada con la entalla opuesta al impacto.</p>
+</div>
+<div id="resultado-charpy_resiliencia_kgfm" class="resultado">
+<p><strong>5.</strong> a) esquema Charpy rotulado; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>64</mn></mrow><annotation encoding="application/x-tex">h_f=0,64</annotation></semantics></math> m; c) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>28</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\rho=28,5</annotation></semantics></math> kgf·m/cm² (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>279</mn><mo>,</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">=279,6</annotation></semantics></math> J/cm²) y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>s</mi></msub><mo>=</mo><mn>168</mn><mo>,</mo><mn>73</mn></mrow><annotation encoding="application/x-tex">E_s=168,73</annotation></semantics></math> J.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_maza_25kg_40cm ce=CE2.1 dificultad=baja puntos=2.5 -->
+<div id="prob-charpy_maza_25kg_40cm" class="problema">
+<section id="section-5" class="level2">
+<h2 class="anchored" data-anchor-id="section-5">6.</h2>
+<div class="enunciado">
+<p>En un ensayo Charpy, la maza de 25 kg ha caído desde una altura de 1 m y, después de romper la probeta de 80 mm² de sección, se ha elevado hasta una altura de 40 cm. Calcule:</p>
+<ol type="a">
+<li><p>La energía empleada en la rotura.</p></li>
+<li><p>La resiliencia del material de la probeta.</p></li>
+<li><p>Explique para qué se realiza este ensayo.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_maza_25kg_40cm" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 6">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 6
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><msub><mi>h</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>25</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>40</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">E=mg(h_0-h_f)=25·9,81·(1,00-0,40)=147,15</annotation></semantics></math> J. La sección efectiva es <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=10(10-2)=80</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">=0,80</annotation></semantics></math> cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>E</mi><mi>/</mi><mi>S</mi><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>183</mn><mo>,</mo><mn>94</mn></mrow><annotation encoding="application/x-tex">\rho=E/S=147,15/0,80=183,94</annotation></semantics></math> J/cm². Es un ensayo dinámico Charpy que mide la resistencia a la rotura por impacto.</p>
+</div>
+<div id="resultado-charpy_maza_25kg_40cm" class="resultado">
+<p><strong>6.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">E=147,15</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>183</mn><mo>,</mo><mn>94</mn></mrow><annotation encoding="application/x-tex">\rho=183,94</annotation></semantics></math> J/cm²; c) mide la resistencia a la rotura por impacto.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_resiliencia_185 ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_resiliencia_185" class="problema">
+<section id="section-6" class="level2">
+<h2 class="anchored" data-anchor-id="section-6">7.</h2>
+<div class="enunciado">
+<p>Para medir la resiliencia de un material mediante el ensayo Charpy se ha utilizado una probeta de sección cuadrada de 10x10 mm, con entalla en forma de V y 2 mm de profundidad. La resiliencia obtenida fue de 185 J/cm², utilizando un martillo de 30 kg desde una altura de 150 cm. Se pide:</p>
+<ol type="a">
+<li><p>Dibujar un croquis del ensayo y calcular la altura a que se elevará el martillo tras golpear y romper la probeta.</p></li>
+<li><p>Si el martillo hubiera sido de 20 kg y se hubiera lanzado desde 2m de altura, determinar la energía sobrante tras el impacto.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_resiliencia_185" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 7">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 7
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>185</mn><mo>·</mo><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>148</mn><mo>,</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">E=185·0,80=148,00</annotation></semantics></math> J. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>50</mn><mo>−</mo><mi>E</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>997</mn></mrow><annotation encoding="application/x-tex">h_f=1,50-E/(30·9,81)=0,997</annotation></semantics></math> m. Para 20 kg desde 2 m, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>s</mi></msub><mo>=</mo><mn>20</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mn>2</mn><mo>−</mo><mi>E</mi><mo>=</mo><mn>244</mn><mo>,</mo><mn>40</mn></mrow><annotation encoding="application/x-tex">E_s=20·9,81·2-E=244,40</annotation></semantics></math> J. El esquema Charpy debe rotular eje, brazo, maza, alturas <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>f</mi></msub><annotation encoding="application/x-tex">h_f</annotation></semantics></math>, y la probeta apoyada con la entalla opuesta al impacto.</p>
+</div>
+<div id="resultado-charpy_resiliencia_185" class="resultado">
+<p><strong>7.</strong> a) esquema Charpy rotulado y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>997</mn></mrow><annotation encoding="application/x-tex">h_f=0,997</annotation></semantics></math> m; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>s</mi></msub><mo>=</mo><mn>244</mn><mo>,</mo><mn>40</mn></mrow><annotation encoding="application/x-tex">E_s=244,40</annotation></semantics></math> J.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_martillo_kp ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_martillo_kp" class="problema">
+<section id="section-7" class="level2">
+<h2 class="anchored" data-anchor-id="section-7">8.</h2>
+<div class="enunciado">
+<p>Se realiza un ensayo Charpy sobre una probeta de sección cuadrada de 10 mm de lado y con una entalla en forma de V de 2 mm de profundidad. La resiliencia obtenida es de 110·104 J·m⁻² utilizando un martillo de 30 kp desde una altura de 150 cm. Se pide:</p>
+<ol type="a">
+<li><p>Calcular la altura a la que se elevará el martillo después de golpear y romper la probeta</p></li>
+<li><p>Si el martillo hubiera sido de 20 kp y se hubiera lanzado desde 2 m de altura, determinar la energía sobrante tras el impacto.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_martillo_kp" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 8">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 8
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>110</mn><mo>·</mo><msup><mn>10</mn><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">110·10^4</annotation></semantics></math> J/m² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>110</mn></mrow><annotation encoding="application/x-tex">=110</annotation></semantics></math> J/cm². Con <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=0,80</annotation></semantics></math> cm², <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>88</mn><mo>,</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">E=88,00</annotation></semantics></math> J. Como 30 kp = 294,3 N, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>50</mn><mo>−</mo><mn>88</mn><mi>/</mi><mn>294</mn><mo>,</mo><mn>3</mn><mo>=</mo><mn>1</mn><mo>,</mo><mn>201</mn></mrow><annotation encoding="application/x-tex">h_f=1,50-88/294,3=1,201</annotation></semantics></math> m. Con 20 kp desde 2 m, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>s</mi></msub><mo>=</mo><mn>20</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mn>2</mn><mo>−</mo><mn>88</mn><mo>=</mo><mn>304</mn><mo>,</mo><mn>40</mn></mrow><annotation encoding="application/x-tex">E_s=20·9,81·2-88=304,40</annotation></semantics></math> J.</p>
+</div>
+<div id="resultado-charpy_martillo_kp" class="resultado">
+<p><strong>8.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>201</mn></mrow><annotation encoding="application/x-tex">h_f=1,201</annotation></semantics></math> m; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>s</mi></msub><mo>=</mo><mn>304</mn><mo>,</mo><mn>40</mn></mrow><annotation encoding="application/x-tex">E_s=304,40</annotation></semantics></math> J.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=impacto_maza_30kg ce=CE2.1 dificultad=baja puntos=2.5 -->
+<div id="prob-impacto_maza_30kg" class="problema">
+<section id="section-8" class="level2">
+<h2 class="anchored" data-anchor-id="section-8">9.</h2>
+<div class="enunciado">
+<p>En un ensayo de impacto cae una maza de 30 kg desde una altura de 1 m y, después de romper la probeta con 80 mm² de sección en la entalla, se eleva hasta una altura de 60 cm. Se pide:</p>
+<ol type="a">
+<li><p>Dibujar un esquema del ensayo y calcular la energía absorbida en la rotura.</p></li>
+<li><p>Calcular la resiliencia del material de la probeta.</p></li>
+</ol>
+</div>
+<div id="respuesta-impacto_maza_30kg" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 9">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 9
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><msub><mi>h</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>60</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>117</mn><mo>,</mo><mn>72</mn></mrow><annotation encoding="application/x-tex">E=mg(h_0-h_f)=30·9,81·(1,00-0,60)=117,72</annotation></semantics></math> J. La sección efectiva es <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=10(10-2)=80</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">=0,80</annotation></semantics></math> cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>E</mi><mi>/</mi><mi>S</mi><mo>=</mo><mn>117</mn><mo>,</mo><mn>72</mn><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">\rho=E/S=117,72/0,80=147,15</annotation></semantics></math> J/cm². El esquema Charpy debe rotular eje, brazo, maza, alturas <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>f</mi></msub><annotation encoding="application/x-tex">h_f</annotation></semantics></math>, y la probeta apoyada con la entalla opuesta al impacto.</p>
+</div>
+<div id="resultado-impacto_maza_30kg" class="resultado">
+<p><strong>9.</strong> a) esquema Charpy rotulado y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>117</mn><mo>,</mo><mn>72</mn></mrow><annotation encoding="application/x-tex">E=117,72</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">\rho=147,15</annotation></semantics></math> J/cm².</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_energia_absorbida_180 ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_energia_absorbida_180" class="problema">
+<section id="section-9" class="level2">
+<h2 class="anchored" data-anchor-id="section-9">10.</h2>
+<div class="enunciado">
+<p>En un ensayo Charpy se ha utilizado una probeta de sección cuadrada de 10 mm de lado con entalla en forma de V de 2 mm de profundidad. La energía absorbida fue de 180 J, utilizando un martillo de 30 kg desde una altura de 102 cm. Se pide:</p>
+<ol type="a">
+<li><p>Determinar la energía almacenada inicialmente en el martillo.</p></li>
+<li><p>Calcular la altura a la que se elevará el martillo después de golpear y romper la probeta.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_energia_absorbida_180" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 10">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 10
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>=</mo><mi>m</mi><mi>g</mi><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mn>1</mn><mo>,</mo><mn>02</mn><mo>=</mo><mn>300</mn><mo>,</mo><mn>19</mn></mrow><annotation encoding="application/x-tex">E_0=mgh_0=30·9,81·1,02=300,19</annotation></semantics></math> J. Tras absorber 180 J quedan <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>120</mn><mo>,</mo><mn>19</mn></mrow><annotation encoding="application/x-tex">120,19</annotation></semantics></math> J; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>E</mi><mn>0</mn></msub><mo>−</mo><mn>180</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>408</mn></mrow><annotation encoding="application/x-tex">h_f=(E_0-180)/(30·9,81)=0,408</annotation></semantics></math> m.</p>
+</div>
+<div id="resultado-charpy_energia_absorbida_180" class="resultado">
+<p><strong>10.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>=</mo><mn>300</mn><mo>,</mo><mn>19</mn></mrow><annotation encoding="application/x-tex">E_0=300,19</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>408</mn></mrow><annotation encoding="application/x-tex">h_f=0,408</annotation></semantics></math> m.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_maza_185kg ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_maza_185kg" class="problema">
+<section id="section-10" class="level2">
+<h2 class="anchored" data-anchor-id="section-10">11.</h2>
+<div class="enunciado">
+<p>En un ensayo de impacto realizado con el péndulo Charpy, la maza de 18,5 kg está situada a 1,2 m de altura. Una vez liberado el péndulo y fracturada la probeta de 80 mm<sup>2</sup> de sección transversal, la maza asciende hasta una altura de 65 cm. Se pide:</p>
+<ol type="a">
+<li><p>Calcular la resiliencia del material.</p></li>
+<li><p>Calcular la energía sobrante tras el impacto.</p></li>
+<li><p>Dibujar un esquema del ensayo.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_maza_185kg" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 11">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 11
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>18</mn><mo>,</mo><mn>5</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>20</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>65</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>99</mn><mo>,</mo><mn>82</mn></mrow><annotation encoding="application/x-tex">E=18,5·9,81·(1,20-0,65)=99,82</annotation></semantics></math> J; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>E</mi><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>124</mn><mo>,</mo><mn>77</mn></mrow><annotation encoding="application/x-tex">\rho=E/0,80=124,77</annotation></semantics></math> J/cm². La energía sobrante es <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>s</mi></msub><mo>=</mo><mn>18</mn><mo>,</mo><mn>5</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mn>0</mn><mo>,</mo><mn>65</mn><mo>=</mo><mn>117</mn><mo>,</mo><mn>97</mn></mrow><annotation encoding="application/x-tex">E_s=18,5·9,81·0,65=117,97</annotation></semantics></math> J. El esquema Charpy debe rotular eje, brazo, maza, alturas <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>f</mi></msub><annotation encoding="application/x-tex">h_f</annotation></semantics></math>, y la probeta apoyada con la entalla opuesta al impacto.</p>
+</div>
+<div id="resultado-charpy_maza_185kg" class="resultado">
+<p><strong>11.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>124</mn><mo>,</mo><mn>77</mn></mrow><annotation encoding="application/x-tex">\rho=124,77</annotation></semantics></math> J/cm²; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>s</mi></msub><mo>=</mo><mn>117</mn><mo>,</mo><mn>97</mn></mrow><annotation encoding="application/x-tex">E_s=117,97</annotation></semantics></math> J; c) esquema Charpy rotulado.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_martillo_20kg ce=CE2.1 dificultad=baja puntos=2.5 -->
+<div id="prob-charpy_martillo_20kg" class="problema">
+<section id="section-11" class="level2">
+<h2 class="anchored" data-anchor-id="section-11">12.</h2>
+<div class="enunciado">
+<p>Una probeta de sección cuadrada de 10 mm de lado y una entalla de 2 mm de profundidad, es sometida a un ensayo Charpy. La masa del martillo es de 20 kg y cae desde una altura de 1 m. Tras la rotura alcanza una altura de 85 cm. Se pide:</p>
+<ol type="a">
+<li><p>Determinar la energía absorbida en la rotura.</p></li>
+<li><p>Determinar la resiliencia del material.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_martillo_20kg" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 12">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 12
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><msub><mi>h</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>20</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>85</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>29</mn><mo>,</mo><mn>43</mn></mrow><annotation encoding="application/x-tex">E=mg(h_0-h_f)=20·9,81·(1,00-0,85)=29,43</annotation></semantics></math> J. La sección efectiva es <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=10(10-2)=80</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">=0,80</annotation></semantics></math> cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>E</mi><mi>/</mi><mi>S</mi><mo>=</mo><mn>29</mn><mo>,</mo><mn>43</mn><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>36</mn><mo>,</mo><mn>79</mn></mrow><annotation encoding="application/x-tex">\rho=E/S=29,43/0,80=36,79</annotation></semantics></math> J/cm².</p>
+</div>
+<div id="resultado-charpy_martillo_20kg" class="resultado">
+<p><strong>12.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>29</mn><mo>,</mo><mn>43</mn></mrow><annotation encoding="application/x-tex">E=29,43</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>36</mn><mo>,</mo><mn>79</mn></mrow><annotation encoding="application/x-tex">\rho=36,79</annotation></semantics></math> J/cm².</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_velocidad_y_tipos ce=CE2.1 dificultad=alta puntos=2.5 -->
+<div id="prob-charpy_velocidad_y_tipos" class="problema">
+<section id="section-12" class="level2">
+<h2 class="anchored" data-anchor-id="section-12">13.</h2>
+<div class="enunciado">
+<p>Se realiza un ensayo de resiliencia (Charpy) dejando caer una maza de 22 kg desde una altura de 1 m sobre una probeta. La probeta es de sección cuadrada de 10 mm de lado y presenta una entalla de 2 mm de profundidad. Después de romperla, el martillo se eleva hasta una altura de 67 cm. Se pide:</p>
+<ol type="a">
+<li><p>Dibujar un esquema del ensayo propuesto. Calcular la energía absorbida por la probeta al romper.</p></li>
+<li><p>Calcular la resiliencia y la velocidad que alcanza la maza en el momento del impacto.</p></li>
+<li><p>¿Cuál es la diferencia entre los ensayos dinámicos y estáticos?</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_velocidad_y_tipos" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 13">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 13
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>22</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>67</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>71</mn><mo>,</mo><mn>22</mn></mrow><annotation encoding="application/x-tex">E=22·9,81·(1,00-0,67)=71,22</annotation></semantics></math> J; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>E</mi><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>89</mn><mo>,</mo><mn>03</mn></mrow><annotation encoding="application/x-tex">\rho=E/0,80=89,03</annotation></semantics></math> J/cm². Justo antes del impacto, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><mn>2</mn><mi>g</mi><msub><mi>h</mi><mn>0</mn></msub></mrow></msqrt><mo>=</mo><mn>4</mn><mo>,</mo><mn>43</mn></mrow><annotation encoding="application/x-tex">v=\sqrt{2gh_0}=4,43</annotation></semantics></math> m/s. El esquema Charpy debe rotular eje, brazo, maza, alturas <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>f</mi></msub><annotation encoding="application/x-tex">h_f</annotation></semantics></math>, y la probeta apoyada con la entalla opuesta al impacto. Charpy es dinámico (carga rápida por impacto); un ensayo estático aplica la carga lenta o cuasiestáticamente.</p>
+</div>
+<div id="resultado-charpy_velocidad_y_tipos" class="resultado">
+<p><strong>13.</strong> a) esquema Charpy rotulado y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>71</mn><mo>,</mo><mn>22</mn></mrow><annotation encoding="application/x-tex">E=71,22</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>89</mn><mo>,</mo><mn>03</mn></mrow><annotation encoding="application/x-tex">\rho=89,03</annotation></semantics></math> J/cm² y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mn>4</mn><mo>,</mo><mn>43</mn></mrow><annotation encoding="application/x-tex">v=4,43</annotation></semantics></math> m/s; c) dinámico: carga rápida; estático: carga lenta.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_pendulo_204kg ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_pendulo_204kg" class="problema">
+<section id="section-13" class="level2">
+<h2 class="anchored" data-anchor-id="section-13">14.</h2>
+<div class="enunciado">
+<p>Un péndulo Charpy tiene una masa de 20,4 kg y se deja caer desde una altura de 1,5 m. Después de romper la probeta de 0,8 cm<sup>2</sup> de sección, el péndulo asciende 60 cm. Se pide:</p>
+<ol type="a">
+<li><p>La energía sobrante después de la rotura.</p></li>
+<li><p>La resiliencia del material ensayado.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_pendulo_204kg" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 14">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 14
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p>La energía sobrante es <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>s</mi></msub><mo>=</mo><mi>m</mi><mi>g</mi><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>20</mn><mo>,</mo><mn>4</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mn>0</mn><mo>,</mo><mn>60</mn><mo>=</mo><mn>120</mn><mo>,</mo><mn>07</mn></mrow><annotation encoding="application/x-tex">E_s=mgh_f=20,4·9,81·0,60=120,07</annotation></semantics></math> J. La absorbida es <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>20</mn><mo>,</mo><mn>4</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>50</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>60</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>180</mn><mo>,</mo><mn>11</mn></mrow><annotation encoding="application/x-tex">E=20,4·9,81·(1,50-0,60)=180,11</annotation></semantics></math> J; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>E</mi><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>225</mn><mo>,</mo><mn>14</mn></mrow><annotation encoding="application/x-tex">\rho=E/0,80=225,14</annotation></semantics></math> J/cm².</p>
+</div>
+<div id="resultado-charpy_pendulo_204kg" class="resultado">
+<p><strong>14.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>s</mi></msub><mo>=</mo><mn>120</mn><mo>,</mo><mn>07</mn></mrow><annotation encoding="application/x-tex">E_s=120,07</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>225</mn><mo>,</mo><mn>14</mn></mrow><annotation encoding="application/x-tex">\rho=225,14</annotation></semantics></math> J/cm².</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=brinell_intruso_1000kp ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-brinell_intruso_1000kp" class="problema">
+<section id="section-14" class="level2">
+<h2 class="anchored" data-anchor-id="section-14">15.</h2>
+<div class="enunciado">
+<p>En un ensayo de dureza Brinell se ha utilizado una bola de 10 mm de diámetro. Al aplicar una carga de 1000 kp se ha obtenido una huella de 2,5 mm de diámetro. Se pide:</p>
+<ol type="a">
+<li><p>La dureza del material.</p></li>
+<li><p>La constante de ensayo del material.</p></li>
+</ol>
+</div>
+<div id="respuesta-brinell_intruso_1000kp" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 15">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 15
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p>Aunque el enunciado es de dureza y está fuera de tema, se conserva. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mi>B</mi><mo>=</mo><mn>2</mn><mi>F</mi><mi>/</mi><mo stretchy="false" form="prefix">[</mo><mi>π</mi><mi>D</mi><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo>−</mo><msqrt><mrow><msup><mi>D</mi><mn>2</mn></msup><mo>−</mo><msup><mi>d</mi><mn>2</mn></msup></mrow></msqrt><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>200</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">HB=2F/[\pi D(D-\sqrt{D^2-d^2})]=200,5</annotation></semantics></math> kgf/mm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>F</mi><mi>/</mi><msup><mi>D</mi><mn>2</mn></msup><mo>=</mo><mn>1000</mn><mi>/</mi><msup><mn>10</mn><mn>2</mn></msup><mo>=</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">K=F/D^2=1000/10^2=10</annotation></semantics></math> kgf/mm².</p>
+</div>
+<div id="resultado-brinell_intruso_1000kp" class="resultado">
+<p><strong>15.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mi>B</mi><mo>=</mo><mn>200</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">HB=200,5</annotation></semantics></math> kgf/mm²; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">K=10</annotation></semantics></math> kgf/mm².</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_maza_20kg ce=CE2.1 dificultad=baja puntos=2.5 -->
+<div id="prob-charpy_maza_20kg" class="problema">
+<section id="section-15" class="level2">
+<h2 class="anchored" data-anchor-id="section-15">16.</h2>
+<div class="enunciado">
+<p>En un ensayo con el péndulo Charpy se usó una maza de 20 kg que se dejó caer desde 1 m de altura sobre una probeta de 80 mm<sup>2</sup> de sección. Tras la rotura de la probeta el péndulo alcanzó una altura de 60 cm. Se pide:</p>
+<ol type="a">
+<li><p>La energía absorbida en la rotura de la probeta.</p></li>
+<li><p>La resiliencia del material.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_maza_20kg" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 16">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 16
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><msub><mi>h</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>20</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>60</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>78</mn><mo>,</mo><mn>48</mn></mrow><annotation encoding="application/x-tex">E=mg(h_0-h_f)=20·9,81·(1,00-0,60)=78,48</annotation></semantics></math> J. La sección efectiva es <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=10(10-2)=80</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">=0,80</annotation></semantics></math> cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>E</mi><mi>/</mi><mi>S</mi><mo>=</mo><mn>78</mn><mo>,</mo><mn>48</mn><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>98</mn><mo>,</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">\rho=E/S=78,48/0,80=98,10</annotation></semantics></math> J/cm².</p>
+</div>
+<div id="resultado-charpy_maza_20kg" class="resultado">
+<p><strong>16.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>78</mn><mo>,</mo><mn>48</mn></mrow><annotation encoding="application/x-tex">E=78,48</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>98</mn><mo>,</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">\rho=98,10</annotation></semantics></math> J/cm².</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_tenacidad ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_tenacidad" class="problema">
+<section id="section-16" class="level2">
+<h2 class="anchored" data-anchor-id="section-16">17.</h2>
+<div class="enunciado">
+<p>En un ensayo Charpy la maza de 25 kg de masa cae desde una altura de 1 m y después de romper la probeta de 0,8 cm<sup>2</sup> de sección, se eleva hasta una altura de 40 cm. Se pide:</p>
+<ol type="a">
+<li><p>La energía empleada en la rotura.</p></li>
+<li><p>La resiliencia del material de la probeta expresada en J/cm<sup>2</sup>.</p></li>
+<li><p>Dibujar un esquema del ensayo y definir el concepto de tenacidad de un material.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_tenacidad" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 17">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 17
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><msub><mi>h</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>25</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>40</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">E=mg(h_0-h_f)=25·9,81·(1,00-0,40)=147,15</annotation></semantics></math> J. La sección efectiva es <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=10(10-2)=80</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">=0,80</annotation></semantics></math> cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>E</mi><mi>/</mi><mi>S</mi><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>183</mn><mo>,</mo><mn>94</mn></mrow><annotation encoding="application/x-tex">\rho=E/S=147,15/0,80=183,94</annotation></semantics></math> J/cm². El esquema Charpy debe rotular eje, brazo, maza, alturas <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>f</mi></msub><annotation encoding="application/x-tex">h_f</annotation></semantics></math>, y la probeta apoyada con la entalla opuesta al impacto. La tenacidad es la capacidad de absorber energía antes de romperse.</p>
+</div>
+<div id="resultado-charpy_tenacidad" class="resultado">
+<p><strong>17.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">E=147,15</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>183</mn><mo>,</mo><mn>94</mn></mrow><annotation encoding="application/x-tex">\rho=183,94</annotation></semantics></math> J/cm²; c) esquema Charpy rotulado; tenacidad: energía absorbida antes de romper.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_velocidad_22kg ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_velocidad_22kg" class="problema">
+<section id="section-17" class="level2">
+<h2 class="anchored" data-anchor-id="section-17">18.</h2>
+<div class="enunciado">
+<p>Se realiza un ensayo Charpy dejando caer una maza de 22 kg de masa desde una altura de 1 m sobre una probeta de sección cuadrada de 10 mm de lado que presenta una entalla en V de 2 mm de profundidad. Después de romperla, el martillo se eleva hasta una altura de 67 cm. Se pide:</p>
+<ol type="a">
+<li><p>Hacer un esquema del ensayo y calcular la energía absorbida por la probeta al romperse.</p></li>
+<li><p>Calcular la resiliencia del material y la velocidad que alcanza la maza en el momento del impacto.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_velocidad_22kg" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 18">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 18
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>22</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>67</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>71</mn><mo>,</mo><mn>22</mn></mrow><annotation encoding="application/x-tex">E=22·9,81·(1,00-0,67)=71,22</annotation></semantics></math> J; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>E</mi><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>89</mn><mo>,</mo><mn>03</mn></mrow><annotation encoding="application/x-tex">\rho=E/0,80=89,03</annotation></semantics></math> J/cm². Justo antes del impacto, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><mn>2</mn><mi>g</mi><msub><mi>h</mi><mn>0</mn></msub></mrow></msqrt><mo>=</mo><mn>4</mn><mo>,</mo><mn>43</mn></mrow><annotation encoding="application/x-tex">v=\sqrt{2gh_0}=4,43</annotation></semantics></math> m/s. El esquema Charpy debe rotular eje, brazo, maza, alturas <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>f</mi></msub><annotation encoding="application/x-tex">h_f</annotation></semantics></math>, y la probeta apoyada con la entalla opuesta al impacto.</p>
+</div>
+<div id="resultado-charpy_velocidad_22kg" class="resultado">
+<p><strong>18.</strong> a) esquema Charpy rotulado y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>71</mn><mo>,</mo><mn>22</mn></mrow><annotation encoding="application/x-tex">E=71,22</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>89</mn><mo>,</mo><mn>03</mn></mrow><annotation encoding="application/x-tex">\rho=89,03</annotation></semantics></math> J/cm² y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mn>4</mn><mo>,</mo><mn>43</mn></mrow><annotation encoding="application/x-tex">v=4,43</annotation></semantics></math> m/s.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_dos_materiales ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_dos_materiales" class="problema">
+<section id="section-18" class="level2">
+<h2 class="anchored" data-anchor-id="section-18">19.</h2>
+<div class="enunciado">
+<p>En un ensayo Charpy sobre una probeta de sección cuadrada de 10 mm x 10 mm con una entalla en forma de V de 2 mm de profundidad, se obtiene una resiliencia de 28,5 J/cm<sup>2</sup>. El martillo utilizado tiene 30 kg de masa y se deja caer desde una altura de 140 cm. Se pide:</p>
+<ol type="a">
+<li><p>La altura a la que se elevará el martillo después de golpear y romper la probeta.</p></li>
+<li><p>La resiliencia de otra probeta normalizada de distinto material si el martillo hubiera sido de 20 kg de masa, se hubiera lanzado desde 2 m de altura y la energía sobrante tras el impacto hubiera sido de 260 J.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_dos_materiales" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 19">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 19
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p>Primera probeta: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>=</mo><mn>28</mn><mo>,</mo><mn>5</mn><mo>·</mo><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>22</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">E_1=28,5·0,80=22,80</annotation></semantics></math> J y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>40</mn><mo>−</mo><msub><mi>E</mi><mn>1</mn></msub><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn><mo>,</mo><mn>323</mn></mrow><annotation encoding="application/x-tex">h_f=1,40-E_1/(30·9,81)=1,323</annotation></semantics></math> m. Segunda: la energía inicial es 392,40 J; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>=</mo><mn>392</mn><mo>,</mo><mn>40</mn><mo>−</mo><mn>260</mn><mo>=</mo><mn>132</mn><mo>,</mo><mn>40</mn></mrow><annotation encoding="application/x-tex">E_2=392,40-260=132,40</annotation></semantics></math> J y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mn>2</mn></msub><mo>=</mo><msub><mi>E</mi><mn>2</mn></msub><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>165</mn><mo>,</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">\rho_2=E_2/0,80=165,50</annotation></semantics></math> J/cm².</p>
+</div>
+<div id="resultado-charpy_dos_materiales" class="resultado">
+<p><strong>19.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>323</mn></mrow><annotation encoding="application/x-tex">h_f=1,323</annotation></semantics></math> m; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mn>2</mn></msub><mo>=</mo><mn>165</mn><mo>,</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">\rho_2=165,50</annotation></semantics></math> J/cm².</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_entalla_u_5mm_a ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_entalla_u_5mm_a" class="problema">
+<section id="section-19" class="level2">
+<h2 class="anchored" data-anchor-id="section-19">20.</h2>
+<div class="enunciado">
+<p>Se realiza un ensayo Charpy sobre una probeta de sección cuadrada de 10 mm de lado, utilizando un martillo de 30 kg de masa situado a una altura de 1 m. La probeta tiene una entalla en forma de U de 5 mm de profundidad. El valor de la resiliencia obtenida es de 254 J/cm<sup>2</sup>. Se pide:</p>
+<ol type="a">
+<li><p>La energía total absorbida por la probeta al romperse.</p></li>
+<li><p>La altura a la que se eleva el martillo después de la rotura de la probeta</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_entalla_u_5mm_a" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 20">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 20
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">S=10(10-5)=50</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">=0,50</annotation></semantics></math> cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>254</mn><mo>·</mo><mn>0</mn><mo>,</mo><mn>50</mn><mo>=</mo><mn>127</mn><mo>,</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">E=254·0,50=127,00</annotation></semantics></math> J. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><mi>E</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>568</mn></mrow><annotation encoding="application/x-tex">h_f=1-E/(30·9,81)=0,568</annotation></semantics></math> m.</p>
+</div>
+<div id="resultado-charpy_entalla_u_5mm_a" class="resultado">
+<p><strong>20.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>127</mn><mo>,</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">E=127,00</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>568</mn></mrow><annotation encoding="application/x-tex">h_f=0,568</annotation></semantics></math> m.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_entalla_v_5mm ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_entalla_v_5mm" class="problema">
+<section id="section-20" class="level2">
+<h2 class="anchored" data-anchor-id="section-20">21.</h2>
+<div class="enunciado">
+<p>En un ensayo Charpy se utiliza una probeta de sección cuadrada de 10 mm de lado con una entalla en “V” de 5 mm de profundidad. Tras el ensayo se obtuvo un valor de la resiliencia de 254 J/cm<sup>2</sup>. El péndulo, de 30 kg de masa, se suelta desde una altura de 1 m.</p>
+<ol type="a">
+<li><p>Calcular la energía absorbida por la probeta en el ensayo.</p></li>
+<li><p>Determinar la altura que alcanza el péndulo después de golpear y romper la probeta.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_entalla_v_5mm" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 21">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 21
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">S=10(10-5)=50</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">=0,50</annotation></semantics></math> cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>254</mn><mo>·</mo><mn>0</mn><mo>,</mo><mn>50</mn><mo>=</mo><mn>127</mn><mo>,</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">E=254·0,50=127,00</annotation></semantics></math> J. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><mi>E</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>568</mn></mrow><annotation encoding="application/x-tex">h_f=1-E/(30·9,81)=0,568</annotation></semantics></math> m.</p>
+</div>
+<div id="resultado-charpy_entalla_v_5mm" class="resultado">
+<p><strong>21.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>127</mn><mo>,</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">E=127,00</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>568</mn></mrow><annotation encoding="application/x-tex">h_f=0,568</annotation></semantics></math> m.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_pendulo_40kg ce=CE2.1 dificultad=baja puntos=2.5 -->
+<div id="prob-charpy_pendulo_40kg" class="problema">
+<section id="section-21" class="level2">
+<h2 class="anchored" data-anchor-id="section-21">23.</h2>
+<div class="enunciado">
+<p>En un ensayo de impacto se utiliza una probeta de sección cuadrada de 10 mm de lado con una entalla en forma de “V” de 2 mm de profundidad. Durante la prueba, el péndulo de 40 kg de masa cae desde 1 m de altura alcanzando 70 cm tras la rotura.</p>
+<ol type="a">
+<li><p>Calcule la energía absorbida por la probeta en el choque.</p></li>
+<li><p>Determine la resiliencia del material.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_pendulo_40kg" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 23">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 23
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><msub><mi>h</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>40</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>70</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>117</mn><mo>,</mo><mn>72</mn></mrow><annotation encoding="application/x-tex">E=mg(h_0-h_f)=40·9,81·(1,00-0,70)=117,72</annotation></semantics></math> J. La sección efectiva es <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=10(10-2)=80</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">=0,80</annotation></semantics></math> cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>E</mi><mi>/</mi><mi>S</mi><mo>=</mo><mn>117</mn><mo>,</mo><mn>72</mn><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">\rho=E/S=117,72/0,80=147,15</annotation></semantics></math> J/cm².</p>
+</div>
+<div id="resultado-charpy_pendulo_40kg" class="resultado">
+<p><strong>23.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>117</mn><mo>,</mo><mn>72</mn></mrow><annotation encoding="application/x-tex">E=117,72</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">\rho=147,15</annotation></semantics></math> J/cm².</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_velocidad_sin_rebote ce=CE2.1 dificultad=alta puntos=2.5 -->
+<div id="prob-charpy_velocidad_sin_rebote" class="problema">
+<section id="section-22" class="level2">
+<h2 class="anchored" data-anchor-id="section-22">24.</h2>
+<div class="enunciado">
+<p>Se realiza un ensayo de resiliencia a una probeta de sección cuadrada de 10 mm de lado con una entalla en forma de “V” de 2 mm de profundidad. El péndulo de 30 kg de masa se mueve a una velocidad de 5 m/s justo antes del impacto.</p>
+<ol type="a">
+<li><p>Dibuje el esquema del ensayo y calcule la altura desde la que se dejó caer el martillo.</p></li>
+<li><p>Calcule la resiliencia de la probeta.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_velocidad_sin_rebote" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 24">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 24
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p>De <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><mi>g</mi><msub><mi>h</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">v^2=2gh_0</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>g</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>25</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn><mo>,</mo><mn>274</mn></mrow><annotation encoding="application/x-tex">h_0=v^2/(2g)=25/(2·9,81)=1,274</annotation></semantics></math> m. Para hallar la resiliencia hace falta la energía absorbida; el enunciado no da altura/velocidad de rebote ni otro dato equivalente. No puede determinarse sin inventar datos. El esquema Charpy debe rotular eje, brazo, maza, alturas <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>f</mi></msub><annotation encoding="application/x-tex">h_f</annotation></semantics></math>, y la probeta apoyada con la entalla opuesta al impacto.</p>
+</div>
+<div id="resultado-charpy_velocidad_sin_rebote" class="resultado">
+<p><strong>24.</strong> a) esquema Charpy rotulado y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>274</mn></mrow><annotation encoding="application/x-tex">h_0=1,274</annotation></semantics></math> m; b) resiliencia no determinable con los datos dados.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_alturas_140_113 ce=CE2.1 dificultad=baja puntos=2.5 -->
+<div id="prob-charpy_alturas_140_113" class="problema">
+<section id="section-23" class="level2">
+<h2 class="anchored" data-anchor-id="section-23">25.</h2>
+<div class="enunciado">
+<p>En un ensayo Charpy se ha utilizado una probeta con una sección en la zona de la entalla o rotura de 80 mm<sup>2</sup>. La maza de 30 kg ha caído desde una altura de 1,40 m y después de romper la probeta se ha elevado a una altura de 1,13 m. Se pide:</p>
+<ol type="a">
+<li><p>La energía absorbida en la rotura.</p></li>
+<li><p>La resiliencia del material de la probeta medida en J/cm<sup>2</sup>.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_alturas_140_113" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 25">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 25
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><msub><mi>h</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>40</mn><mo>−</mo><mn>1</mn><mo>,</mo><mn>13</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>79</mn><mo>,</mo><mn>46</mn></mrow><annotation encoding="application/x-tex">E=mg(h_0-h_f)=30·9,81·(1,40-1,13)=79,46</annotation></semantics></math> J. La sección efectiva es <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=10(10-2)=80</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">=0,80</annotation></semantics></math> cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mi>E</mi><mi>/</mi><mi>S</mi><mo>=</mo><mn>79</mn><mo>,</mo><mn>46</mn><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>99</mn><mo>,</mo><mn>33</mn></mrow><annotation encoding="application/x-tex">\rho=E/S=79,46/0,80=99,33</annotation></semantics></math> J/cm².</p>
+</div>
+<div id="resultado-charpy_alturas_140_113" class="resultado">
+<p><strong>25.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>79</mn><mo>,</mo><mn>46</mn></mrow><annotation encoding="application/x-tex">E=79,46</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>99</mn><mo>,</mo><mn>33</mn></mrow><annotation encoding="application/x-tex">\rho=99,33</annotation></semantics></math> J/cm².</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_entalla_u_5mm_b ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_entalla_u_5mm_b" class="problema">
+<section id="section-24" class="level2">
+<h2 class="anchored" data-anchor-id="section-24">26.</h2>
+<div class="enunciado">
+<p>Se realiza un ensayo de impacto Charpy sobre una probeta de sección cuadrada de 10 mm de lado. La probeta tiene una entalladura en U de 5 mm de profundidad. El péndulo tiene una masa de 30 kg y se suelta desde una altura de 1 m. Tras el ensayo el valor de la resiliencia obtenida es de 254 J/cm<sup>2</sup>.</p>
+<ol type="a">
+<li><p>﻿﻿﻿Determinar la energía total absorbida por la probeta en la rotura.</p></li>
+<li><p>Calcular la altura que adquiere el mazo después de la rotura</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_entalla_u_5mm_b" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 26">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 26
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">S=10(10-5)=50</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">=0,50</annotation></semantics></math> cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>254</mn><mo>·</mo><mn>0</mn><mo>,</mo><mn>50</mn><mo>=</mo><mn>127</mn><mo>,</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">E=254·0,50=127,00</annotation></semantics></math> J. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><mi>E</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>568</mn></mrow><annotation encoding="application/x-tex">h_f=1-E/(30·9,81)=0,568</annotation></semantics></math> m.</p>
+</div>
+<div id="resultado-charpy_entalla_u_5mm_b" class="resultado">
+<p><strong>26.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>127</mn><mo>,</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">E=127,00</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>568</mn></mrow><annotation encoding="application/x-tex">h_f=0,568</annotation></semantics></math> m.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_rho_j_mm2 ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_rho_j_mm2" class="problema">
+<section id="section-25" class="level2">
+<h2 class="anchored" data-anchor-id="section-25">27.</h2>
+<div class="enunciado">
+<p>En un ensayo de impacto el martillo del péndulo de Charpy, cuya masa es de 30 kg, asciende 40 cm después de golpear y romper una probeta que tiene una sección de 1 cm<sup>2</sup> en la zona de rotura. La resiliencia del material ensayado es 0,80 J/mm<sup>2</sup>.</p>
+<ol type="a">
+<li><p>﻿﻿﻿Calcular la energía absorbida por la probeta durante la rotura.</p></li>
+<li><p>Determinar la altura desde la que se lanzó el martillo.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_rho_j_mm2" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 27">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 27
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-26" class="callout-26-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">S=1</annotation></semantics></math> cm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">=100</annotation></semantics></math> mm²; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn><mo>·</mo><mn>100</mn><mo>=</mo><mn>80</mn><mo>,</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">E=0,80·100=80,00</annotation></semantics></math> J. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><msub><mi>h</mi><mi>f</mi></msub><mo>+</mo><mi>E</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mi>g</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>40</mn><mo>+</mo><mn>80</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>672</mn></mrow><annotation encoding="application/x-tex">h_0=h_f+E/(mg)=0,40+80/(30·9,81)=0,672</annotation></semantics></math> m.</p>
+</div>
+<div id="resultado-charpy_rho_j_mm2" class="resultado">
+<p><strong>27.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>80</mn><mo>,</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">E=80,00</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>672</mn></mrow><annotation encoding="application/x-tex">h_0=0,672</annotation></semantics></math> m.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_taller_pendulo ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_taller_pendulo" class="problema">
+<section id="section-26" class="level2">
+<h2 class="anchored" data-anchor-id="section-26">30.</h2>
+<div class="enunciado">
+<p>En un taller se está desarrollando un proyecto de montaje de un ensayo Charpy. Se conoce que la resiliencia del material que se va a utilizar para el ensayo es de 30 J/cm<sup>2</sup> y que la probeta de sección cuadrada es de 10 mm de lado con una entalla de 2 mm. Además, quieren soltar el péndulo desde una altura de 2 m para que llegue, después de golpear la probeta, justo a una bandeja situada a 1 m de altura. Responder a las siguientes cuestiones:</p>
+<ol type="a">
+<li><p>¿Qué masa deberá de tener el martillo del péndulo que golpeará la probeta para conseguir el objetivo?</p></li>
+<li><p>Si cambiamos el martillo por uno de 10 kg, ¿a qué altura llegaría después de golpear la probeta?</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_taller_pendulo" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 30">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 30
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-27" class="callout-27-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=0,80</annotation></semantics></math> cm² y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>30</mn><mo>·</mo><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>24</mn><mo>,</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">E=30·0,80=24,00</annotation></semantics></math> J. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mi>E</mi><mi>/</mi><mo stretchy="false" form="prefix">[</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>2</mn><mo>,</mo><mn>446</mn></mrow><annotation encoding="application/x-tex">m=E/[g(2-1)]=2,446</annotation></semantics></math> kg. Con <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">m=10</annotation></semantics></math> kg, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>2</mn><mo>−</mo><mi>E</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn><mo>,</mo><mn>755</mn></mrow><annotation encoding="application/x-tex">h_f=2-E/(10·9,81)=1,755</annotation></semantics></math> m.</p>
+</div>
+<div id="resultado-charpy_taller_pendulo" class="resultado">
+<p><strong>30.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>2</mn><mo>,</mo><mn>446</mn></mrow><annotation encoding="application/x-tex">m=2,446</annotation></semantics></math> kg; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>755</mn></mrow><annotation encoding="application/x-tex">h_f=1,755</annotation></semantics></math> m.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_laboratorio_acero ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_laboratorio_acero" class="problema">
+<section id="section-27" class="level2">
+<h2 class="anchored" data-anchor-id="section-27">31.</h2>
+<div class="enunciado">
+<p>En un laboratorio de control de calidad se realiza un ensayo Charpy a una probeta de acero estructural con una sección cuadrada de 10 mm de lado utilizando un péndulo de 20 kg de masa. El péndulo parte de una altura inicial de 1,2 m y, tras impactar con la probeta, alcanza una altura final de 30 cm. Se pide:</p>
+<ol type="a">
+<li><p>Calcular la energía absorbida por la probeta.</p></li>
+<li><p>Determinar la resiliencia del material.</p></li>
+<li><p>En caso de utilizar un péndulo de 18 kg de masa, ¿desde qué altura debería dejarse caer para alcanzar la misma altura final una vez rota la probeta?</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_laboratorio_acero" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 31">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 31
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-28" class="callout-28-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>20</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>20</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>30</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>176</mn><mo>,</mo><mn>58</mn></mrow><annotation encoding="application/x-tex">E=20·9,81·(1,20-0,30)=176,58</annotation></semantics></math> J. Al no indicarse entalla, la sección efectiva es la sección completa, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">S=1,00</annotation></semantics></math> cm², y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>176</mn><mo>,</mo><mn>58</mn></mrow><annotation encoding="application/x-tex">\rho=176,58</annotation></semantics></math> J/cm². Para 18 kg y el mismo <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>f</mi></msub><annotation encoding="application/x-tex">h_f</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>30</mn><mo>+</mo><mi>E</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>18</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn><mo>,</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">h_0=0,30+E/(18·9,81)=1,30</annotation></semantics></math> m.</p>
+</div>
+<div id="resultado-charpy_laboratorio_acero" class="resultado">
+<p><strong>31.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>176</mn><mo>,</mo><mn>58</mn></mrow><annotation encoding="application/x-tex">E=176,58</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>176</mn><mo>,</mo><mn>58</mn></mrow><annotation encoding="application/x-tex">\rho=176,58</annotation></semantics></math> J/cm²; c) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">h_0=1,30</annotation></semantics></math> m.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<section id="section-28" class="level1">
+<h1>2024</h1>
+<!-- item: id=charpy_pau_2024_masa ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_pau_2024_masa" class="problema">
+<section id="section-29" class="level2">
+<h2 class="anchored" data-anchor-id="section-29">22.</h2>
+<div class="enunciado">
+<p>En un ensayo Charpy el péndulo cae desde una altura de 1 m y después de romper la probeta, sube hasta una altura de 70 cm. La energía absorbida por la rotura del material es 147 J. La probeta del ensayo es de sección cuadrada con 10 mm de lado y presenta una entalla de 2 mm en el punto de impacto.</p>
+<ol type="a">
+<li><p>Calcular la masa del péndulo utilizado en el ensayo</p></li>
+<li><p>Calcular la resiliencia del material</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_pau_2024_masa" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 22">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 22
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-29" class="callout-29-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mi>E</mi><mi>/</mi><mo stretchy="false" form="prefix">[</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><msub><mi>h</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>147</mn><mi>/</mi><mo stretchy="false" form="prefix">[</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>70</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>49</mn><mo>,</mo><mn>95</mn></mrow><annotation encoding="application/x-tex">m=E/[g(h_0-h_f)]=147/[9,81(1,00-0,70)]=49,95</annotation></semantics></math> kg. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=0,80</annotation></semantics></math> cm² y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>147</mn><mi>/</mi><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>183</mn><mo>,</mo><mn>75</mn></mrow><annotation encoding="application/x-tex">\rho=147/0,80=183,75</annotation></semantics></math> J/cm².</p>
+</div>
+<div id="resultado-charpy_pau_2024_masa" class="resultado">
+<p><strong>22.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>49</mn><mo>,</mo><mn>95</mn></mrow><annotation encoding="application/x-tex">m=49,95</annotation></semantics></math> kg; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>183</mn><mo>,</mo><mn>75</mn></mrow><annotation encoding="application/x-tex">\rho=183,75</annotation></semantics></math> J/cm².</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_pau_2024_entalla_u ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_pau_2024_entalla_u" class="problema">
+<section id="section-30" class="level2">
+<h2 class="anchored" data-anchor-id="section-30">28.</h2>
+<div class="enunciado">
+<p>En un ensayo Charpy el péndulo de 30 kg de masa asciende 60 cm después de golpear y romper una probeta. Dicha probeta es de sección cuadrada de 10 mm de lado y tiene una entalla en forma de U de 2 mm de profundidad. La resiliencia obtenida es 147,15 J/cm<sup>2</sup>.</p>
+<ol type="a">
+<li><p>Determinar la energía total absorbida por la probeta en el ensayo.</p></li>
+<li><p>Calcular la altura desde la que se dejó caer el péndulo.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_pau_2024_entalla_u" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 28">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-30-contents" aria-controls="callout-30" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 28
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-30" class="callout-30-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=0,80</annotation></semantics></math> cm²; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>147</mn><mo>,</mo><mn>15</mn><mo>·</mo><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>117</mn><mo>,</mo><mn>72</mn></mrow><annotation encoding="application/x-tex">E=147,15·0,80=117,72</annotation></semantics></math> J. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><msub><mi>h</mi><mi>f</mi></msub><mo>+</mo><mi>E</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mi>g</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>60</mn><mo>+</mo><mn>117</mn><mo>,</mo><mn>72</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>30</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn><mo>,</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">h_0=h_f+E/(mg)=0,60+117,72/(30·9,81)=1,00</annotation></semantics></math> m.</p>
+</div>
+<div id="resultado-charpy_pau_2024_entalla_u" class="resultado">
+<p><strong>28.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>117</mn><mo>,</mo><mn>72</mn></mrow><annotation encoding="application/x-tex">E=117,72</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>00</mn></mrow><annotation encoding="application/x-tex">h_0=1,00</annotation></semantics></math> m.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_pau_2024_profundidad ce=CE2.1 dificultad=alta puntos=2.5 -->
+<div id="prob-charpy_pau_2024_profundidad" class="problema">
+<section id="section-31" class="level2">
+<h2 class="anchored" data-anchor-id="section-31">29.</h2>
+<div class="enunciado">
+<p>En un ensayo Charpy, el péndulo tiene una masa de 20 kg, cae desde una altura de 1 m y después de romper la probeta sube hasta una altura de 65 cm. La probeta del ensayo es de sección cuadrada de 10 mm de lado y presenta una entalla en el punto de impacto.</p>
+<ol type="a">
+<li><p>Calcular la energía disipada en la rotura.</p></li>
+<li><p>Calcular la profundidad de la entalla de la probeta sabiendo que la resiliencia del material es 85,75 J/cm<sup>2</sup></p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_pau_2024_profundidad" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 29">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-31-contents" aria-controls="callout-31" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 29
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-31" class="callout-31-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>20</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>65</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>68</mn><mo>,</mo><mn>67</mn></mrow><annotation encoding="application/x-tex">E=20·9,81·(1,00-0,65)=68,67</annotation></semantics></math> J. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>E</mi><mi>/</mi><mi>ρ</mi><mo>=</mo><mn>68</mn><mo>,</mo><mn>67</mn><mi>/</mi><mn>85</mn><mo>,</mo><mn>75</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>8008</mn></mrow><annotation encoding="application/x-tex">S=E/\rho=68,67/85,75=0,8008</annotation></semantics></math> cm². Como <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mi>e</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>100</mn></mrow><annotation encoding="application/x-tex">S=10(10-e)/100</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>99</mn></mrow><annotation encoding="application/x-tex">e=1,99</annotation></semantics></math> mm (aprox. 2,0 mm; la diferencia procede del redondeo de la resiliencia).</p>
+</div>
+<div id="resultado-charpy_pau_2024_profundidad" class="resultado">
+<p><strong>29.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>68</mn><mo>,</mo><mn>67</mn></mrow><annotation encoding="application/x-tex">E=68,67</annotation></semantics></math> J; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>99</mn></mrow><annotation encoding="application/x-tex">e=1,99</annotation></semantics></math> mm (≈ 2,0 mm).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+<section id="section-32" class="level1">
+<h1>2026</h1>
+<!-- item: id=charpy_tipo_2026_estacion ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_tipo_2026_estacion" class="problema">
+<section id="section-33" class="level2">
+<h2 class="anchored" data-anchor-id="section-33">32.</h2>
+<div class="enunciado">
+<p>La empresa que está haciendo la obra de la estación de autobuses de Almería ha subcontratado a otra empresa que fabrica y monta estructuras metálicas para que haga la cubierta de la zona donde los autobuses se estacionan. Como en esa zona hay riesgo de que algún vehículo impacte con los pilares de la estructura, el proyecto técnico debe contener un estudio de la tenacidad a la fractura de estos pilares. Para hacer este estudio se realizan una serie de ensayos Charpy sacando varias probetas del acero de las vigas que la fábrica ha comprado para hacer la estructura. Se usa un péndulo con una masa de 4 kg que se suelta desde 1 m de altura. Se pide:</p>
+<ol type="a">
+<li><p>Calcular la resiliencia del material de la viga si al hacer un ensayo con una probeta de sección es cuadrada de 1,5 cm de lado con una entalla en V de 2 mm profundidad el martillo sube hasta los 60 cm tras el impacto.</p></li>
+<li><p>Si al hacer otra probeta para repetir el ensayo se comete un error en la fabricación y la profundidad de la entalla es de 4 mm, en la misma sección cuadrada ¿a qué altura subirá el péndulo para que la resiliencia sea la misma?</p></li>
+<li><p>Calcular y comparar la energía absorbida en la rotura de la probeta con 2 mm y con 4 mm de profundidad de entalla.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_tipo_2026_estacion" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 32">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-32-contents" aria-controls="callout-32" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 32
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-32" class="callout-32-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub><mo>=</mo><mn>15</mn><mo stretchy="false" form="prefix">(</mo><mn>15</mn><mo>−</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>195</mn></mrow><annotation encoding="application/x-tex">S_1=15(15-2)=195</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>1</mn><mo>,</mo><mn>95</mn></mrow><annotation encoding="application/x-tex">=1,95</annotation></semantics></math> cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>=</mo><mn>4</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>60</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>15</mn><mo>,</mo><mn>696</mn></mrow><annotation encoding="application/x-tex">E_1=4·9,81·(1-0,60)=15,696</annotation></semantics></math> J; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><msub><mi>E</mi><mn>1</mn></msub><mi>/</mi><msub><mi>S</mi><mn>1</mn></msub><mo>=</mo><mn>8</mn><mo>,</mo><mn>05</mn></mrow><annotation encoding="application/x-tex">\rho=E_1/S_1=8,05</annotation></semantics></math> J/cm². Para 4 mm, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mn>2</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>65</mn></mrow><annotation encoding="application/x-tex">S_2=1,65</annotation></semantics></math> cm², <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>=</mo><mi>ρ</mi><msub><mi>S</mi><mn>2</mn></msub><mo>=</mo><mn>13</mn><mo>,</mo><mn>281</mn></mrow><annotation encoding="application/x-tex">E_2=\rho S_2=13,281</annotation></semantics></math> J y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mi>f</mi><mn>2</mn></mrow></msub><mo>=</mo><mn>1</mn><mo>−</mo><msub><mi>E</mi><mn>2</mn></msub><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>662</mn></mrow><annotation encoding="application/x-tex">h_{f2}=1-E_2/(4·9,81)=0,662</annotation></semantics></math> m.</p>
+</div>
+<div id="resultado-charpy_tipo_2026_estacion" class="resultado">
+<p><strong>32.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>8</mn><mo>,</mo><mn>05</mn></mrow><annotation encoding="application/x-tex">\rho=8,05</annotation></semantics></math> J/cm²; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>662</mn></mrow><annotation encoding="application/x-tex">h_f=0,662</annotation></semantics></math> m; c) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>=</mo><mn>15</mn><mo>,</mo><mn>696</mn></mrow><annotation encoding="application/x-tex">E_1=15,696</annotation></semantics></math> J y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>=</mo><mn>13</mn><mo>,</mo><mn>281</mn></mrow><annotation encoding="application/x-tex">E_2=13,281</annotation></semantics></math> J.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_nave_logistica_pau_2026 ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_nave_logistica_pau_2026" class="problema">
+<section id="section-34" class="level2">
+<h2 class="anchored" data-anchor-id="section-34">33.</h2>
+<div class="enunciado">
+<p>Se construye una nave logística con zonas destinadas a maniobras de camiones. Dado el riesgo de impactos contra los pilares de la estructura metálica, el proyecto exige un estudio de tenacidad al impacto del acero. Para ello se extraen probetas para un ensayo Charpy del lote de pilares de acero adquirido para la construcción de la nave y se ensayan con un péndulo de 8 kg, liberado desde 1,2 m de altura.</p>
+<ol type="a">
+<li><p>En un primer ensayo se usa una probeta de sección cuadrada de 12 mm de lado con entalla en V de 3 mm de profundidad. Tras el impacto, el péndulo asciende hasta 0,30 m. Calcular la resiliencia.</p></li>
+<li><p>Una segunda probeta del mismo material tiene una entalla de 5 mm de profundidad. ¿A qué altura subirá el péndulo después del impacto?</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_nave_logistica_pau_2026" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 33">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-33-contents" aria-controls="callout-33" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 33
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-33" class="callout-33-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>=</mo><mn>8</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>·</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>20</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>30</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>70</mn><mo>,</mo><mn>63</mn></mrow><annotation encoding="application/x-tex">E_1=8·9,81·(1,20-0,30)=70,63</annotation></semantics></math> J. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub><mo>=</mo><mn>12</mn><mo stretchy="false" form="prefix">(</mo><mn>12</mn><mo>−</mo><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>108</mn></mrow><annotation encoding="application/x-tex">S_1=12(12-3)=108</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>1</mn><mo>,</mo><mn>08</mn></mrow><annotation encoding="application/x-tex">=1,08</annotation></semantics></math> cm²; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>65</mn><mo>,</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\rho=65,4</annotation></semantics></math> J/cm². <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mn>2</mn></msub><mo>=</mo><mn>12</mn><mo stretchy="false" form="prefix">(</mo><mn>12</mn><mo>−</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>84</mn></mrow><annotation encoding="application/x-tex">S_2=12(12-5)=84</annotation></semantics></math> mm² <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>84</mn></mrow><annotation encoding="application/x-tex">=0,84</annotation></semantics></math> cm²; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>=</mo><mi>ρ</mi><msub><mi>S</mi><mn>2</mn></msub><mo>=</mo><mn>54</mn><mo>,</mo><mn>94</mn></mrow><annotation encoding="application/x-tex">E_2=\rho S_2=54,94</annotation></semantics></math> J; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>20</mn><mo>−</mo><msub><mi>E</mi><mn>2</mn></msub><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>8</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">h_f=1,20-E_2/(8·9,81)=0,50</annotation></semantics></math> m.</p>
+</div>
+<div id="resultado-charpy_nave_logistica_pau_2026" class="resultado">
+<p><strong>33.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>65</mn><mo>,</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\rho=65,4</annotation></semantics></math> J/cm²; b) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">h_f=0,50</annotation></semantics></math> m.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_s235jr_pau_2026 ce=CE2.1 dificultad=alta puntos=2.5 -->
+<div id="prob-charpy_s235jr_pau_2026" class="problema">
+<section id="section-35" class="level2">
+<h2 class="anchored" data-anchor-id="section-35">34.</h2>
+<div class="enunciado">
+<p>En el control de calidad de un acero S235JR se realiza un ensayo de resiliencia Charpy sobre dos probetas, de dimensiones 55 mm × 10 mm × 10 mm con entalla en V, obteniéndose una energía absorbida de 36 J para la primera probeta y de 32 J para la segunda.</p>
+<ol type="a">
+<li><p>Determinar la masa del péndulo si la altura inicial es 1,6 m en ambos ensayos y la altura final tras la rotura de la segunda probeta es un 10 % mayor que la de la primera.</p></li>
+<li><p>Determinar la profundidad de la entalla en ambas probetas sabiendo que la profundidad de la entalla de la segunda probeta es el doble que la de la primera.</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_s235jr_pau_2026" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 34">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-34-contents" aria-controls="callout-34" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 34
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-34" class="callout-34-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p>Con <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mi>f</mi><mn>2</mn></mrow></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>10</mn><msub><mi>h</mi><mrow><mi>f</mi><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">h_{f2}=1,10h_{f1}</annotation></semantics></math> y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>f</mi></msub><mo>=</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><mi>E</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mi>g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">h_f=h_0-E/(mg)</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>10</mn><mo>·</mo><mn>36</mn><mo>−</mo><mn>32</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>10</mn><mo>·</mo><mn>1</mn><mo>,</mo><mn>6</mn><mo>·</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>4</mn><mo>,</mo><mn>842</mn></mrow><annotation encoding="application/x-tex">m=(1,10·36-32)/(0,10·1,6·9,81)=4,842</annotation></semantics></math> kg. Resultan <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mi>f</mi><mn>1</mn></mrow></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>8421</mn></mrow><annotation encoding="application/x-tex">h_{f1}=0,8421</annotation></semantics></math> m y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mi>f</mi><mn>2</mn></mrow></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>9263</mn></mrow><annotation encoding="application/x-tex">h_{f2}=0,9263</annotation></semantics></math> m. Igualando <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>36</mn><mi>/</mi><mo stretchy="false" form="prefix">[</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><msub><mi>e</mi><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>32</mn><mi>/</mi><mo stretchy="false" form="prefix">[</mo><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>−</mo><mn>2</mn><msub><mi>e</mi><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">36/[10(10-e_1)]=32/[10(10-2e_1)]</annotation></semantics></math> se obtiene <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>e</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">e_1=1,0</annotation></semantics></math> mm y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>e</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><mo>,</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">e_2=2,0</annotation></semantics></math> mm.</p>
+</div>
+<div id="resultado-charpy_s235jr_pau_2026" class="resultado">
+<p><strong>34.</strong> a) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>4</mn><mo>,</mo><mn>842</mn></mrow><annotation encoding="application/x-tex">m=4,842</annotation></semantics></math> kg; b) entallas de 1,0 mm y 2,0 mm.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- item: id=charpy_tope_plastico_pau_2026 ce=CE2.1 dificultad=media puntos=2.5 -->
+<div id="prob-charpy_tope_plastico_pau_2026" class="problema">
+<section id="section-36" class="level2">
+<h2 class="anchored" data-anchor-id="section-36">35.</h2>
+<div class="enunciado">
+<p>En el diseño de un automatismo, se necesita colocar un tope para limitar la carrera de la parte móvil. Esta pieza va a recibir impactos frecuentes, por lo que se busca un material plástico rígido que sea resistente a la rotura por impacto. Para elegir el mejor candidato, se realizan una serie de ensayos Charpy con probetas de sección cuadrada de 1,0 cm de lado y entallas con distinta profundidad, entre 0 y 4 mm. Con el candidato más prometedor se obtiene una resiliencia de 1,25 J/cm² en la probeta sin entalla y 0,45 J/cm² en la probeta con una entalla de 2 mm. El péndulo que se ha fabricado para la realización de estos ensayos tiene una masa de 1 kg, y se deja caer en todos los casos desde una altura inicial de 0,5 m.</p>
+<ol type="a">
+<li><p>Calcular la altura a la que sube el péndulo en el ensayo de la probeta con la entalla de 0 mm y en la de la probeta con entalla de 2 mm.</p></li>
+<li><p>¿Qué porcentaje de resiliencia ha perdido el material por hacerle una entalla de 2 mm?</p></li>
+</ol>
+</div>
+<div id="respuesta-charpy_tope_plastico_pau_2026" class="solucion">
+<div class="callout callout-style-default callout-tip callout-titled" title="Resultado del problema 35">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Resultado del problema 35
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-35" class="callout-35-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="desarrollo">
+<p>Sin entalla, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>25</mn><mo>·</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>=</mo><mn>1</mn><mo>,</mo><mn>25</mn></mrow><annotation encoding="application/x-tex">E_0=1,25·1,00=1,25</annotation></semantics></math> J y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mi>f</mi><mn>0</mn></mrow></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo>−</mo><mn>1</mn><mo>,</mo><mn>25</mn><mi>/</mi><mn>9</mn><mo>,</mo><mn>81</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>3726</mn></mrow><annotation encoding="application/x-tex">h_{f0}=0,5-1,25/9,81=0,3726</annotation></semantics></math> m. Con 2 mm, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">S=0,80</annotation></semantics></math> cm², <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>45</mn><mo>·</mo><mn>0</mn><mo>,</mo><mn>80</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>36</mn></mrow><annotation encoding="application/x-tex">E_2=0,45·0,80=0,36</annotation></semantics></math> J y <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mi>f</mi><mn>2</mn></mrow></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>4633</mn></mrow><annotation encoding="application/x-tex">h_{f2}=0,4633</annotation></semantics></math> m. La pérdida es <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>25</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>45</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>1</mn><mo>,</mo><mn>25</mn><mo>·</mo><mn>100</mn><mo>=</mo><mn>64</mn></mrow><annotation encoding="application/x-tex">(1,25-0,45)/1,25·100=64</annotation></semantics></math> %.</p>
+</div>
+<div id="resultado-charpy_tope_plastico_pau_2026" class="resultado">
+<p><strong>35.</strong> a) 37,3 cm sin entalla y 46,3 cm con entalla; b) 64 %.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+      <a href="./dureza.html" class="pagination-link" aria-label="Colección de problemas de dureza">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Colección de problemas de dureza</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

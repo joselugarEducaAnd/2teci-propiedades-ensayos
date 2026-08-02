@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celda Unidad HCP - Hexagonal Compacta</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, 'DejaVu Sans', Verdana, Arial, sans-serif;
+            background: transparent;
+            color: #22425c;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+          background: transparent;
+}
+        #header {
+            background: rgba(34, 66, 92, 0.05);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(34, 66, 92, 0.14);
+            z-index: 10;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        #header h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #453f93;
+        }
+        #header .subtitle {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            margin-left: 10px;
+        }
+        #mode-toggle {
+            display: flex;
+            background: rgba(34, 66, 92, 0.05);
+            border-radius: 8px;
+            padding: 3px;
+            border: 1px solid rgba(34, 66, 92, 0.16);
+        }
+        #mode-toggle button {
+            background: transparent;
+            border: none;
+            color: #22425c;
+            padding: 7px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.84rem;
+            font-weight: 500;
+            transition: all 0.25s;
+            white-space: nowrap;
+        }
+        #mode-toggle button.active {
+            background: rgba(69, 63, 147, 0.12);
+            color: #453f93;
+            box-shadow: 0 0 0 1px rgba(69, 63, 147, 0.45);
+        }
+        #mode-toggle button:hover:not(.active) {
+            color: #453f93;
+        }
+        #canvas-container {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+            width: 100% !important;
+            height: 100% !important;
+        }
+        #info-panel {
+            position: absolute;
+            bottom: 18px;
+            left: 18px;
+            background: rgba(255, 255, 255, 0.88);
+            padding: 14px 18px;
+            border-radius: 10px;
+            font-size: 0.88rem;
+            max-width: 320px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(34, 66, 92, 0.16);
+            line-height: 1.5;
+        }
+        #info-panel h3 {
+            color: #453f93;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+        #info-panel ul {
+            padding-left: 18px;
+            margin: 5px 0;
+        }
+        #info-panel li { margin-bottom: 2px; }
+        #mode-label {
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            color: #453f93;
+            border: 1px solid rgba(69, 63, 147, 0.35);
+            pointer-events: none;
+            text-align: center;
+            max-width: 90%;
+        }
+        @media (max-width: 700px) {
+            #header { flex-direction: column; text-align: center; }
+            #mode-toggle button { padding: 6px 10px; font-size: 0.78rem; }
+            #info-panel { max-width: 85%; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div>
+            <h1>Celda Unidad HCP</h1>
+            <span class="subtitle">Hexagonal Compacta (ABAB)</span>
+        </div>
+        <div id="mode-toggle">
+            <button id="btn-schematic" class="active">Esquemática</button>
+            <button id="btn-realistic">Realista</button>
+            <button id="btn-interior">Solo interior</button>
+        </div>
+    </div>
+
+    <div id="canvas-container">
+        <div id="mode-label">Vista esquemática · átomos reducidos</div>
+
+        <div id="info-panel">
+            <h3>Características HCP</h3>
+            <ul>
+                <li><strong>Átomos (celda conv.):</strong> 6</li>
+                <li><strong>Coordinación:</strong> 12</li>
+                <li><strong>Factor de empaquetamiento:</strong> 0,74</li>
+                <li><strong>Relación ideal:</strong> c/a = √(8/3) ≈ 1,633</li>
+            </ul>
+            <p style="margin-top:7px; font-size:0.82rem; opacity:0.9;">
+                12 vértices (1/6 cada uno) + 2 centros de base (1/2) + 3 interiores.
+                Apilamiento ABAB, misma eficiencia que la FCC.
+            </p>
+        </div>
+    </div>
+
+    <script src="lib/three.min.js"></script>
+    <script src="lib/OrbitControls.js"></script>
+
+    <script>
+        // ========== CONSTANTES ==========
+        const A = 1.0;                              // parámetro de red a
+        const C = Math.sqrt(8 / 3);                 // c ideal ≈ 1.633
+        const RADIUS_SCHEMATIC = 0.18;
+        const RADIUS_REALISTIC = 0.5;               // en HCP los átomos se tocan a distancia a → r = a/2
+
+        const VERTEX_COLOR = 0x6699cc;   // Azul - vértices del prisma
+        const MIDDLE_COLOR = 0xed8754;  // Naranja - capa intermedia (B)
+        const EDGE_COLOR   = 0x22425c;
+
+        // ========== ESCENA ==========
+        const container = document.getElementById('canvas-container');
+        const scene = new THREE.Scene();
+        scene.background = null;   // canvas transparente: hereda el fondo claro de la página
+
+        const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 100);
+        camera.position.set(2.8, 2.2, 3.2);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        renderer.localClippingEnabled = true;
+        container.appendChild(renderer.domElement);
+
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.08;
+        controls.minDistance = 1.8;
+        controls.maxDistance = 10;
+        controls.target.set(0, C / 2, 0);
+
+        // ========== ILUMINACIÓN ==========
+        scene.add(new THREE.AmbientLight(0xffffff, 0.78));
+        const dirLight = new THREE.DirectionalLight(0xffffff, 0.70);
+        dirLight.position.set(5, 8, 6);
+        scene.add(dirLight);
+        const fillLight = new THREE.DirectionalLight(0xdfeaf5, 0.45);
+        fillLight.position.set(-4, 2, -3);
+        scene.add(fillLight);
+
+        // ========== GEOMETRÍA DEL PRISMA HEXAGONAL ==========
+        // Vértices del hexágono regular de lado A (radio = A)
+        const hexVerts2D = [];
+        for (let i = 0; i < 6; i++) {
+            const angle = i * Math.PI / 3;
+            hexVerts2D.push(new THREE.Vector2(A * Math.cos(angle), A * Math.sin(angle)));
+        }
+
+        // ========== PLANOS DE RECORTE (prisma hexagonal) ==========
+        // Apotema geométrico ≈ 0.866. Usamos 0.90 para que se vean bien los casquetes.
+        const apothem = 0.90;
+
+        const clipPlanes = [];
+
+        // 6 planos laterales.
+        // Three.js descarta fragmentos cuando (normal · punto + constant) < 0.
+        // Para conservar el INTERIOR del hexágono usamos normales hacia dentro
+        // y constant = +apothem.
+        for (let i = 0; i < 6; i++) {
+            const angle = i * Math.PI / 3 + Math.PI / 6;
+            const nx = Math.cos(angle);
+            const nz = Math.sin(angle);
+            // Normal hacia el interior
+            clipPlanes.push(new THREE.Plane(new THREE.Vector3(-nx, 0, -nz), apothem));
+        }
+        // Plano inferior: y >= 0
+        clipPlanes.push(new THREE.Plane(new THREE.Vector3(0, 1, 0), 0));
+        // Plano superior: y <= C
+        clipPlanes.push(new THREE.Plane(new THREE.Vector3(0, -1, 0), C));
+
+        // ========== GRUPO PRINCIPAL ==========
+        const cellGroup = new THREE.Group();
+        scene.add(cellGroup);
+
+        // ========== MATERIALES ==========
+        function makeAtomMaterial(color) {
+            return new THREE.MeshStandardMaterial({
+                color: color,
+                metalness: 0.10,
+                roughness: 0.58,
+                transparent: true,
+                opacity: 0.92,
+                side: THREE.DoubleSide,
+                clippingPlanes: [],
+                clipShadows: true,
+                depthWrite: true
+            });
+        }
+
+        const vertexMatTemplate = makeAtomMaterial(VERTEX_COLOR);
+        const middleMatTemplate = makeAtomMaterial(MIDDLE_COLOR);
+
+        // ========== ÁTOMOS ==========
+        const atomGeo = new THREE.SphereGeometry(1, 40, 40);
+
+        // --- Vértices del prisma (capa A abajo + capa A arriba) ---
+        const vertexAtoms = [];
+        const vertexPositions = [];
+
+        for (let i = 0; i < 6; i++) {
+            const x = hexVerts2D[i].x;
+            const z = hexVerts2D[i].y;   // Vector2.y is our Z
+            // Bottom
+            vertexPositions.push(new THREE.Vector3(x, 0, z));
+            // Top
+            vertexPositions.push(new THREE.Vector3(x, C, z));
+        }
+
+        vertexPositions.forEach(pos => {
+            const atom = new THREE.Mesh(atomGeo, vertexMatTemplate.clone());
+            atom.position.copy(pos);
+            atom.scale.setScalar(RADIUS_SCHEMATIC);
+            cellGroup.add(atom);
+            vertexAtoms.push(atom);
+        });
+
+        // --- Centros de las bases (capa A, 1/2 cada uno) ---
+        // Cierran el recuento de la celda: 12·(1/6) + 2·(1/2) + 3 = 6 átomos.
+        // Van en el color de la capa A porque eso es lo que son: el átomo del
+        // centro del hexágono, tangente a los seis vértices de su propia base.
+        const baseAtoms = [];
+        const basePositions = [
+            new THREE.Vector3(0, 0, 0),
+            new THREE.Vector3(0, C, 0)
+        ];
+
+        basePositions.forEach(pos => {
+            const atom = new THREE.Mesh(atomGeo, vertexMatTemplate.clone());
+            atom.position.copy(pos);
+            atom.scale.setScalar(RADIUS_SCHEMATIC);
+            cellGroup.add(atom);
+            baseAtoms.push(atom);
+        });
+
+        // --- Capa intermedia B (3 átomos) ---
+        const middleAtoms = [];
+        const middlePositions = [
+            new THREE.Vector3( 0.5 * A, C / 2,  (Math.sqrt(3) / 6) * A),
+            new THREE.Vector3(-0.5 * A, C / 2,  (Math.sqrt(3) / 6) * A),
+            new THREE.Vector3( 0,       C / 2, -(Math.sqrt(3) / 3) * A)
+        ];
+
+        middlePositions.forEach(pos => {
+            const atom = new THREE.Mesh(atomGeo, middleMatTemplate.clone());
+            atom.position.copy(pos);
+            atom.scale.setScalar(RADIUS_SCHEMATIC);
+            cellGroup.add(atom);
+            middleAtoms.push(atom);
+        });
+
+        // ========== TAPAS EXACTAS (cierran los huecos de las esferas cortadas) ==========
+        const capsGroup = new THREE.Group();
+        capsGroup.visible = false;
+        cellGroup.add(capsGroup);
+
+        function makeCapMat(color) {
+            return new THREE.MeshStandardMaterial({
+                color: color,
+                metalness: 0.10,
+                roughness: 0.58,
+                side: THREE.DoubleSide,
+                depthWrite: true
+            });
+        }
+
+        const vertexCapMat = makeCapMat(VERTEX_COLOR);
+        const middleCapMat = makeCapMat(MIDDLE_COLOR);
+
+        /**
+         * Crea un disco que cierra exactamente la intersección de una esfera
+         * con un plano de recorte.
+         * La tapa se recorta con TODOS los planos EXCEPTO el que la genera
+         * (para evitar que por precisión se descarte el disco entero).
+         */
+        function createExactCap(center, plane, radius, baseMaterial) {
+            const dist = plane.normal.dot(center) + plane.constant;
+            if (Math.abs(dist) >= radius - 1e-6) return null;
+
+            const capRadius = Math.sqrt(radius * radius - dist * dist);
+            const geo = new THREE.CircleGeometry(capRadius, 48);
+
+            // Material propio que excluye el plano generador
+            const otherPlanes = clipPlanes.filter(p => p !== plane);
+            const mat = baseMaterial.clone();
+            mat.clippingPlanes = otherPlanes;
+
+            const mesh = new THREE.Mesh(geo, mat);
+
+            const capCenter = center.clone().addScaledVector(plane.normal, -dist);
+            mesh.position.copy(capCenter);
+
+            const up = new THREE.Vector3(0, 0, 1);
+            const quat = new THREE.Quaternion().setFromUnitVectors(up, plane.normal.clone().normalize());
+            mesh.quaternion.copy(quat);
+
+            // Pequeño desplazamiento hacia el interior
+            mesh.position.addScaledVector(plane.normal, -0.003 * Math.sign(dist || 1));
+
+            return mesh;
+        }
+
+        // Generar tapas para todos los átomos y todos los planos que los cortan
+        const allAtomData = [
+            ...vertexPositions.map(p => ({ pos: p, mat: vertexCapMat })),
+            ...basePositions.map(p => ({ pos: p, mat: vertexCapMat })),
+            ...middlePositions.map(p => ({ pos: p, mat: middleCapMat }))
+        ];
+
+        allAtomData.forEach(({ pos, mat }) => {
+            clipPlanes.forEach(plane => {
+                const cap = createExactCap(pos, plane, RADIUS_REALISTIC, mat);
+                if (cap) capsGroup.add(cap);
+            });
+        });
+
+        // ========== ARISTAS DEL PRISMA HEXAGONAL ==========
+        const edgeMat = new THREE.LineBasicMaterial({
+            color: EDGE_COLOR,
+            transparent: true,
+            opacity: 0.7
+        });
+        const edgesGroup = new THREE.Group();
+
+        // Hexágono inferior y superior
+        for (let i = 0; i < 6; i++) {
+            const j = (i + 1) % 6;
+            // Bottom
+            const geoB = new THREE.BufferGeometry().setFromPoints([
+                new THREE.Vector3(hexVerts2D[i].x, 0, hexVerts2D[i].y),
+                new THREE.Vector3(hexVerts2D[j].x, 0, hexVerts2D[j].y)
+            ]);
+            edgesGroup.add(new THREE.Line(geoB, edgeMat));
+            // Top
+            const geoT = new THREE.BufferGeometry().setFromPoints([
+                new THREE.Vector3(hexVerts2D[i].x, C, hexVerts2D[i].y),
+                new THREE.Vector3(hexVerts2D[j].x, C, hexVerts2D[j].y)
+            ]);
+            edgesGroup.add(new THREE.Line(geoT, edgeMat));
+            // Vertical
+            const geoV = new THREE.BufferGeometry().setFromPoints([
+                new THREE.Vector3(hexVerts2D[i].x, 0, hexVerts2D[i].y),
+                new THREE.Vector3(hexVerts2D[i].x, C, hexVerts2D[i].y)
+            ]);
+            edgesGroup.add(new THREE.Line(geoV, edgeMat));
+        }
+        cellGroup.add(edgesGroup);
+
+        // Ejes de referencia
+        const axes = new THREE.AxesHelper(0.4);
+        axes.position.set(-1.3, -0.15, -1.3);
+        cellGroup.add(axes);
+
+        // ========== CONTROL DE MODOS ==========
+        const modeLabel    = document.getElementById('mode-label');
+        const btnSchematic = document.getElementById('btn-schematic');
+        const btnRealistic = document.getElementById('btn-realistic');
+        const btnInterior  = document.getElementById('btn-interior');
+
+        const modes = {
+            schematic: {
+                radius: RADIUS_SCHEMATIC,
+                clip: false,
+                showCaps: false,
+                label: 'Vista esquemática · átomos reducidos',
+                opacity: 0.90
+            },
+            realistic: {
+                radius: RADIUS_REALISTIC,
+                clip: false,
+                showCaps: false,
+                label: 'Vista realista · los átomos se tocan (r = a/2)',
+                opacity: 0.97
+            },
+            interior: {
+                radius: RADIUS_REALISTIC,
+                clip: true,
+                showCaps: true,
+                label: 'Solo interior · fragmentos macizos (12·1/6 + 2·1/2 + 3 = 6)',
+                opacity: 1.0
+            }
+        };
+
+        function setMode(modeName) {
+            const mode = modes[modeName];
+            const isOpaque = mode.opacity >= 0.999;
+
+            const allAtoms = [...vertexAtoms, ...baseAtoms, ...middleAtoms];
+            allAtoms.forEach(atom => {
+                atom.scale.setScalar(mode.radius);
+                atom.material.opacity = mode.opacity;
+                atom.material.transparent = !isOpaque;
+                atom.material.depthWrite = true;
+                atom.material.clippingPlanes = mode.clip ? clipPlanes : [];
+                atom.material.needsUpdate = true;
+            });
+
+            capsGroup.visible = mode.showCaps;
+
+            btnSchematic.classList.toggle('active', modeName === 'schematic');
+            btnRealistic.classList.toggle('active', modeName === 'realistic');
+            btnInterior.classList.toggle('active',  modeName === 'interior');
+            modeLabel.textContent = mode.label;
+        }
+
+        btnSchematic.addEventListener('click', () => setMode('schematic'));
+        btnRealistic.addEventListener('click', () => setMode('realistic'));
+        btnInterior.addEventListener('click',  () => setMode('interior'));
+
+        // ========== RESPONSIVE ==========
+        window.addEventListener('resize', () => {
+            const w = container.clientWidth;
+            const h = container.clientHeight;
+            camera.aspect = w / h;
+            camera.updateProjectionMatrix();
+            renderer.setSize(w, h);
+        });
+
+        // --- Añadido al integrar en eXeLearning (2026-08-01) -------------------
+        // El modelo va dentro de una pestaña: mientras la pestaña está oculta el
+        // contenedor mide 0x0 y el canvas se inicializa vacío. El listener de
+        // 'resize' de la ventana no se dispara al mostrarla, así que observamos
+        // el propio contenedor y reajustamos cámara y renderer en cuanto tiene
+        // tamaño real.
+        if (typeof ResizeObserver !== 'undefined') {
+            new ResizeObserver(() => {
+                const w = container.clientWidth, h = container.clientHeight;
+                if (w > 0 && h > 0) {
+                    camera.aspect = w / h;
+                    camera.updateProjectionMatrix();
+                    renderer.setSize(w, h);
+                }
+            }).observe(container);
+        }
+
+        // ========== BUCLE ==========
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();
+            renderer.render(scene, camera);
+        }
+        animate();
+    </script>
+</body>
+</html>

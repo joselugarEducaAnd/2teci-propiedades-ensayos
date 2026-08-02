@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mr8adz4a-estint2026">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.2">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>2. Estructura interna de los materiales | Propiedades de los materiales. Ensayos de medida.</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Propiedades de los materiales. Ensayos. Tecnología e Ingeniería II.">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260705231150C9UWFG","packageTitle":"Propiedades de los materiales. Ensayos de medida.","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mr8adz4a-estint2026" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Propiedades de los materiales. Ensayos de medida.</a>
+</li>
+<li> <a href="../html/1-propiedades-de-los-materiales.html" class="no-ch">1. Propiedades de los materiales</a>
+</li>
+<li class="active"> <a href="../html/2-estructura-interna-de-los-materiales.html" class="active no-ch">2. Estructura interna de los materiales</a>
+</li>
+<li> <a href="../html/3-impacto-social-y-ambiental-de-los-materiales-y-p.html" class="no-ch">3. Impacto social y ambiental de los materiales y procesos</a>
+</li>
+<li> <a href="../html/4-ensayos-de-medida.html" class="daddy">4. Ensayos de medida</a>
+<ul class="other-section">
+<li> <a href="../html/41-ensayo-de-traccion.html" class="no-ch">4.1. Ensayo de tracción</a>
+</li>
+<li> <a href="../html/42-ensayos-de-dureza.html" class="no-ch">4.2. Ensayos de dureza</a>
+</li>
+<li> <a href="../html/43-ensayos-de-resiliencia.html" class="no-ch">4.3. Ensayos de resiliencia</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/5-anexo-colecciones-de-problemas.html" class="no-ch">5. Anexo. Colecciones de problemas</a>
+</li>
+</ul>
+</nav><main id="page-mr8adz4a-estint2026" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Propiedades de los materiales. Ensayos de medida.</p></div>
+<div class="page-header"><h1 class="page-title">2. Estructura interna de los materiales</h1></div>
+</header><div id="page-content-page-mr8adz4a-estint2026" class="page-content">
+<article id="block-mr8adz4a-0bnt2026" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mr8adz4a-0int2026" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mr8adz4a-0int2026&quot;}">
+<style>.exe-content{--chrome:#22425c;--chrome-osc:#163049;--chrome-tinte:#eaeef2;--chrome-linea:#cdd6de;}</style>
+<p>Muchas propiedades de un material —la densidad, el punto de fusión, la facilidad para
+deformarse— no se explican mirando la pieza, sino mirando cómo están colocados sus átomos.
+En este apartado vamos a describir esa colocación y, sobre todo, a <strong>calcular</strong> a
+partir de ella: con la geometría de la red y el radio de un átomo se puede deducir la densidad
+del material sin pesarlo.</p>
+
+<div class="bloque bloque-nota">
+<p class="bloque-titulo">Para qué sirve este apartado</p>
+<p>Es la base del bloque de ensayos: un material dúctil y uno frágil se diferencian, en el
+fondo, en cómo se mueven los planos de átomos de su red. Y en la prueba de acceso a la
+universidad la estructura interna se usa para contextualizar, pero el cálculo de la celda
+—número de átomos, constante reticular y densidad— sí aparece como problema numérico.</p>
+</div>
+
+<h3>Sólidos amorfos y sólidos cristalinos</h3>
+
+<p>En un <strong>sólido amorfo</strong> las partículas carecen de una estructura ordenada; el
+vidrio es el ejemplo típico. En los <strong>sólidos cristalinos</strong>, en cambio, los átomos
+se disponen de manera regular y ordenada formando <strong>redes cristalinas</strong>. Los metales
+son cristalinos.</p>
+
+<figure class="exe-figure exe-image position-center">
+<img src="../content/resources/Solido_cristalino_y_amorfo.png"
+     alt="Comparación entre un sólido cristalino, con los átomos en posiciones regulares que se repiten por toda la red, y un sólido amorfo, con el mismo número de átomos colocados sin ningún orden."
+     width="640" />
+<figcaption class="figcaption"><span class="author">Elaboración propia</span>. <span class="title"><em>Sólido cristalino y sólido amorfo</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/licenses/?lang=es" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA">CC BY-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+
+<p>Las redes cristalinas tienen una estructura básica que se repite por toda la red. Analizando
+esa estructura básica se puede comprender el comportamiento del material a nivel macroscópico e
+incluso calcular algunas de sus propiedades.</p>
+
+</div>
+</div>
+</article><article id="block-mr8adz4a-1bnt2026" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">2.1. La celda unitaria</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mr8adz4a-1int2026" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mr8adz4a-1int2026&quot;}">
+<p>La estructura mínima que se repite en una red cristalina se denomina
+<strong>celda unitaria</strong>. Según su geometría, las propiedades del material serán unas u
+otras. Aunque hay muchas celdas posibles, <strong>el 90 % de los metales cristaliza en alguna de
+estas tres</strong>. Cámbialas con las pestañas.</p>
+
+<div class="exe-fx exe-tabs">
+<h2>Cúbica centrada en el cuerpo (BCC)</h2>
+<p>Del inglés <em>Body-Centered Cubic</em>. La celda es un cubo con un átomo en cada vértice más
+otro en el centro del cubo. Cristalizan en BCC el <strong>Li, Na, K, Cr, Fe(α), Ba, V y W</strong>.</p>
+<iframe src="../content/resources/modelos-cristalinos/celda_BCC.html"
+        title="Modelo tridimensional interactivo de una celda unidad cúbica centrada en el cuerpo"
+        width="100%" height="620" loading="lazy"
+        style="display:block; width:100%; max-width:1120px; margin:1rem auto;
+               border:0; border-radius:14px; background:#ffffff;">
+</iframe>
+<p>Los átomos de los vértices pertenecen a varias celdas a la vez: de cada uno sólo entra en
+esta celda 1/8. Súmalo al átomo central, que sí está entero, y salen los <strong>2 átomos por
+celda</strong>. Gira el modelo en la vista «solo interior» para verlo.</p>
+
+<h2>Cúbica centrada en las caras (FCC)</h2>
+<p>Del inglés <em>Face-Centered Cubic</em>. La celda es un cubo con un átomo en cada vértice más
+otros seis, uno en el centro de cada cara. Cristalizan en FCC el <strong>Al, Cu, Au, Ir, Pb, Ni,
+Pt y Ag</strong>.</p>
+<iframe src="../content/resources/modelos-cristalinos/celda_FCC.html"
+        title="Modelo tridimensional interactivo de una celda unidad cúbica centrada en las caras"
+        width="100%" height="620" loading="lazy"
+        style="display:block; width:100%; max-width:1120px; margin:1rem auto;
+               border:0; border-radius:14px; background:#ffffff;">
+</iframe>
+<p>Los átomos de las caras aportan media esfera a esta celda y la otra media a la celda contigua:
+6·½ + 8·⅛ dan los <strong>4 átomos por celda</strong>. Es la red más compacta de las tres junto
+con la HCP.</p>
+
+<h2>Hexagonal compacta (HCP)</h2>
+<p>Del inglés <em>Hexagonal Close-Packed</em>. La celda es un prisma de base hexagonal con un
+átomo en cada vértice, uno en el centro de cada cara hexagonal y otros tres en el interior.
+Cristalizan en HCP el <strong>Be, Cd, Mg, Ti, Zn y Zr</strong>.</p>
+<iframe src="../content/resources/modelos-cristalinos/celda_HCP.html"
+        title="Modelo tridimensional interactivo de una celda unidad hexagonal compacta"
+        width="100%" height="620" loading="lazy"
+        style="display:block; width:100%; max-width:1120px; margin:1rem auto;
+               border:0; border-radius:14px; background:#ffffff;">
+</iframe>
+<p>Los tres átomos del interior del prisma no caben enteros, pero lo que les falta entra desde
+las celdas de alrededor, así que a efectos de contar materia se computan completos:
+2·½ + 12·⅙ + 3 dan <strong>6 átomos por celda</strong>.</p>
+</div>
+
+<div class="bloque bloque-teoria">
+<p class="bloque-titulo">Alotropía</p>
+<p>Un mismo elemento puede cambiar de red cristalina al variar la presión o la temperatura: es
+lo que se llama <strong>alotropía</strong> o polimorfismo. El hierro, por ejemplo, es BCC a
+temperatura ambiente pero pasa a FCC entre 912 °C y 1394 °C. Como la FCC es más compacta, ese
+cambio modifica la densidad y la capacidad del hierro para disolver carbono, que es
+precisamente la base de los tratamientos térmicos del acero.</p>
+</div>
+
+</div>
+</div>
+</article><article id="block-mr8adz4a-2bnt2026" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">2.2. Valores característicos de la celda</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mr8adz4a-2int2026" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mr8adz4a-2int2026&quot;}">
+<p>Para comparar materiales y calcular sus propiedades se manejan siempre los
+mismos seis valores de la celda unitaria.</p>
+
+<table class="tabla-datos" border="1" cellpadding="6">
+<thead>
+<tr><th>Símbolo</th><th>Magnitud</th><th>Cómo se obtiene</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>n</strong></td><td>Número de átomos por celda</td>
+<td>Átomos completos que pertenecen a la celda, contando de cada uno su fracción: un vértice de
+un cubo aporta 1/8; el centro de una cara, 1/2; uno interior, 1</td></tr>
+<tr><td><strong>V<sub>a</sub></strong></td><td>Volumen atómico de la celda</td>
+<td>\(V_{a}=n\cdot\frac{4}{3}\pi R^{3}\), tratando los átomos como esferas de radio <em>R</em></td></tr>
+<tr><td><strong>m</strong></td><td>Masa de la celda</td>
+<td>\(m=\frac{n\cdot m_{at}}{N_{A}}\), con <em>N<sub>A</sub></em> = 6,022·10<sup>23</sup></td></tr>
+<tr><td><strong>a</strong></td><td>Constante reticular o parámetro de red</td>
+<td>Arista de la celda, en función del radio atómico. Depende de la red (ver pestañas)</td></tr>
+<tr><td><strong>i</strong></td><td>Índice de coordinación</td>
+<td>Número de átomos tangentes a otro. Si varía según la posición, se toma el mayor</td></tr>
+<tr><td><strong>FE</strong></td><td>Factor de empaquetamiento</td>
+<td>\(FE=V_{a}/V\). No depende del tamaño de los átomos, sólo de la geometría</td></tr>
+</tbody>
+</table>
+
+<p>Los tres primeros se calculan igual en cualquier red; la constante reticular y el factor de
+empaquetamiento dependen de la geometría de cada una:</p>
+
+<div class="exe-fx exe-tabs">
+<h2>BCC</h2>
+<p>El átomo central está entero dentro de la celda y cada uno de los 8 vértices aporta 1/8:</p>
+\[n=1+8\cdot\frac{1}{8}=1+1=2\]
+<p>El índice de coordinación es <strong>i = 8</strong>, el del átomo central. Las esferas son
+tangentes a lo largo de la <strong>diagonal del cubo</strong>, que mide 4<em>R</em>:</p>
+<figure class="exe-figure exe-image position-center">
+<img src="../content/resources/constante_reticular_bcc.png" alt="Celda cúbica centrada en el cuerpo. Tres átomos alineados a lo largo de la diagonal del cubo se tocan entre sí. Cada átomo se dibuja sólido en la parte que pertenece a esta celda y transparente en la que comparte con las celdas vecinas, y se marcan sobre él los cortes con las caras del cubo. La diagonal mide cuatro radios atómicos y equivale a la arista por raíz de tres." width="430" />
+<figcaption class="figcaption"><span class="author">Elaboración propia</span>. <span class="title"><em>Constante reticular de la celda BCC: los átomos se tocan a lo largo de la diagonal del cubo</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/licenses/?lang=es" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA">CC BY-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p>De la geometría de la diagonal de un cubo en función de su lado se deduce que:</p>
+\[a=\frac{4\cdot R}{\sqrt{3}}\]
+<p>El volumen de la celda es el de un cubo, <em>V</em> = <em>a</em><sup>3</sup>, y el factor de
+empaquetamiento resulta:</p>
+\[FE=\frac{V_{a}}{V}=\frac{n\cdot \frac{4}{3}\pi R^{3}}{(\frac{4R}{\sqrt{3}})^{3}}=\frac{8\sqrt{3}\pi}{64}\simeq 0{,}68\]
+
+<h2>FCC</h2>
+<p>Los 6 átomos de las caras aportan media esfera y los 8 vértices, 1/8 cada uno:</p>
+\[n=6\cdot \frac{1}{2}+8\cdot\frac{1}{8}=3+1=4\]
+<p>El índice de coordinación es <strong>i = 12</strong>, el de los átomos de los centros de las
+caras. Aquí la tangencia se produce a lo largo de la <strong>diagonal de cada cara</strong>:</p>
+<figure class="exe-figure exe-image position-center">
+<img src="../content/resources/constante_reticular_FCC.png" alt="Celda cúbica centrada en las caras. Tres átomos alineados a lo largo de la diagonal de una cara se tocan entre sí. Cada átomo se dibuja sólido en la parte que pertenece a esta celda y transparente en la que comparte con las celdas vecinas, y se marcan sobre él los cortes con las caras del cubo. La diagonal de la cara mide cuatro radios atómicos y equivale a la arista por raíz de dos." width="390" />
+<figcaption class="figcaption"><span class="author">Elaboración propia</span>. <span class="title"><em>Constante reticular de la celda FCC: los átomos se tocan a lo largo de la diagonal de la cara</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/licenses/?lang=es" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA">CC BY-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+\[a=\frac{4\cdot R}{\sqrt{2}}\]
+\[FE=\frac{V_{a}}{V}=\frac{n\cdot \frac{4}{3}\pi R^{3}}{(\frac{4R}{\sqrt{2}})^{3}}=\frac{\sqrt{2}\pi}{6}\simeq 0{,}74\]
+
+<h2>HCP</h2>
+<p>Los 2 átomos de las caras hexagonales aportan media esfera, los 12 vértices 1/6 cada uno y
+los 3 átomos interiores se cuentan enteros:</p>
+\[n=2\cdot \frac{1}{2}+12\cdot\frac{1}{6}+3=1+2+3=6\]
+<p>El índice de coordinación es <strong>i = 12</strong>. La constante reticular es el lado del
+hexágono, donde las esferas son tangentes, y la altura del prisma se deduce imponiendo que las
+esferas interiores sean tangentes a las de las bases:</p>
+\[a=2 \cdot R\]
+\[h=\frac{2\sqrt{2}}{\sqrt{3}}a=\sqrt{\frac{2}{3}}4R\]
+\[V=A_{base}\cdot h=6\sqrt{3}R^{2}\cdot \sqrt{\frac{2}{3}}4R=24\sqrt{2}R^{3}\]
+\[FE=\frac{V_{a}}{V}=\frac{n\cdot \frac{4}{3}\pi R^{3}}{24\sqrt{2}R^{3}}=\frac{\sqrt{2}\pi}{6}\simeq 0{,}74\]
+</div>
+
+<table class="tabla-datos" border="1" cellpadding="6">
+<thead>
+<tr><th>Celda</th><th>n</th><th>i</th><th>Constante reticular</th><th>FE</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>BCC</strong></td><td>2</td><td>8</td><td><em>a</em> = 4<em>R</em>/√3</td><td>0,68</td></tr>
+<tr><td><strong>FCC</strong></td><td>4</td><td>12</td><td><em>a</em> = 4<em>R</em>/√2</td><td>0,74</td></tr>
+<tr><td><strong>HCP</strong></td><td>6</td><td>12</td><td><em>a</em> = 2<em>R</em></td><td>0,74</td></tr>
+</tbody>
+</table>
+
+<div class="bloque bloque-teoria">
+<p class="bloque-titulo">De la celda a la densidad</p>
+<p>Encadenando lo anterior se obtiene la densidad sin pesar nada: se cuentan los átomos de la
+celda, se calcula su masa dividiendo entre el número de Avogadro, se halla el volumen de la
+celda a partir del radio atómico y se dividen ambos.</p>
+\[\rho=\frac{n\cdot m_{at}}{N_{A}\cdot V}\]
+<p>Cuidado con las unidades: si quieres la densidad en kg/m³, la masa atómica debe entrar en
+kg/mol y el volumen de la celda en m³.</p>
+</div>
+
+</div>
+</div>
+</article><article id="block-mr8adz4a-3bnt2026" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/calculate.png" alt="">
+</div>
+<h1 class="box-title">Ejercicios de estructura interna</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mr8adz4a-3int2026" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mr8adz4a-3int2026&quot;}">
+<div class="bloque bloque-actividad">
+<p class="bloque-titulo">Ejercicios de estructura interna</p>
+<p>La colección completa (6 problemas, con el resultado de cada uno para que puedas
+autocorregirte) está en el <a href="5-anexo-colecciones-de-problemas.html">anexo de colecciones de problemas</a>.</p>
+<p>Acceso directo:
+<a href="../content/resources/colecciones/estructura_interna.html" target="_blank" rel="noopener">abrir la
+colección en el navegador</a> &nbsp;·&nbsp;
+<a href="../content/resources/EJERCICIOS ESTRUCTURA INTERNA.pdf" target="_blank" rel="noopener">descargar el PDF</a></p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/1-propiedades-de-los-materiales.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/3-impacto-social-y-ambiental-de-los-materiales-y-p.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+
+</body>
+</html>

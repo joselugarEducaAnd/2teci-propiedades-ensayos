@@ -1,0 +1,1492 @@
+[
+  {
+    "objectID": "resiliencia.html",
+    "href": "resiliencia.html",
+    "title": "Colección de problemas de resiliencia",
+    "section": "",
+    "text": "En un ensayo Charpy, se deja caer una maza de 25 kg desde una altura de 1,20 m. Después de romper la probeta el péndulo asciende una altura de 50 cm. Datos: La probeta es de sección cuadrada de 10 mm de lado y presenta una entalla de 2 mm de profundidad. Se pide:\n\nCalcular la energía empleada en la rotura.\nDibujar un esquema del ensayo y calcular la resiliencia del material de la probeta.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 1\n\n\n\n\n\n\nE=mg(h0−hf)=25·9,81·(1,20−0,50)=171,67E=mg(h_0-h_f)=25·9,81·(1,20-0,50)=171,67 J. La sección efectiva es S=10(10−2)=80S=10(10-2)=80 mm² =0,80=0,80 cm². ρ=E/S=171,67/0,80=214,59\\rho=E/S=171,67/0,80=214,59 J/cm². El esquema Charpy debe rotular eje, brazo, maza, alturas h0h_0 y hfh_f, y la probeta apoyada con la entalla opuesta al impacto.\n\n\n1. a) E=171,67E=171,67 J; b) esquema Charpy rotulado y ρ=214,59\\rho=214,59 J/cm².",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section",
+    "href": "resiliencia.html#section",
+    "title": "Colección de problemas de resiliencia",
+    "section": "",
+    "text": "En un ensayo Charpy, se deja caer una maza de 25 kg desde una altura de 1,20 m. Después de romper la probeta el péndulo asciende una altura de 50 cm. Datos: La probeta es de sección cuadrada de 10 mm de lado y presenta una entalla de 2 mm de profundidad. Se pide:\n\nCalcular la energía empleada en la rotura.\nDibujar un esquema del ensayo y calcular la resiliencia del material de la probeta.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 1\n\n\n\n\n\n\nE=mg(h0−hf)=25·9,81·(1,20−0,50)=171,67E=mg(h_0-h_f)=25·9,81·(1,20-0,50)=171,67 J. La sección efectiva es S=10(10−2)=80S=10(10-2)=80 mm² =0,80=0,80 cm². ρ=E/S=171,67/0,80=214,59\\rho=E/S=171,67/0,80=214,59 J/cm². El esquema Charpy debe rotular eje, brazo, maza, alturas h0h_0 y hfh_f, y la probeta apoyada con la entalla opuesta al impacto.\n\n\n1. a) E=171,67E=171,67 J; b) esquema Charpy rotulado y ρ=214,59\\rho=214,59 J/cm².",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-1",
+    "href": "resiliencia.html#section-1",
+    "title": "Colección de problemas de resiliencia",
+    "section": "2.",
+    "text": "2.\n\nEn un ensayo Charpy la maza de 30 kg ha caído desde una altura de 100 cm y, después de romper la probeta de sección cuadrada de 10 mm de lado y 2 mm de profundidad de la entalla, se ha elevado hasta una altura de 60 cm.\n\nDibujar el esquema del ensayo y calcular la energía empleada en la rotura.\nCalcular la resiliencia del material de la probeta.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 2\n\n\n\n\n\n\nE=mg(h0−hf)=30·9,81·(1,00−0,60)=117,72E=mg(h_0-h_f)=30·9,81·(1,00-0,60)=117,72 J. La sección efectiva es S=10(10−2)=80S=10(10-2)=80 mm² =0,80=0,80 cm². ρ=E/S=117,72/0,80=147,15\\rho=E/S=117,72/0,80=147,15 J/cm². El esquema Charpy debe rotular eje, brazo, maza, alturas h0h_0 y hfh_f, y la probeta apoyada con la entalla opuesta al impacto.\n\n\n2. a) esquema Charpy rotulado y E=117,72E=117,72 J; b) ρ=147,15\\rho=147,15 J/cm².",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-2",
+    "href": "resiliencia.html#section-2",
+    "title": "Colección de problemas de resiliencia",
+    "section": "3.",
+    "text": "3.\n\nEn un ensayo Charpy se deja caer un péndulo con una masa de 30 kg, desde una altura de 1m, impactando sobre una probeta de 0,8 cm² de sección. Si, tras la rotura, el péndulo se eleva hasta 60 cm, se pide:\n\nCalcular la energía absorbida en la rotura.\nCalcular la resiliencia del material.\nExplicar el tipo de ensayo realizado y la finalidad del mismo.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 3\n\n\n\n\n\n\nE=30·9,81·(1,00−0,60)=117,72E=30·9,81·(1,00-0,60)=117,72 J. Con S=0,80S=0,80 cm², ρ=147,15\\rho=147,15 J/cm². Es un ensayo dinámico Charpy: cuantifica la energía absorbida y la resiliencia frente a impacto.\n\n\n3. a) E=117,72E=117,72 J; b) ρ=147,15\\rho=147,15 J/cm²; c) ensayo dinámico Charpy de resistencia al impacto.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-3",
+    "href": "resiliencia.html#section-3",
+    "title": "Colección de problemas de resiliencia",
+    "section": "4.",
+    "text": "4.\n\nEn un ensayo Charpy, la maza de 30kg de masa ha caído desde una altura de 1m y, después de romper la probeta de sección cuadrada de 10mm de lado y entalla de 2mm de profundidad, ha subido a una altura de 50cm. Calcular:\n\nLa energía empleada en la rotura.\nLa resiliencia del material de la probeta.\nExplicar para qué se realiza este ensayo.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 4\n\n\n\n\n\n\nE=mg(h0−hf)=30·9,81·(1,00−0,50)=147,15E=mg(h_0-h_f)=30·9,81·(1,00-0,50)=147,15 J. La sección efectiva es S=10(10−2)=80S=10(10-2)=80 mm² =0,80=0,80 cm². ρ=E/S=147,15/0,80=183,94\\rho=E/S=147,15/0,80=183,94 J/cm². Es un ensayo dinámico Charpy que mide la resistencia a la rotura por impacto.\n\n\n4. a) E=147,15E=147,15 J; b) ρ=183,94\\rho=183,94 J/cm²; c) mide la resistencia a la rotura por impacto.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-4",
+    "href": "resiliencia.html#section-4",
+    "title": "Colección de problemas de resiliencia",
+    "section": "5.",
+    "text": "5.\n\nPara medir la resiliencia de un material mediante el ensayo Charpy se ha utilizado una probeta de sección cuadrada de 10x10 mm, con entalla en forma de V y 2 mm de profundidad. La resiliencia obtenida fue de 28,5 kgm/cm², utilizando un martillo de 30 kg desde una altura de 140 cm. Se pide:\n\nDibujar un esquema ilustrativo del ensayo.\nCalcular la altura a la que se elevará el martillo después de golpear y romper la probeta.\nSi el martillo hubiera sido de 20 kg y se hubiera lanzado desde 2 m de altura, determinar la resiliencia que se hubiera obtenido y la energía sobrante tras el impacto.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 5\n\n\n\n\n\n\nρ=28,5\\rho=28,5 kgf·m/cm² =279,6=279,6 J/cm² y S=0,80S=0,80 cm²; E=ρS=223,67E=\\rho S=223,67 J. hf=1,40−E/(30·9,81)=0,64h_f=1,40-E/(30·9,81)=0,64 m. Con 20 kg desde 2 m, la misma probeta absorbe la misma energía: queda Es=20·9,81·2−E=168,73E_s=20·9,81·2-E=168,73 J. El esquema Charpy debe rotular eje, brazo, maza, alturas h0h_0 y hfh_f, y la probeta apoyada con la entalla opuesta al impacto.\n\n\n5. a) esquema Charpy rotulado; b) hf=0,64h_f=0,64 m; c) ρ=28,5\\rho=28,5 kgf·m/cm² (=279,6=279,6 J/cm²) y Es=168,73E_s=168,73 J.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-5",
+    "href": "resiliencia.html#section-5",
+    "title": "Colección de problemas de resiliencia",
+    "section": "6.",
+    "text": "6.\n\nEn un ensayo Charpy, la maza de 25 kg ha caído desde una altura de 1 m y, después de romper la probeta de 80 mm² de sección, se ha elevado hasta una altura de 40 cm. Calcule:\n\nLa energía empleada en la rotura.\nLa resiliencia del material de la probeta.\nExplique para qué se realiza este ensayo.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 6\n\n\n\n\n\n\nE=mg(h0−hf)=25·9,81·(1,00−0,40)=147,15E=mg(h_0-h_f)=25·9,81·(1,00-0,40)=147,15 J. La sección efectiva es S=10(10−2)=80S=10(10-2)=80 mm² =0,80=0,80 cm². ρ=E/S=147,15/0,80=183,94\\rho=E/S=147,15/0,80=183,94 J/cm². Es un ensayo dinámico Charpy que mide la resistencia a la rotura por impacto.\n\n\n6. a) E=147,15E=147,15 J; b) ρ=183,94\\rho=183,94 J/cm²; c) mide la resistencia a la rotura por impacto.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-6",
+    "href": "resiliencia.html#section-6",
+    "title": "Colección de problemas de resiliencia",
+    "section": "7.",
+    "text": "7.\n\nPara medir la resiliencia de un material mediante el ensayo Charpy se ha utilizado una probeta de sección cuadrada de 10x10 mm, con entalla en forma de V y 2 mm de profundidad. La resiliencia obtenida fue de 185 J/cm², utilizando un martillo de 30 kg desde una altura de 150 cm. Se pide:\n\nDibujar un croquis del ensayo y calcular la altura a que se elevará el martillo tras golpear y romper la probeta.\nSi el martillo hubiera sido de 20 kg y se hubiera lanzado desde 2m de altura, determinar la energía sobrante tras el impacto.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 7\n\n\n\n\n\n\nE=185·0,80=148,00E=185·0,80=148,00 J. hf=1,50−E/(30·9,81)=0,997h_f=1,50-E/(30·9,81)=0,997 m. Para 20 kg desde 2 m, Es=20·9,81·2−E=244,40E_s=20·9,81·2-E=244,40 J. El esquema Charpy debe rotular eje, brazo, maza, alturas h0h_0 y hfh_f, y la probeta apoyada con la entalla opuesta al impacto.\n\n\n7. a) esquema Charpy rotulado y hf=0,997h_f=0,997 m; b) Es=244,40E_s=244,40 J.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-7",
+    "href": "resiliencia.html#section-7",
+    "title": "Colección de problemas de resiliencia",
+    "section": "8.",
+    "text": "8.\n\nSe realiza un ensayo Charpy sobre una probeta de sección cuadrada de 10 mm de lado y con una entalla en forma de V de 2 mm de profundidad. La resiliencia obtenida es de 110·104 J·m⁻² utilizando un martillo de 30 kp desde una altura de 150 cm. Se pide:\n\nCalcular la altura a la que se elevará el martillo después de golpear y romper la probeta\nSi el martillo hubiera sido de 20 kp y se hubiera lanzado desde 2 m de altura, determinar la energía sobrante tras el impacto.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 8\n\n\n\n\n\n\n110·104110·10^4 J/m² =110=110 J/cm². Con S=0,80S=0,80 cm², E=88,00E=88,00 J. Como 30 kp = 294,3 N, hf=1,50−88/294,3=1,201h_f=1,50-88/294,3=1,201 m. Con 20 kp desde 2 m, Es=20·9,81·2−88=304,40E_s=20·9,81·2-88=304,40 J.\n\n\n8. a) hf=1,201h_f=1,201 m; b) Es=304,40E_s=304,40 J.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-8",
+    "href": "resiliencia.html#section-8",
+    "title": "Colección de problemas de resiliencia",
+    "section": "9.",
+    "text": "9.\n\nEn un ensayo de impacto cae una maza de 30 kg desde una altura de 1 m y, después de romper la probeta con 80 mm² de sección en la entalla, se eleva hasta una altura de 60 cm. Se pide:\n\nDibujar un esquema del ensayo y calcular la energía absorbida en la rotura.\nCalcular la resiliencia del material de la probeta.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 9\n\n\n\n\n\n\nE=mg(h0−hf)=30·9,81·(1,00−0,60)=117,72E=mg(h_0-h_f)=30·9,81·(1,00-0,60)=117,72 J. La sección efectiva es S=10(10−2)=80S=10(10-2)=80 mm² =0,80=0,80 cm². ρ=E/S=117,72/0,80=147,15\\rho=E/S=117,72/0,80=147,15 J/cm². El esquema Charpy debe rotular eje, brazo, maza, alturas h0h_0 y hfh_f, y la probeta apoyada con la entalla opuesta al impacto.\n\n\n9. a) esquema Charpy rotulado y E=117,72E=117,72 J; b) ρ=147,15\\rho=147,15 J/cm².",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-9",
+    "href": "resiliencia.html#section-9",
+    "title": "Colección de problemas de resiliencia",
+    "section": "10.",
+    "text": "10.\n\nEn un ensayo Charpy se ha utilizado una probeta de sección cuadrada de 10 mm de lado con entalla en forma de V de 2 mm de profundidad. La energía absorbida fue de 180 J, utilizando un martillo de 30 kg desde una altura de 102 cm. Se pide:\n\nDeterminar la energía almacenada inicialmente en el martillo.\nCalcular la altura a la que se elevará el martillo después de golpear y romper la probeta.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 10\n\n\n\n\n\n\nE0=mgh0=30·9,81·1,02=300,19E_0=mgh_0=30·9,81·1,02=300,19 J. Tras absorber 180 J quedan 120,19120,19 J; hf=(E0−180)/(30·9,81)=0,408h_f=(E_0-180)/(30·9,81)=0,408 m.\n\n\n10. a) E0=300,19E_0=300,19 J; b) hf=0,408h_f=0,408 m.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-10",
+    "href": "resiliencia.html#section-10",
+    "title": "Colección de problemas de resiliencia",
+    "section": "11.",
+    "text": "11.\n\nEn un ensayo de impacto realizado con el péndulo Charpy, la maza de 18,5 kg está situada a 1,2 m de altura. Una vez liberado el péndulo y fracturada la probeta de 80 mm2 de sección transversal, la maza asciende hasta una altura de 65 cm. Se pide:\n\nCalcular la resiliencia del material.\nCalcular la energía sobrante tras el impacto.\nDibujar un esquema del ensayo.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 11\n\n\n\n\n\n\nE=18,5·9,81·(1,20−0,65)=99,82E=18,5·9,81·(1,20-0,65)=99,82 J; ρ=E/0,80=124,77\\rho=E/0,80=124,77 J/cm². La energía sobrante es Es=18,5·9,81·0,65=117,97E_s=18,5·9,81·0,65=117,97 J. El esquema Charpy debe rotular eje, brazo, maza, alturas h0h_0 y hfh_f, y la probeta apoyada con la entalla opuesta al impacto.\n\n\n11. a) ρ=124,77\\rho=124,77 J/cm²; b) Es=117,97E_s=117,97 J; c) esquema Charpy rotulado.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-11",
+    "href": "resiliencia.html#section-11",
+    "title": "Colección de problemas de resiliencia",
+    "section": "12.",
+    "text": "12.\n\nUna probeta de sección cuadrada de 10 mm de lado y una entalla de 2 mm de profundidad, es sometida a un ensayo Charpy. La masa del martillo es de 20 kg y cae desde una altura de 1 m. Tras la rotura alcanza una altura de 85 cm. Se pide:\n\nDeterminar la energía absorbida en la rotura.\nDeterminar la resiliencia del material.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 12\n\n\n\n\n\n\nE=mg(h0−hf)=20·9,81·(1,00−0,85)=29,43E=mg(h_0-h_f)=20·9,81·(1,00-0,85)=29,43 J. La sección efectiva es S=10(10−2)=80S=10(10-2)=80 mm² =0,80=0,80 cm². ρ=E/S=29,43/0,80=36,79\\rho=E/S=29,43/0,80=36,79 J/cm².\n\n\n12. a) E=29,43E=29,43 J; b) ρ=36,79\\rho=36,79 J/cm².",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-12",
+    "href": "resiliencia.html#section-12",
+    "title": "Colección de problemas de resiliencia",
+    "section": "13.",
+    "text": "13.\n\nSe realiza un ensayo de resiliencia (Charpy) dejando caer una maza de 22 kg desde una altura de 1 m sobre una probeta. La probeta es de sección cuadrada de 10 mm de lado y presenta una entalla de 2 mm de profundidad. Después de romperla, el martillo se eleva hasta una altura de 67 cm. Se pide:\n\nDibujar un esquema del ensayo propuesto. Calcular la energía absorbida por la probeta al romper.\nCalcular la resiliencia y la velocidad que alcanza la maza en el momento del impacto.\n¿Cuál es la diferencia entre los ensayos dinámicos y estáticos?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 13\n\n\n\n\n\n\nE=22·9,81·(1,00−0,67)=71,22E=22·9,81·(1,00-0,67)=71,22 J; ρ=E/0,80=89,03\\rho=E/0,80=89,03 J/cm². Justo antes del impacto, v=2gh0=4,43v=\\sqrt{2gh_0}=4,43 m/s. El esquema Charpy debe rotular eje, brazo, maza, alturas h0h_0 y hfh_f, y la probeta apoyada con la entalla opuesta al impacto. Charpy es dinámico (carga rápida por impacto); un ensayo estático aplica la carga lenta o cuasiestáticamente.\n\n\n13. a) esquema Charpy rotulado y E=71,22E=71,22 J; b) ρ=89,03\\rho=89,03 J/cm² y v=4,43v=4,43 m/s; c) dinámico: carga rápida; estático: carga lenta.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-13",
+    "href": "resiliencia.html#section-13",
+    "title": "Colección de problemas de resiliencia",
+    "section": "14.",
+    "text": "14.\n\nUn péndulo Charpy tiene una masa de 20,4 kg y se deja caer desde una altura de 1,5 m. Después de romper la probeta de 0,8 cm2 de sección, el péndulo asciende 60 cm. Se pide:\n\nLa energía sobrante después de la rotura.\nLa resiliencia del material ensayado.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 14\n\n\n\n\n\n\nLa energía sobrante es Es=mghf=20,4·9,81·0,60=120,07E_s=mgh_f=20,4·9,81·0,60=120,07 J. La absorbida es E=20,4·9,81·(1,50−0,60)=180,11E=20,4·9,81·(1,50-0,60)=180,11 J; ρ=E/0,80=225,14\\rho=E/0,80=225,14 J/cm².\n\n\n14. a) Es=120,07E_s=120,07 J; b) ρ=225,14\\rho=225,14 J/cm².",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-14",
+    "href": "resiliencia.html#section-14",
+    "title": "Colección de problemas de resiliencia",
+    "section": "15.",
+    "text": "15.\n\nEn un ensayo de dureza Brinell se ha utilizado una bola de 10 mm de diámetro. Al aplicar una carga de 1000 kp se ha obtenido una huella de 2,5 mm de diámetro. Se pide:\n\nLa dureza del material.\nLa constante de ensayo del material.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 15\n\n\n\n\n\n\nAunque el enunciado es de dureza y está fuera de tema, se conserva. HB=2F/[πD(D−D2−d2)]=200,5HB=2F/[\\pi D(D-\\sqrt{D^2-d^2})]=200,5 kgf/mm². K=F/D2=1000/102=10K=F/D^2=1000/10^2=10 kgf/mm².\n\n\n15. a) HB=200,5HB=200,5 kgf/mm²; b) K=10K=10 kgf/mm².",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-15",
+    "href": "resiliencia.html#section-15",
+    "title": "Colección de problemas de resiliencia",
+    "section": "16.",
+    "text": "16.\n\nEn un ensayo con el péndulo Charpy se usó una maza de 20 kg que se dejó caer desde 1 m de altura sobre una probeta de 80 mm2 de sección. Tras la rotura de la probeta el péndulo alcanzó una altura de 60 cm. Se pide:\n\nLa energía absorbida en la rotura de la probeta.\nLa resiliencia del material.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 16\n\n\n\n\n\n\nE=mg(h0−hf)=20·9,81·(1,00−0,60)=78,48E=mg(h_0-h_f)=20·9,81·(1,00-0,60)=78,48 J. La sección efectiva es S=10(10−2)=80S=10(10-2)=80 mm² =0,80=0,80 cm². ρ=E/S=78,48/0,80=98,10\\rho=E/S=78,48/0,80=98,10 J/cm².\n\n\n16. a) E=78,48E=78,48 J; b) ρ=98,10\\rho=98,10 J/cm².",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-16",
+    "href": "resiliencia.html#section-16",
+    "title": "Colección de problemas de resiliencia",
+    "section": "17.",
+    "text": "17.\n\nEn un ensayo Charpy la maza de 25 kg de masa cae desde una altura de 1 m y después de romper la probeta de 0,8 cm2 de sección, se eleva hasta una altura de 40 cm. Se pide:\n\nLa energía empleada en la rotura.\nLa resiliencia del material de la probeta expresada en J/cm2.\nDibujar un esquema del ensayo y definir el concepto de tenacidad de un material.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 17\n\n\n\n\n\n\nE=mg(h0−hf)=25·9,81·(1,00−0,40)=147,15E=mg(h_0-h_f)=25·9,81·(1,00-0,40)=147,15 J. La sección efectiva es S=10(10−2)=80S=10(10-2)=80 mm² =0,80=0,80 cm². ρ=E/S=147,15/0,80=183,94\\rho=E/S=147,15/0,80=183,94 J/cm². El esquema Charpy debe rotular eje, brazo, maza, alturas h0h_0 y hfh_f, y la probeta apoyada con la entalla opuesta al impacto. La tenacidad es la capacidad de absorber energía antes de romperse.\n\n\n17. a) E=147,15E=147,15 J; b) ρ=183,94\\rho=183,94 J/cm²; c) esquema Charpy rotulado; tenacidad: energía absorbida antes de romper.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-17",
+    "href": "resiliencia.html#section-17",
+    "title": "Colección de problemas de resiliencia",
+    "section": "18.",
+    "text": "18.\n\nSe realiza un ensayo Charpy dejando caer una maza de 22 kg de masa desde una altura de 1 m sobre una probeta de sección cuadrada de 10 mm de lado que presenta una entalla en V de 2 mm de profundidad. Después de romperla, el martillo se eleva hasta una altura de 67 cm. Se pide:\n\nHacer un esquema del ensayo y calcular la energía absorbida por la probeta al romperse.\nCalcular la resiliencia del material y la velocidad que alcanza la maza en el momento del impacto.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 18\n\n\n\n\n\n\nE=22·9,81·(1,00−0,67)=71,22E=22·9,81·(1,00-0,67)=71,22 J; ρ=E/0,80=89,03\\rho=E/0,80=89,03 J/cm². Justo antes del impacto, v=2gh0=4,43v=\\sqrt{2gh_0}=4,43 m/s. El esquema Charpy debe rotular eje, brazo, maza, alturas h0h_0 y hfh_f, y la probeta apoyada con la entalla opuesta al impacto.\n\n\n18. a) esquema Charpy rotulado y E=71,22E=71,22 J; b) ρ=89,03\\rho=89,03 J/cm² y v=4,43v=4,43 m/s.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-18",
+    "href": "resiliencia.html#section-18",
+    "title": "Colección de problemas de resiliencia",
+    "section": "19.",
+    "text": "19.\n\nEn un ensayo Charpy sobre una probeta de sección cuadrada de 10 mm x 10 mm con una entalla en forma de V de 2 mm de profundidad, se obtiene una resiliencia de 28,5 J/cm2. El martillo utilizado tiene 30 kg de masa y se deja caer desde una altura de 140 cm. Se pide:\n\nLa altura a la que se elevará el martillo después de golpear y romper la probeta.\nLa resiliencia de otra probeta normalizada de distinto material si el martillo hubiera sido de 20 kg de masa, se hubiera lanzado desde 2 m de altura y la energía sobrante tras el impacto hubiera sido de 260 J.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 19\n\n\n\n\n\n\nPrimera probeta: E1=28,5·0,80=22,80E_1=28,5·0,80=22,80 J y hf=1,40−E1/(30·9,81)=1,323h_f=1,40-E_1/(30·9,81)=1,323 m. Segunda: la energía inicial es 392,40 J; E2=392,40−260=132,40E_2=392,40-260=132,40 J y ρ2=E2/0,80=165,50\\rho_2=E_2/0,80=165,50 J/cm².\n\n\n19. a) hf=1,323h_f=1,323 m; b) ρ2=165,50\\rho_2=165,50 J/cm².",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-19",
+    "href": "resiliencia.html#section-19",
+    "title": "Colección de problemas de resiliencia",
+    "section": "20.",
+    "text": "20.\n\nSe realiza un ensayo Charpy sobre una probeta de sección cuadrada de 10 mm de lado, utilizando un martillo de 30 kg de masa situado a una altura de 1 m. La probeta tiene una entalla en forma de U de 5 mm de profundidad. El valor de la resiliencia obtenida es de 254 J/cm2. Se pide:\n\nLa energía total absorbida por la probeta al romperse.\nLa altura a la que se eleva el martillo después de la rotura de la probeta\n\n\n\n\n\n\n\n\n\nTipResultado del problema 20\n\n\n\n\n\n\nS=10(10−5)=50S=10(10-5)=50 mm² =0,50=0,50 cm². E=254·0,50=127,00E=254·0,50=127,00 J. hf=1−E/(30·9,81)=0,568h_f=1-E/(30·9,81)=0,568 m.\n\n\n20. a) E=127,00E=127,00 J; b) hf=0,568h_f=0,568 m.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-20",
+    "href": "resiliencia.html#section-20",
+    "title": "Colección de problemas de resiliencia",
+    "section": "21.",
+    "text": "21.\n\nEn un ensayo Charpy se utiliza una probeta de sección cuadrada de 10 mm de lado con una entalla en “V” de 5 mm de profundidad. Tras el ensayo se obtuvo un valor de la resiliencia de 254 J/cm2. El péndulo, de 30 kg de masa, se suelta desde una altura de 1 m.\n\nCalcular la energía absorbida por la probeta en el ensayo.\nDeterminar la altura que alcanza el péndulo después de golpear y romper la probeta.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 21\n\n\n\n\n\n\nS=10(10−5)=50S=10(10-5)=50 mm² =0,50=0,50 cm². E=254·0,50=127,00E=254·0,50=127,00 J. hf=1−E/(30·9,81)=0,568h_f=1-E/(30·9,81)=0,568 m.\n\n\n21. a) E=127,00E=127,00 J; b) hf=0,568h_f=0,568 m.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-21",
+    "href": "resiliencia.html#section-21",
+    "title": "Colección de problemas de resiliencia",
+    "section": "23.",
+    "text": "23.\n\nEn un ensayo de impacto se utiliza una probeta de sección cuadrada de 10 mm de lado con una entalla en forma de “V” de 2 mm de profundidad. Durante la prueba, el péndulo de 40 kg de masa cae desde 1 m de altura alcanzando 70 cm tras la rotura.\n\nCalcule la energía absorbida por la probeta en el choque.\nDetermine la resiliencia del material.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 23\n\n\n\n\n\n\nE=mg(h0−hf)=40·9,81·(1,00−0,70)=117,72E=mg(h_0-h_f)=40·9,81·(1,00-0,70)=117,72 J. La sección efectiva es S=10(10−2)=80S=10(10-2)=80 mm² =0,80=0,80 cm². ρ=E/S=117,72/0,80=147,15\\rho=E/S=117,72/0,80=147,15 J/cm².\n\n\n23. a) E=117,72E=117,72 J; b) ρ=147,15\\rho=147,15 J/cm².",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-22",
+    "href": "resiliencia.html#section-22",
+    "title": "Colección de problemas de resiliencia",
+    "section": "24.",
+    "text": "24.\n\nSe realiza un ensayo de resiliencia a una probeta de sección cuadrada de 10 mm de lado con una entalla en forma de “V” de 2 mm de profundidad. El péndulo de 30 kg de masa se mueve a una velocidad de 5 m/s justo antes del impacto.\n\nDibuje el esquema del ensayo y calcule la altura desde la que se dejó caer el martillo.\nCalcule la resiliencia de la probeta.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 24\n\n\n\n\n\n\nDe v2=2gh0v^2=2gh_0, h0=v2/(2g)=25/(2·9,81)=1,274h_0=v^2/(2g)=25/(2·9,81)=1,274 m. Para hallar la resiliencia hace falta la energía absorbida; el enunciado no da altura/velocidad de rebote ni otro dato equivalente. No puede determinarse sin inventar datos. El esquema Charpy debe rotular eje, brazo, maza, alturas h0h_0 y hfh_f, y la probeta apoyada con la entalla opuesta al impacto.\n\n\n24. a) esquema Charpy rotulado y h0=1,274h_0=1,274 m; b) resiliencia no determinable con los datos dados.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-23",
+    "href": "resiliencia.html#section-23",
+    "title": "Colección de problemas de resiliencia",
+    "section": "25.",
+    "text": "25.\n\nEn un ensayo Charpy se ha utilizado una probeta con una sección en la zona de la entalla o rotura de 80 mm2. La maza de 30 kg ha caído desde una altura de 1,40 m y después de romper la probeta se ha elevado a una altura de 1,13 m. Se pide:\n\nLa energía absorbida en la rotura.\nLa resiliencia del material de la probeta medida en J/cm2.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 25\n\n\n\n\n\n\nE=mg(h0−hf)=30·9,81·(1,40−1,13)=79,46E=mg(h_0-h_f)=30·9,81·(1,40-1,13)=79,46 J. La sección efectiva es S=10(10−2)=80S=10(10-2)=80 mm² =0,80=0,80 cm². ρ=E/S=79,46/0,80=99,33\\rho=E/S=79,46/0,80=99,33 J/cm².\n\n\n25. a) E=79,46E=79,46 J; b) ρ=99,33\\rho=99,33 J/cm².",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-24",
+    "href": "resiliencia.html#section-24",
+    "title": "Colección de problemas de resiliencia",
+    "section": "26.",
+    "text": "26.\n\nSe realiza un ensayo de impacto Charpy sobre una probeta de sección cuadrada de 10 mm de lado. La probeta tiene una entalladura en U de 5 mm de profundidad. El péndulo tiene una masa de 30 kg y se suelta desde una altura de 1 m. Tras el ensayo el valor de la resiliencia obtenida es de 254 J/cm2.\n\n﻿﻿﻿Determinar la energía total absorbida por la probeta en la rotura.\nCalcular la altura que adquiere el mazo después de la rotura\n\n\n\n\n\n\n\n\n\nTipResultado del problema 26\n\n\n\n\n\n\nS=10(10−5)=50S=10(10-5)=50 mm² =0,50=0,50 cm². E=254·0,50=127,00E=254·0,50=127,00 J. hf=1−E/(30·9,81)=0,568h_f=1-E/(30·9,81)=0,568 m.\n\n\n26. a) E=127,00E=127,00 J; b) hf=0,568h_f=0,568 m.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-25",
+    "href": "resiliencia.html#section-25",
+    "title": "Colección de problemas de resiliencia",
+    "section": "27.",
+    "text": "27.\n\nEn un ensayo de impacto el martillo del péndulo de Charpy, cuya masa es de 30 kg, asciende 40 cm después de golpear y romper una probeta que tiene una sección de 1 cm2 en la zona de rotura. La resiliencia del material ensayado es 0,80 J/mm2.\n\n﻿﻿﻿Calcular la energía absorbida por la probeta durante la rotura.\nDeterminar la altura desde la que se lanzó el martillo.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 27\n\n\n\n\n\n\nS=1S=1 cm² =100=100 mm²; E=0,80·100=80,00E=0,80·100=80,00 J. h0=hf+E/(mg)=0,40+80/(30·9,81)=0,672h_0=h_f+E/(mg)=0,40+80/(30·9,81)=0,672 m.\n\n\n27. a) E=80,00E=80,00 J; b) h0=0,672h_0=0,672 m.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-26",
+    "href": "resiliencia.html#section-26",
+    "title": "Colección de problemas de resiliencia",
+    "section": "30.",
+    "text": "30.\n\nEn un taller se está desarrollando un proyecto de montaje de un ensayo Charpy. Se conoce que la resiliencia del material que se va a utilizar para el ensayo es de 30 J/cm2 y que la probeta de sección cuadrada es de 10 mm de lado con una entalla de 2 mm. Además, quieren soltar el péndulo desde una altura de 2 m para que llegue, después de golpear la probeta, justo a una bandeja situada a 1 m de altura. Responder a las siguientes cuestiones:\n\n¿Qué masa deberá de tener el martillo del péndulo que golpeará la probeta para conseguir el objetivo?\nSi cambiamos el martillo por uno de 10 kg, ¿a qué altura llegaría después de golpear la probeta?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 30\n\n\n\n\n\n\nS=0,80S=0,80 cm² y E=30·0,80=24,00E=30·0,80=24,00 J. m=E/[g(2−1)]=2,446m=E/[g(2-1)]=2,446 kg. Con m=10m=10 kg, hf=2−E/(10·9,81)=1,755h_f=2-E/(10·9,81)=1,755 m.\n\n\n30. a) m=2,446m=2,446 kg; b) hf=1,755h_f=1,755 m.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-27",
+    "href": "resiliencia.html#section-27",
+    "title": "Colección de problemas de resiliencia",
+    "section": "31.",
+    "text": "31.\n\nEn un laboratorio de control de calidad se realiza un ensayo Charpy a una probeta de acero estructural con una sección cuadrada de 10 mm de lado utilizando un péndulo de 20 kg de masa. El péndulo parte de una altura inicial de 1,2 m y, tras impactar con la probeta, alcanza una altura final de 30 cm. Se pide:\n\nCalcular la energía absorbida por la probeta.\nDeterminar la resiliencia del material.\nEn caso de utilizar un péndulo de 18 kg de masa, ¿desde qué altura debería dejarse caer para alcanzar la misma altura final una vez rota la probeta?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 31\n\n\n\n\n\n\nE=20·9,81·(1,20−0,30)=176,58E=20·9,81·(1,20-0,30)=176,58 J. Al no indicarse entalla, la sección efectiva es la sección completa, S=1,00S=1,00 cm², y ρ=176,58\\rho=176,58 J/cm². Para 18 kg y el mismo hfh_f, h0=0,30+E/(18·9,81)=1,30h_0=0,30+E/(18·9,81)=1,30 m.\n\n\n31. a) E=176,58E=176,58 J; b) ρ=176,58\\rho=176,58 J/cm²; c) h0=1,30h_0=1,30 m.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-29",
+    "href": "resiliencia.html#section-29",
+    "title": "Colección de problemas de resiliencia",
+    "section": "22.",
+    "text": "22.\n\nEn un ensayo Charpy el péndulo cae desde una altura de 1 m y después de romper la probeta, sube hasta una altura de 70 cm. La energía absorbida por la rotura del material es 147 J. La probeta del ensayo es de sección cuadrada con 10 mm de lado y presenta una entalla de 2 mm en el punto de impacto.\n\nCalcular la masa del péndulo utilizado en el ensayo\nCalcular la resiliencia del material\n\n\n\n\n\n\n\n\n\nTipResultado del problema 22\n\n\n\n\n\n\nm=E/[g(h0−hf)]=147/[9,81(1,00−0,70)]=49,95m=E/[g(h_0-h_f)]=147/[9,81(1,00-0,70)]=49,95 kg. S=0,80S=0,80 cm² y ρ=147/0,80=183,75\\rho=147/0,80=183,75 J/cm².\n\n\n22. a) m=49,95m=49,95 kg; b) ρ=183,75\\rho=183,75 J/cm².",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-30",
+    "href": "resiliencia.html#section-30",
+    "title": "Colección de problemas de resiliencia",
+    "section": "28.",
+    "text": "28.\n\nEn un ensayo Charpy el péndulo de 30 kg de masa asciende 60 cm después de golpear y romper una probeta. Dicha probeta es de sección cuadrada de 10 mm de lado y tiene una entalla en forma de U de 2 mm de profundidad. La resiliencia obtenida es 147,15 J/cm2.\n\nDeterminar la energía total absorbida por la probeta en el ensayo.\nCalcular la altura desde la que se dejó caer el péndulo.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 28\n\n\n\n\n\n\nS=0,80S=0,80 cm²; E=147,15·0,80=117,72E=147,15·0,80=117,72 J. h0=hf+E/(mg)=0,60+117,72/(30·9,81)=1,00h_0=h_f+E/(mg)=0,60+117,72/(30·9,81)=1,00 m.\n\n\n28. a) E=117,72E=117,72 J; b) h0=1,00h_0=1,00 m.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-31",
+    "href": "resiliencia.html#section-31",
+    "title": "Colección de problemas de resiliencia",
+    "section": "29.",
+    "text": "29.\n\nEn un ensayo Charpy, el péndulo tiene una masa de 20 kg, cae desde una altura de 1 m y después de romper la probeta sube hasta una altura de 65 cm. La probeta del ensayo es de sección cuadrada de 10 mm de lado y presenta una entalla en el punto de impacto.\n\nCalcular la energía disipada en la rotura.\nCalcular la profundidad de la entalla de la probeta sabiendo que la resiliencia del material es 85,75 J/cm2\n\n\n\n\n\n\n\n\n\nTipResultado del problema 29\n\n\n\n\n\n\nE=20·9,81·(1,00−0,65)=68,67E=20·9,81·(1,00-0,65)=68,67 J. S=E/ρ=68,67/85,75=0,8008S=E/\\rho=68,67/85,75=0,8008 cm². Como S=10(10−e)/100S=10(10-e)/100, e=1,99e=1,99 mm (aprox. 2,0 mm; la diferencia procede del redondeo de la resiliencia).\n\n\n29. a) E=68,67E=68,67 J; b) e=1,99e=1,99 mm (≈ 2,0 mm).",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-33",
+    "href": "resiliencia.html#section-33",
+    "title": "Colección de problemas de resiliencia",
+    "section": "32.",
+    "text": "32.\n\nLa empresa que está haciendo la obra de la estación de autobuses de Almería ha subcontratado a otra empresa que fabrica y monta estructuras metálicas para que haga la cubierta de la zona donde los autobuses se estacionan. Como en esa zona hay riesgo de que algún vehículo impacte con los pilares de la estructura, el proyecto técnico debe contener un estudio de la tenacidad a la fractura de estos pilares. Para hacer este estudio se realizan una serie de ensayos Charpy sacando varias probetas del acero de las vigas que la fábrica ha comprado para hacer la estructura. Se usa un péndulo con una masa de 4 kg que se suelta desde 1 m de altura. Se pide:\n\nCalcular la resiliencia del material de la viga si al hacer un ensayo con una probeta de sección es cuadrada de 1,5 cm de lado con una entalla en V de 2 mm profundidad el martillo sube hasta los 60 cm tras el impacto.\nSi al hacer otra probeta para repetir el ensayo se comete un error en la fabricación y la profundidad de la entalla es de 4 mm, en la misma sección cuadrada ¿a qué altura subirá el péndulo para que la resiliencia sea la misma?\nCalcular y comparar la energía absorbida en la rotura de la probeta con 2 mm y con 4 mm de profundidad de entalla.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 32\n\n\n\n\n\n\nS1=15(15−2)=195S_1=15(15-2)=195 mm² =1,95=1,95 cm². E1=4·9,81·(1−0,60)=15,696E_1=4·9,81·(1-0,60)=15,696 J; ρ=E1/S1=8,05\\rho=E_1/S_1=8,05 J/cm². Para 4 mm, S2=1,65S_2=1,65 cm², E2=ρS2=13,281E_2=\\rho S_2=13,281 J y hf2=1−E2/(4·9,81)=0,662h_{f2}=1-E_2/(4·9,81)=0,662 m.\n\n\n32. a) ρ=8,05\\rho=8,05 J/cm²; b) hf=0,662h_f=0,662 m; c) E1=15,696E_1=15,696 J y E2=13,281E_2=13,281 J.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-34",
+    "href": "resiliencia.html#section-34",
+    "title": "Colección de problemas de resiliencia",
+    "section": "33.",
+    "text": "33.\n\nSe construye una nave logística con zonas destinadas a maniobras de camiones. Dado el riesgo de impactos contra los pilares de la estructura metálica, el proyecto exige un estudio de tenacidad al impacto del acero. Para ello se extraen probetas para un ensayo Charpy del lote de pilares de acero adquirido para la construcción de la nave y se ensayan con un péndulo de 8 kg, liberado desde 1,2 m de altura.\n\nEn un primer ensayo se usa una probeta de sección cuadrada de 12 mm de lado con entalla en V de 3 mm de profundidad. Tras el impacto, el péndulo asciende hasta 0,30 m. Calcular la resiliencia.\nUna segunda probeta del mismo material tiene una entalla de 5 mm de profundidad. ¿A qué altura subirá el péndulo después del impacto?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 33\n\n\n\n\n\n\nE1=8·9,81·(1,20−0,30)=70,63E_1=8·9,81·(1,20-0,30)=70,63 J. S1=12(12−3)=108S_1=12(12-3)=108 mm² =1,08=1,08 cm²; ρ=65,4\\rho=65,4 J/cm². S2=12(12−5)=84S_2=12(12-5)=84 mm² =0,84=0,84 cm²; E2=ρS2=54,94E_2=\\rho S_2=54,94 J; hf=1,20−E2/(8·9,81)=0,50h_f=1,20-E_2/(8·9,81)=0,50 m.\n\n\n33. a) ρ=65,4\\rho=65,4 J/cm²; b) hf=0,50h_f=0,50 m.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-35",
+    "href": "resiliencia.html#section-35",
+    "title": "Colección de problemas de resiliencia",
+    "section": "34.",
+    "text": "34.\n\nEn el control de calidad de un acero S235JR se realiza un ensayo de resiliencia Charpy sobre dos probetas, de dimensiones 55 mm × 10 mm × 10 mm con entalla en V, obteniéndose una energía absorbida de 36 J para la primera probeta y de 32 J para la segunda.\n\nDeterminar la masa del péndulo si la altura inicial es 1,6 m en ambos ensayos y la altura final tras la rotura de la segunda probeta es un 10 % mayor que la de la primera.\nDeterminar la profundidad de la entalla en ambas probetas sabiendo que la profundidad de la entalla de la segunda probeta es el doble que la de la primera.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 34\n\n\n\n\n\n\nCon hf2=1,10hf1h_{f2}=1,10h_{f1} y hf=h0−E/(mg)h_f=h_0-E/(mg), m=(1,10·36−32)/(0,10·1,6·9,81)=4,842m=(1,10·36-32)/(0,10·1,6·9,81)=4,842 kg. Resultan hf1=0,8421h_{f1}=0,8421 m y hf2=0,9263h_{f2}=0,9263 m. Igualando 36/[10(10−e1)]=32/[10(10−2e1)]36/[10(10-e_1)]=32/[10(10-2e_1)] se obtiene e1=1,0e_1=1,0 mm y e2=2,0e_2=2,0 mm.\n\n\n34. a) m=4,842m=4,842 kg; b) entallas de 1,0 mm y 2,0 mm.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "resiliencia.html#section-36",
+    "href": "resiliencia.html#section-36",
+    "title": "Colección de problemas de resiliencia",
+    "section": "35.",
+    "text": "35.\n\nEn el diseño de un automatismo, se necesita colocar un tope para limitar la carrera de la parte móvil. Esta pieza va a recibir impactos frecuentes, por lo que se busca un material plástico rígido que sea resistente a la rotura por impacto. Para elegir el mejor candidato, se realizan una serie de ensayos Charpy con probetas de sección cuadrada de 1,0 cm de lado y entallas con distinta profundidad, entre 0 y 4 mm. Con el candidato más prometedor se obtiene una resiliencia de 1,25 J/cm² en la probeta sin entalla y 0,45 J/cm² en la probeta con una entalla de 2 mm. El péndulo que se ha fabricado para la realización de estos ensayos tiene una masa de 1 kg, y se deja caer en todos los casos desde una altura inicial de 0,5 m.\n\nCalcular la altura a la que sube el péndulo en el ensayo de la probeta con la entalla de 0 mm y en la de la probeta con entalla de 2 mm.\n¿Qué porcentaje de resiliencia ha perdido el material por hacerle una entalla de 2 mm?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 35\n\n\n\n\n\n\nSin entalla, E0=1,25·1,00=1,25E_0=1,25·1,00=1,25 J y hf0=0,5−1,25/9,81=0,3726h_{f0}=0,5-1,25/9,81=0,3726 m. Con 2 mm, S=0,80S=0,80 cm², E2=0,45·0,80=0,36E_2=0,45·0,80=0,36 J y hf2=0,4633h_{f2}=0,4633 m. La pérdida es (1,25−0,45)/1,25·100=64(1,25-0,45)/1,25·100=64 %.\n\n\n35. a) 37,3 cm sin entalla y 46,3 cm con entalla; b) 64 %.",
+    "crumbs": [
+      "Colección de problemas de resiliencia"
+    ]
+  },
+  {
+    "objectID": "traccion.html",
+    "href": "traccion.html",
+    "title": "Colección de problemas de tracción",
+    "section": "",
+    "text": "Un redondo de 50 cm de longitud está fabricado con un acero de límite elástico 250 MPa y de módulo de elasticidad 21·10⁴ MPa. Se pide:\n\nSi se sometiera a una carga de 12500 N, ¿cuál debería ser su diámetro mínimo, para que la barra no se alargara más de 0,50 mm?\nSi la carga fuera de 25000 N y el diámetro de la barra 10 mm, justificar si se produciría deformación plástica.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 1\n\n\n\n\n\n\nEn régimen elástico, Δl=Fl0/(ES0)\\Delta l=F l_0/(E S_0). Por tanto, S0=12500⋅500/(210000⋅0,50)=59,524S_0=12500\\cdot500/(210000\\cdot0,50)=59,524 mm² y d=4S0/π=8,706d=\\sqrt{4S_0/\\pi}=8,706 mm. Para d=10d=10 mm y 25 000 N, σ=F/S0=318,31\\sigma=F/S_0=318,31 MPa, valor superior al límite elástico de 250 MPa; se produciría deformación plástica.\n\n\n1. a) dmin=8,706d_{min}=8,706 mm; b) σ=318,31\\sigma=318,31 MPa &gt; 250 MPa: hay deformación plástica.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section",
+    "href": "traccion.html#section",
+    "title": "Colección de problemas de tracción",
+    "section": "",
+    "text": "Un redondo de 50 cm de longitud está fabricado con un acero de límite elástico 250 MPa y de módulo de elasticidad 21·10⁴ MPa. Se pide:\n\nSi se sometiera a una carga de 12500 N, ¿cuál debería ser su diámetro mínimo, para que la barra no se alargara más de 0,50 mm?\nSi la carga fuera de 25000 N y el diámetro de la barra 10 mm, justificar si se produciría deformación plástica.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 1\n\n\n\n\n\n\nEn régimen elástico, Δl=Fl0/(ES0)\\Delta l=F l_0/(E S_0). Por tanto, S0=12500⋅500/(210000⋅0,50)=59,524S_0=12500\\cdot500/(210000\\cdot0,50)=59,524 mm² y d=4S0/π=8,706d=\\sqrt{4S_0/\\pi}=8,706 mm. Para d=10d=10 mm y 25 000 N, σ=F/S0=318,31\\sigma=F/S_0=318,31 MPa, valor superior al límite elástico de 250 MPa; se produciría deformación plástica.\n\n\n1. a) dmin=8,706d_{min}=8,706 mm; b) σ=318,31\\sigma=318,31 MPa &gt; 250 MPa: hay deformación plástica.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-1",
+    "href": "traccion.html#section-1",
+    "title": "Colección de problemas de tracción",
+    "section": "2.",
+    "text": "2.\n\n\n\n\nPieza escalonada de sección circular sometida a tracción.\n\n\nUna pieza de acero como la de la figura, de sección circular, se somete a una fuerza F. El acero tiene una resistencia a tracción de 630 MPa y un módulo elástico de 210 GPa y se desea un coeficiente de seguridad de 4. Determinar:\n\nEl valor máximo de la fuerza a aplicar.\nEl alargamiento total producido con esa fuerza.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 2\n\n\n\n\n\n\nLa sección crítica es la de 20 mm: S2=π202/4=314,16S_2=\\pi20^2/4=314,16 mm². Como la fuente solo aporta resistencia a tracción, el cociente 630/4=157,5630/4=157,5 MPa es aquí una tensión de seguridad frente a rotura, no la tensión admisible PAU basada en el límite elástico. Así, Fmax=157,5S2=49,48F_{max}=157,5S_2=49,48 kN. Suponiendo respuesta elástica, Δl=F/E(30/S1+40/S2)=0,0336\\Delta l=F/E\\,(30/S_1+40/S_2)=0,0336 mm.\n\n\n2. a) Fmax=49,48F_{max}=49,48 kN (seguridad frente a rotura); b) Δl=0,0336\\Delta l=0,0336 mm, suponiendo régimen elástico.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-2",
+    "href": "traccion.html#section-2",
+    "title": "Colección de problemas de tracción",
+    "section": "3.",
+    "text": "3.\n\nUn acero tiene un módulo elástico de 200 GPa y un límite elástico de 360 MPa. Una varilla de este material, de 12 mm² de sección y 80 cm de longitud, se somete a una carga vertical de 1800 N. Razonar:\n\n¿Recuperará la varilla su longitud inicial?\n¿Qué diámetro mínimo debería tener una barra de dicho material para que, sometida a una carga de 50 kN, no experimente deformación permanente?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 3\n\n\n\n\n\n\nσ=1800/12=150\\sigma=1800/12=150 MPa, menor que 360 MPa; al retirar la carga recupera su longitud. Para 50 kN, Smin=50000/360=138,89S_{min}=50000/360=138,89 mm² y dmin=4S/π=13,298d_{min}=\\sqrt{4S/\\pi}=13,298 mm.\n\n\n3. a) Sí, σ=150\\sigma=150 MPa &lt; 360 MPa; b) dmin=13,298d_{min}=13,298 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-3",
+    "href": "traccion.html#section-3",
+    "title": "Colección de problemas de tracción",
+    "section": "4.",
+    "text": "4.\n\nUna barra de 30 mm de diámetro tiene las siguientes características: módulo de elasticidad E = 700 MPa, resistencia a tracción 20 MPa y límite elástico 10 MPa. Calcular:\n\nLa tensión unitaria a la que está sometida la barra cuando se aplica una fuerza de tracción de 1500 N. Si esa carga dejara de actuar, razonar si la barra recupera su longitud inicial.\nLa longitud inicial de la barra para que el alargamiento producido por la carga de 1500 N sea de 1,25 mm.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 4\n\n\n\n\n\n\nS0=π302/4S_0=\\pi30^2/4 y σ=1500/S0=2,122\\sigma=1500/S_0=2,122 MPa. Como es menor que 10 MPa, la barra trabaja en la zona elástica y recupera su longitud. De Δl=σl0/E\\Delta l=\\sigma l_0/E, resulta l0=1,25⋅700/2,122=412,33l_0=1,25\\cdot700/2,122=412,33 mm.\n\n\n4. a) σ=2,122\\sigma=2,122 MPa y recuperación elástica; b) l0=412,33l_0=412,33 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-4",
+    "href": "traccion.html#section-4",
+    "title": "Colección de problemas de tracción",
+    "section": "5.",
+    "text": "5.\n\nUna barra cilíndrica de 80mm de longitud y 8 mm² de sección está sometida a una fuerza de tracción de 4 kN. Sabiendo que el módulo de elasticidad del material es 4·10⁴ MPa y que el límite elástico es 250 MPa:\n\nCalcular el alargamiento unitario en el límite elástico.\nJustificar si la barra recuperará la longitud primitiva al retirar la carga de 4 kN. En caso negativo, ¿qué diámetro mínimo habrá́ de tener la barra para que la deformación no sea permanente?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 5\n\n\n\n\n\n\nEn el límite elástico, εE=σE/E=250/40000=0,00625\\varepsilon_E=\\sigma_E/E=250/40000=0,00625 (0,625 %). Con 4 kN y 8 mm², σ=500\\sigma=500 MPa &gt; 250 MPa, por lo que no recupera por completo. Para evitarlo, Smin=4000/250=16S_{min}=4000/250=16 mm² y dmin=4,514d_{min}=4,514 mm.\n\n\n5. a) εE=0,00625\\varepsilon_E=0,00625 (0,625 %); b) no recupera; dmin=4,514d_{min}=4,514 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-5",
+    "href": "traccion.html#section-5",
+    "title": "Colección de problemas de tracción",
+    "section": "6.",
+    "text": "6.\n\nUna probeta de acero de 13,8 mm de diámetro y 110 mm de distancia entre marcas, está sometida a una carga de tracción de 60 000 N. El límite elástico es de 500 MPa y el módulo de elasticidad de 210 GPa. Se pide:\n\nCalcular la tensión y la deformación unitaria que presenta la probeta con esa carga.\nCalcular el alargamiento y la estricción en la rotura si el diámetro final es de 10,2 mm, y la longitud final de 127,3 mm.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 6\n\n\n\n\n\n\nS0=π13,82/4=149,57S_0=\\pi13,8^2/4=149,57 mm²; σ=60000/S0=401,15\\sigma=60000/S_0=401,15 MPa y, suponiendo régimen elástico, ε=σ/210000=0,001910\\varepsilon=\\sigma/210000=0,001910. En rotura, Δl=127,3−110=17,3\\Delta l=127,3-110=17,3 mm, A=Δl/l0⋅100=15,73A=\\Delta l/l_0\\cdot100=15,73 % y Z=(S0−Sf)/S0⋅100=45,37Z=(S_0-S_f)/S_0\\cdot100=45,37 %.\n\n\n6. a) σ=401,15\\sigma=401,15 MPa, ε=0,001910\\varepsilon=0,001910; b) Δl=17,3\\Delta l=17,3 mm, A=15,73A=15,73 %, Z=45,37Z=45,37 %.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-6",
+    "href": "traccion.html#section-6",
+    "title": "Colección de problemas de tracción",
+    "section": "7.",
+    "text": "7.\n\n\n\n\nFuerza (N)\nLongitud (mm)\n\n\n\n\n700\n100,2\n\n\n7000\n102\n\n\n14 000\n104\n\n\n17 500\n106,5\n\n\n14 000\n110 (rotura)\n\n\n\nUn material se ensaya a tracción utilizando una probeta cilíndrica de 8 mm de diámetro y 100 mm de longitud. Los resultados obtenidos se muestran en la tabla adjunta. Se pide:\n\nDibujar el diagrama tensión-deformación unitaria.\n¿Cuál será́ el módulo elástico de la aleación y el alargamiento al romper? Explicar las diferencias entre límite de elasticidad y módulo de elasticidad.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 7\n\n\n\n\n\n\nCon S0=π82/4=50,265S_0=\\pi8^2/4=50,265 mm² se transforma cada fila mediante σ=F/S0\\sigma=F/S_0 y ε=(l−l0)/l0\\varepsilon=(l-l_0)/l_0. Los puntos son: (13,93 MPa; 0,0020); (139,26 MPa; 0,0200); (278,52 MPa; 0,0400); (348,15 MPa; 0,0650); (278,52 MPa; 0,1000). En la zona lineal, por ejemplo con 7000 N, E=σ/ε=6,963E=\\sigma/\\varepsilon=6,963 GPa. Al romper, Δl=10\\Delta l=10 mm y A=10A=10 %.\n\n\n7. Diagrama con los cinco puntos calculados; E=6,963E=6,963 GPa; ΔlR=10\\Delta l_R=10 mm (A=10A=10 %).",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-7",
+    "href": "traccion.html#section-7",
+    "title": "Colección de problemas de tracción",
+    "section": "8.",
+    "text": "8.\n\n\n\n\nMaterial\nE (GPa)\nLímite elástico (MPa)\nR (MPa)\nA (%)\n\n\n\n\nNº 1\n193\n205\n515\n40\n\n\nNº 2\n110\n825\n895\n10\n\n\nNº 3\n110\n320\n652\n34\n\n\nNº 4\n179\n283\n579\n39,5\n\n\n\nUn eje de 15 cm² de sección que trabaja a tracción debe soportar, sin deformarse plásticamente, 460 kN y, sin romperse, 1010 kN. Se pide:\n\nCon qué material de los de la tabla podría fabricarse el eje.\nCalcular el diámetro mínimo del eje necesario para el caso de seleccionar el material Nº 1.\nRepresentar las gráficas aproximadas del ensayo de tracción de los materiales 2 y 4, indicando cuál de ellos sería: el más dúctil, el más frágil, el más resistente y el más tenaz.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 8\n\n\n\n\n\n\nPara 1500 mm², las exigencias son σE≥460000/1500=306,67\\sigma_E\\ge460000/1500=306,67 MPa y R≥1010000/1500=673,33R\\ge1010000/1500=673,33 MPa. Solo el material 2 cumple ambas. Para el material 1 gobierna la condición elástica: Smin=max⁡(460000/205,1010000/515)=2243,90S_{min}=\\max(460000/205,1010000/515)=2243,90 mm² y dmin=53,45d_{min}=53,45 mm. El 2 es más resistente y más frágil; el 4, mucho más dúctil y, estimando el área bajo la curva, más tenaz.\n\n\n8. a) Material nº 2; b) para el nº 1, dmin=53,45d_{min}=53,45 mm; c) nº 2 más resistente/frágil y nº 4 más dúctil/tenaz.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-8",
+    "href": "traccion.html#section-8",
+    "title": "Colección de problemas de tracción",
+    "section": "9.",
+    "text": "9.\n\nEn el ensayo de tracción de una probeta metálica de sección cuadrada de 20 mm de lado y 250 mm de longitud, se mide un alargamiento de 5·10⁻⁴ mm al someterla a una fuerza, dentro del campo elástico, de 9800 N. Se pide:\n\nMódulo de elasticidad del material.\nTensión y deformación unitarias correspondientes al momento de aplicar esa fuerza.\nFuerza necesaria para producir en la probeta una deformación unitaria de 0,5·10⁻⁵.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 9\n\n\n\n\n\n\nEl XML confirma el exponente: Δl=5⋅10−4\\Delta l=5\\cdot10^{-4} mm. Así, S0=20⋅20=400S_0=20\\cdot20=400 mm², σ=9800/400=24,5\\sigma=9800/400=24,5 MPa y ε=5⋅10−4/250=0,00000200\\varepsilon=5\\cdot10^{-4}/250=0,00000200. Aplicando Hooke en la zona elástica, E=σ/ε=12250000E=\\sigma/\\varepsilon=12250000 MPa. Para ε=0,5⋅10−5\\varepsilon=0,5\\cdot10^{-5}, F=EεS0=24500F=E\\varepsilon S_0=24500 N.\n\n\n9. a) E=12,25000E=12,25000 TPa; b) σ=24,5\\sigma=24,5 MPa, ε=0,00000200\\varepsilon=0,00000200; c) F=24500F=24500 N.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-9",
+    "href": "traccion.html#section-9",
+    "title": "Colección de problemas de tracción",
+    "section": "10.",
+    "text": "10.\n\nEn un ensayo de tracción sobre una probeta normalizada de una determinada aleación, de 7,84 mm de diámetro y de longitud inicial 39,2 mm, se han obtenido los siguientes resultados: longitud final: 45,3 mm; diámetro en la rotura: 5,30 mm; carga en el límite elástico: 3690 N; carga máxima: 4650 N. Calcular:\n\nAlargamiento y estricción.\nTensión en el límite elástico.\nResistencia a la tracción.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 10\n\n\n\n\n\n\nS0=π7,842/4S_0=\\pi7,84^2/4. El alargamiento y la estricción son A=(45,3−39,2)/39,2⋅100=15,56A=(45,3-39,2)/39,2\\cdot100=15,56 % y Z=[1−(5,30/7,84)2]⋅100=54,30Z=[1-(5,30/7,84)^2]\\cdot100=54,30 %. Las tensiones nominales, calculadas con la sección inicial, son σE=3690/S0=76,44\\sigma_E=3690/S_0=76,44 MPa y R=4650/S0=96,32R=4650/S_0=96,32 MPa.\n\n\n10. a) A=15,56A=15,56 %, Z=54,30Z=54,30 %; b) σE=76,44\\sigma_E=76,44 MPa; c) R=96,32R=96,32 MPa.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-10",
+    "href": "traccion.html#section-10",
+    "title": "Colección de problemas de tracción",
+    "section": "11.",
+    "text": "11.\n\nEn el ensayo de tracción de una barra de aluminio, de longitud inicial entre marcas l0 = 5 cm, y diámetro inicial d0 = 1,30 cm, se registra una gráfica de tracción en la que se obtiene, para el límite elástico, los valores de F = 3180 kp y Δl = 0,0175 cm. Si la distancia entre las marcas calibradas, después de la rotura, es de 5,65 cm, y el diámetro final en la sección de fractura de 1,05 cm, calcular:\n\nLa tensión correspondiente al límite elástico y el módulo de elasticidad.\nEl alargamiento y la estricción en la rotura.\nLa longitud que alcanzaría una barra de 125 cm al aplicársele una tensión de 200 MPa.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 11\n\n\n\n\n\n\nS0=π132/4S_0=\\pi13^2/4 y FE=3180⋅9,81F_E=3180\\cdot9,81 N. Por ello, σE=235,03\\sigma_E=235,03 MPa, εE=0,0175/5=0,0035\\varepsilon_E=0,0175/5=0,0035 y E=67,15E=67,15 GPa. En rotura, A=13,00A=13,00 % y Z=34,76Z=34,76 %. Para 200 MPa, inferior a σE\\sigma_E, Hooke da lf=125(1+200/E)=125,372l_f=125(1+200/E)=125,372 cm.\n\n\n11. a) σE=235,03\\sigma_E=235,03 MPa, E=67,15E=67,15 GPa; b) A=13,00A=13,00 %, Z=34,76Z=34,76 %; c) lf=125,372l_f=125,372 cm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-11",
+    "href": "traccion.html#section-11",
+    "title": "Colección de problemas de tracción",
+    "section": "12.",
+    "text": "12.\n\nUna barra de acero de 31 cm de longitud tiene un límite elástico de 300 MPa y un módulo de elasticidad de 12·10⁴ MPa. Se somete a una carga de 12500 N. Contestar:\n\nPara que la barra no se alargue más de 0,40 mm con esa carga, ¿cuál debe ser su diámetro mínimo?\nSi el redondo anterior tuviera un diámetro de 10 mm y se ensayara a tracción, suponga que se obtiene un alargamiento total de 16 mm y que el diámetro final en la sección de rotura es 6 mm, ¿cuál sería el alargamiento y la estricción del material expresados en %?\nSi la carga fuera de 25 000 N, ¿se sobrepasaría la zona de deformación elástica? Razonar.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 12\n\n\n\n\n\n\nS0=Fl0/(EΔl)=80,729S_0=Fl_0/(E\\Delta l)=80,729 mm² y dmin=10,138d_{min}=10,138 mm. Para la probeta de 10 mm, A=16/310⋅100=5,16A=16/310\\cdot100=5,16 % y Z=[1−(6/10)2]⋅100=64,00Z=[1-(6/10)^2]\\cdot100=64,00 %. Con 25 kN, σ=318,31\\sigma=318,31 MPa &gt; 300 MPa: se rebasa la zona elástica.\n\n\n12. a) dmin=10,138d_{min}=10,138 mm; b) A=5,16A=5,16 %, Z=64,00Z=64,00 %; c) sí, σ=318,31\\sigma=318,31 MPa.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-12",
+    "href": "traccion.html#section-12",
+    "title": "Colección de problemas de tracción",
+    "section": "13.",
+    "text": "13.\n\nUn redondo de acero de 310 mm de longitud con un límite elástico de 300 MPa y un módulo de elasticidad de 12·10⁴ MPa, es sometido a una carga de 12500 N. Contestar:\n\nPara que la barra no se alargue más de 0,50 mm con esa carga, ¿cuál debe ser su diámetro mínimo?\nSi el redondo anterior tuviera un diámetro de 10 mm y se ensayara a tracción, suponiendo que se obtuviera un alargamiento total de 16 mm y que el diámetro final en la sección de rotura fuera de 6 mm, ¿cuál sería el alargamiento y la estricción del material expresados en %?\nSi la carga hubiera sido de 25 000 N, ¿se habría sobrepasado la zona de deformación elástica?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 13\n\n\n\n\n\n\nCon Δlmax=0,50\\Delta l_{max}=0,50 mm, S0=Fl0/(EΔl)=64,583S_0=Fl_0/(E\\Delta l)=64,583 mm² y dmin=9,068d_{min}=9,068 mm. Para 10 mm de diámetro, A=5,16A=5,16 % y Z=64,00Z=64,00 %. La carga de 25 kN produce σ=318,31\\sigma=318,31 MPa &gt; 300 MPa, luego hay plasticidad.\n\n\n13. a) dmin=9,068d_{min}=9,068 mm; b) A=5,16A=5,16 %, Z=64,00Z=64,00 %; c) sí, se supera el límite elástico.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-13",
+    "href": "traccion.html#section-13",
+    "title": "Colección de problemas de tracción",
+    "section": "14.",
+    "text": "14.\n\nUna barra de sección circular está fabricada con una aleación con un módulo de elasticidad de 125 000 MPa y un límite elástico de 250 MPa. Se pide:\n\nSi la barra tiene 300 mm de longitud, ¿a qué tensión deberá́ ser sometida para que sufra un alargamiento elástico de 0,30 mm?\n¿Qué diámetro ha de tener esta misma barra para que, sometida a un esfuerzo de tracción de 100 kN, no experimente deformaciones permanentes?\nSuponiendo que la resistencia máxima de esta aleación sea de 400 MPa, ¿qué esfuerzo debería ser capaz de admitir una barra de 30 mm de diámetro sin que llegue a romper?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 14\n\n\n\n\n\n\nε=0,30/300=0,001\\varepsilon=0,30/300=0,001 y, por Hooke, σ=Eε=125\\sigma=E\\varepsilon=125 MPa. Para no superar 250 MPa con 100 kN, dmin=4F/(πσE)=22,568d_{min}=\\sqrt{4F/(\\pi\\sigma_E)}=22,568 mm. Frente a rotura, una barra de 30 mm admite FR=Rπd2/4=282,74F_R=R\\pi d^2/4=282,74 kN.\n\n\n14. a) σ=125\\sigma=125 MPa; b) dmin=22,568d_{min}=22,568 mm; c) FR=282,74F_R=282,74 kN.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-14",
+    "href": "traccion.html#section-14",
+    "title": "Colección de problemas de tracción",
+    "section": "15.",
+    "text": "15.\n\nSe dispone de una serie de redondos de distintos diámetros fabricados con un acero especial cuyo límite elástico alcanza los 500 MPa y cuyo módulo de elasticidad es de 21·10⁴ MPa. Se desea fabricar una pieza de 600 mm de longitud que va a estar cargada longitudinalmente hasta alcanzar los 70·10³ N. Se pide:\n\n¿Qué diámetro deberá tener la pieza para que no se alargue más de 0,40 mm?\nSuponer que se ha elegido una barra de 10 mm de diámetro: explicar si, tras eliminar la carga mencionada, la barra quedará deformada.\nSuponer que entre las barras almacenadas hay una de aluminio con una sección de 300 mm² y una longitud de 600 mm. Sometida esta barra a la carga de 70·10³ N, experimenta un alargamiento completamente elástico de 2 mm. Determine el módulo de elasticidad de este aluminio.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 15\n\n\n\n\n\n\nPara limitar el alargamiento, S0=Fl0/(EΔl)=500S_0=Fl_0/(E\\Delta l)=500 mm² y d=25,231d=25,231 mm. Si d=10d=10 mm, σ=891,27\\sigma=891,27 MPa &gt; 500 MPa, por lo que queda deformación permanente. Para la barra de aluminio, E=Fl0/(S0Δl)=70,00E=Fl_0/(S_0\\Delta l)=70,00 GPa.\n\n\n15. a) d=25,231d=25,231 mm; b) sí, deformación permanente; c) EAl=70,00E_{Al}=70,00 GPa.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-15",
+    "href": "traccion.html#section-15",
+    "title": "Colección de problemas de tracción",
+    "section": "16.",
+    "text": "16.\n\nDos barras de la misma longitud, una de aluminio (con módulo elástico 7·10¹⁰ Pa) y otra de acero (con módulo elástico 210 GPa), están sometidas a una misma tensión de tracción.\n\n¿Cuál de ellas se deformará elásticamente más?\n¿Qué relación deberán tener sus secciones, para que ambas experimenten igual deformación elástica, si la fuerza de tracción fuera la misma?\nSi la tensión se conociera, ¿qué otro dato debería saberse de cada material para poder comprobar si las barras llegan a deformarse plásticamente? ¿Y para saber si romperían?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 16\n\n\n\n\n\n\nPara la misma tensión, ε=σ/E\\varepsilon=\\sigma/E: el aluminio, con 70 GPa, se deforma tres veces más que el acero de 210 GPa. Con la misma fuerza y deformación, F/(SAlEAl)=F/(SAcEAc)F/(S_{Al}E_{Al})=F/(S_{Ac}E_{Ac}), de donde SAl/SAc=EAc/EAl=3S_{Al}/S_{Ac}=E_{Ac}/E_{Al}=3. Para comprobar plasticidad hace falta el límite elástico; para rotura, la resistencia a tracción.\n\n\n16. a) El aluminio, tres veces más; b) SAl=3SAcS_{Al}=3S_{Ac}; c) límite elástico y resistencia a tracción, respectivamente.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-16",
+    "href": "traccion.html#section-16",
+    "title": "Colección de problemas de tracción",
+    "section": "17.",
+    "text": "17.\n\nDel extremo de un alambre de latón de 10 mm² de sección y 100 mm de longitud, se cuelga verticalmente una carga de 1500 N. Si su límite elástico es de 250·10⁶ N/m² y su módulo de elasticidad de 120·10⁹ N/m², se quiere saber:\n\n¿Recuperará el alambre su longitud primitiva al retirarle la carga?\n¿Cuál será́ el alargamiento unitario en las condiciones anteriores?\n¿Qué diámetro mínimo deberá́ tener el material para que, sometido a una carga de 8·10⁴ N, no experimente deformación permanente?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 17\n\n\n\n\n\n\nσ=1500/10=150\\sigma=1500/10=150 MPa &lt; 250 MPa: recupera su longitud. Suponiendo régimen elástico, ε=σ/E=0,00125\\varepsilon=\\sigma/E=0,00125. Para 80 kN, Smin=80000/250=320S_{min}=80000/250=320 mm² y dmin=20,185d_{min}=20,185 mm.\n\n\n17. a) Sí; b) ε=0,00125\\varepsilon=0,00125; c) dmin=20,185d_{min}=20,185 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-17",
+    "href": "traccion.html#section-17",
+    "title": "Colección de problemas de tracción",
+    "section": "18.",
+    "text": "18.\n\nUna varilla se ha fabricado con un acero de límite elástico 350 MPa y de módulo de elasticidad 200 GPa. La varilla tiene una sección uniforme de 12 mm² y una longitud de 50 cm.\n\nSi se carga en uno de sus extremos con una fuerza de 1800 N en la dirección del eje de la barra, ¿recuperará la varilla su longitud inicial cuando se elimine la fuerza?\n¿Cuál deberá́ ser el diámetro mínimo de la varilla si no se desea que se alargue permanentemente tras ser sometida a una carga de 50 000 N?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 18\n\n\n\n\n\n\nσ=1800/12=150\\sigma=1800/12=150 MPa &lt; 350 MPa, luego la deformación es recuperable. Para 50 kN, Smin=50000/350=142,86S_{min}=50000/350=142,86 mm² y dmin=13,487d_{min}=13,487 mm.\n\n\n18. a) Sí, σ=150\\sigma=150 MPa; b) dmin=13,487d_{min}=13,487 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-18",
+    "href": "traccion.html#section-18",
+    "title": "Colección de problemas de tracción",
+    "section": "19.",
+    "text": "19.\n\nSe le aplica una fuerza de compresión de 400 kN, en dirección axial, a un tubo hueco de 40 cm de largo y diámetros exterior e interior de 17 y 12 cm respectivamente. Si su módulo de elasticidad es de 2,7·10⁹ Pa, calcular:\n\nLa tensión de compresión media en el tubo.\nEn cuánto disminuirá́ su longitud.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 19\n\n\n\n\n\n\nS=π(D2−d2)/4=11388,27S=\\pi(D^2-d^2)/4=11388,27 mm². La tensión media de compresión es σ=400000/S=35,12\\sigma=400000/S=35,12 MPa. Suponiendo respuesta lineal elástica, ε=σ/E=0,013009\\varepsilon=\\sigma/E=0,013009 y el acortamiento es Δl=εl0=5,204\\Delta l=\\varepsilon l_0=5,204 mm.\n\n\n19. a) σc=35,12\\sigma_c=35,12 MPa; b) disminuye 5,204 mm, suponiendo régimen elástico.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-19",
+    "href": "traccion.html#section-19",
+    "title": "Colección de problemas de tracción",
+    "section": "20.",
+    "text": "20.\n\nEntre las características mecánicas suministradas por un fabricante de aleaciones de cobre, se encuentra un latón de módulo elástico 10,3·10⁴ MPa y límite elástico de 345 MPa. Calcular:\n\nLa máxima fuerza que podría aplicarse a una probeta de 130 mm² de sección sin que se produzca deformación plástica en el material.\nSi la longitud inicial de la probeta anterior fuera de 76 mm, ¿cuál sería la máxima longitud a la que se podría estirar sin que sufriera deformación plástica?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 20\n\n\n\n\n\n\nLa carga máxima elástica es FE=σES0=345⋅130=44,85F_E=\\sigma_ES_0=345\\cdot130=44,85 kN. En el límite, εE=345/103000=0,003350\\varepsilon_E=345/103000=0,003350 y lmax=76(1+εE)=76,255l_{max}=76(1+\\varepsilon_E)=76,255 mm.\n\n\n20. a) FE=44,85F_E=44,85 kN; b) lmax=76,255l_{max}=76,255 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-20",
+    "href": "traccion.html#section-20",
+    "title": "Colección de problemas de tracción",
+    "section": "21.",
+    "text": "21.\n\nEn un ensayo de tracción a una probeta de 120 mm² de sección, se han obtenido los siguientes datos: límite elástico: 360 MPa; para 27 kN de carga, la probeta presenta un alargamiento unitario de 1,07·10⁻³ y la carga máxima soportada es de 58 kN. Calcular:\n\nEl módulo de Young.\nLa resistencia a la rotura.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 21\n\n\n\n\n\n\nCon 27 kN, σ=27000/120=225\\sigma=27000/120=225 MPa. En la zona elástica, E=σ/ε=210,28E=\\sigma/\\varepsilon=210,28 GPa. La resistencia nominal es R=Fmax/S0=58000/120=483,33R=F_{max}/S_0=58000/120=483,33 MPa.\n\n\n21. a) E=210,28E=210,28 GPa; b) R=483,33R=483,33 MPa.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-21",
+    "href": "traccion.html#section-21",
+    "title": "Colección de problemas de tracción",
+    "section": "22.",
+    "text": "22.\n\nSe dispone de un cable de acero de 10 m de longitud y 80 mm² de sección. Al someterlo a una carga axial de 120 kN, se alarga 80mm dentro del campo elástico. Se pide:\n\nEl alargamiento unitario del cable y el módulo de elasticidad del acero.\n¿Qué carga habría que aplicar al cable para que alargue elásticamente 40 mm?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 22\n\n\n\n\n\n\nε=80/10000=0,0080\\varepsilon=80/10000=0,0080 y σ=120000/80=1500\\sigma=120000/80=1500 MPa. Suponiendo que el dato pertenece al campo elástico, E=σ/ε=187,5E=\\sigma/\\varepsilon=\n187,5 GPa. Para la mitad de alargamiento, por linealidad, hace falta la mitad de carga: 60 kN.\n\n\n22. a) ε=0,0080\\varepsilon=0,0080, E=187,5E=187,5 GPa; b) F=60F=60 kN.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-22",
+    "href": "traccion.html#section-22",
+    "title": "Colección de problemas de tracción",
+    "section": "23.",
+    "text": "23.\n\nUna varilla metálica que tiene una longitud de 1,5 m y una sección de 20 mm² experimenta un alargamiento de 2 mm cuando está sometida a una carga de 1870 N, dentro del campo elástico. Calcular:\n\nEl módulo de elasticidad del material\nLa fuerza de tracción necesaria a aplicar sobre un alambre del mismo material, de 1,2 mm de diámetro y 80 cm de longitud, para que se alargue hasta alcanzar 80,10 cm\n\n\n\n\n\n\n\n\n\nTipResultado del problema 23\n\n\n\n\n\n\nEn la primera varilla, σ=1870/20=93,5\\sigma=1870/20=93,5 MPa y ε=2/1500=0,001333\\varepsilon=2/1500=0,001333; por Hooke, E=70,125E=70,125 GPa. En el alambre, S=π1,22/4=1,1310S=\\pi1,2^2/4=1,1310 mm² y ε=(801−800)/800=0,00125\\varepsilon=(801-800)/800=0,00125, de modo que F=EεS=99,14F=E\\varepsilon S=99,14 N.\n\n\n23. a) E=70,125E=70,125 GPa; b) F=99,14F=99,14 N.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-23",
+    "href": "traccion.html#section-23",
+    "title": "Colección de problemas de tracción",
+    "section": "24.",
+    "text": "24.\n\nSe somete a un ensayo de tracción una probeta de sección transversal cuadrada de 2,5 cm de lado y 25 cm de longitud. La probeta se deforma elásticamente hasta alcanzar una fuerza de 15 kN, rompiendo cuando la fuerza aplicada es de 30 kN. Su módulo elástico es 70GPa. Calcular:\n\nEl límite elástico y la tensión de rotura\nEl alargamiento total cuando se aplica una fuerza de 10 000 N.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 24\n\n\n\n\n\n\nLa sección es 252=62525^2=625 mm². Por tanto, σE=15000/625=24,0\\sigma_E=15000/625=24,0 MPa y R=30000/625=48,0R=30000/625=48,0 MPa. Con 10 kN, suponiendo régimen elástico, Δl=(F/S0)l0/E=0,05714\\Delta l=(F/S_0)l_0/E=0,05714 mm.\n\n\n24. a) σE=24,0\\sigma_E=24,0 MPa, R=48,0R=48,0 MPa; b) Δl=0,05714\\Delta l=0,05714 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-24",
+    "href": "traccion.html#section-24",
+    "title": "Colección de problemas de tracción",
+    "section": "25.",
+    "text": "25.\n\nUna varilla de 20 mm de diámetro se fabrica con un metal que tiene las siguientes características: módulo de elasticidad: 120·10⁷ Pa; resistencia a la tracción: 26·10⁶ Pa; límite elástico: 130·10⁵ Pa. Si la sometemos a una fuerza de tracción de 1500 N y no se quiere que el alargamiento exceda de 1,25 mm, calcular:\n\nLa tensión a la que estará́ sometida la varilla y su longitud inicial.\nLa fuerza máxima que puede soportar la varilla sin romperse.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 25\n\n\n\n\n\n\nEl XML y el orden físico dan E=120⋅107E=120\\cdot10^7 Pa = 1200 MPa, R=26R=26 MPa y σE=13\\sigma_E=13 MPa. Con d=20d=20 mm, σ=1500/(π202/4)=4,775\\sigma=1500/(\\pi20^2/4)=4,775 MPa. De Δl=σl0/E\\Delta l=\\sigma l_0/E, l0=314,16l_0=314,16 mm. Frente a rotura, Fmax=RS0=8168,14F_{max}=RS_0=8168,14 N.\n\n\n25. a) σ=4,775\\sigma=4,775 MPa, l0=314,16l_0=314,16 mm; b) Fmax=8168,14F_{max}=8168,14 N.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-25",
+    "href": "traccion.html#section-25",
+    "title": "Colección de problemas de tracción",
+    "section": "26.",
+    "text": "26.\n\nUna pieza de latón deja de tener un comportamiento elástico para tensiones superiores a 250 MPa. Su módulo de elasticidad es de 10,3·10⁴ MPa. Calcular:\n\nLa fuerza máxima que puede aplicarse a una probeta de 175 mm² de sección, sin que se produzca deformación plástica.\nLa longitud máxima a la que puede ser estirada una probeta de 100 mm de longitud, sin producir deformación plástica\n\n\n\n\n\n\n\n\n\nTipResultado del problema 26\n\n\n\n\n\n\nFE=σES0=250⋅175=43,75F_E=\\sigma_ES_0=250\\cdot175=43,75 kN. εE=250/103000=0,002427\\varepsilon_E=250/103000=0,002427 y lmax=100(1+εE)=100,243l_{max}=100(1+\\varepsilon_E)=100,243 mm.\n\n\n26. a) FE=43,75F_E=43,75 kN; b) lmax=100,243l_{max}=100,243 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-26",
+    "href": "traccion.html#section-26",
+    "title": "Colección de problemas de tracción",
+    "section": "27.",
+    "text": "27.\n\nEl límite elástico de una aleación de magnesio es 180 MPa y su módulo elástico 45 GPa.\n\nCalcular la carga máxima, en N, que puede soportar sin sufrir deformación permanente una probeta de 20 mm² de sección de dicho material.\n¿Cuánto se alarga cada mm de la probeta cuando se aplica la carga calculada en el apartado anterior?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 27\n\n\n\n\n\n\nLa carga máxima sin plasticidad es FE=180⋅20=3600F_E=180\\cdot20=3600 N. En el límite elástico, εE=180/45000=0,0040\\varepsilon_E=180/45000=0,0040; cada milímetro se alarga Δl=εE⋅1=0,0040\\Delta l=\\varepsilon_E\\cdot1=0,0040 mm.\n\n\n27. a) FE=3600F_E=3600 N; b) 0,0040 mm por cada mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-27",
+    "href": "traccion.html#section-27",
+    "title": "Colección de problemas de tracción",
+    "section": "28.",
+    "text": "28.\n\nUna probeta cilíndrica de un material metálico, de 8 mm de diámetro y 100 mm de longitud se ensaya a tracción. Parte de los resultados obtenidos en el ensayo se muestran en la tabla adjunta. Se pide:\n\nDibujar el diagrama aproximado tensión-deformación.\nCalcular el módulo elástico de la aleación y el alargamiento que tendrá́ la probeta una vez rota, tras juntar las dos partes.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFuerza (N)\n500\n5000\n10 000\n11 050\n12 560\n15 985\n12 560\n10 000\n\n\n\n\nLongitud (mm)\n100,2\n102\n104\n105,5\n106,5\n107,5\n108,5\n109 (rotura)\n\n\n\n\n\n\n\n\n\n\n\nTipResultado del problema 28\n\n\n\n\n\n\nCon S0=π82/4S_0=\\pi8^2/4, los puntos (σ;ε)(\\sigma;\\varepsilon) son (9,95 MPa; 0,0020); (99,47 MPa; 0,0200); (198,94 MPa; 0,0400); (219,83 MPa; 0,0550); (249,87 MPa; 0,0650); (318,01 MPa; 0,0750); (249,87 MPa; 0,0850); (198,94 MPa; 0,0900). La pendiente inicial, por ejemplo entre 0 y 5000 N, da E=4,974E=4,974 GPa. La longitud final es 109 mm, luego ΔlR=9\\Delta l_R=9 mm y A=9A=9 %.\n\n\n28. Diagrama con los ocho puntos calculados; E=4,974E=4,974 GPa; ΔlR=9\\Delta l_R=9 mm (A=9A=9 %).",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-28",
+    "href": "traccion.html#section-28",
+    "title": "Colección de problemas de tracción",
+    "section": "29.",
+    "text": "29.\n\nUna probeta de 8 mm de diámetro y longitud entre puntos de 25 mm se ensaya a tracción. Después del ensayo se obtienen los siguientes resultados: carga máxima 30 kN, carga al final del periodo elástico 23 kN, diámetro final 6,2 mm y longitud final 30,7 mm. Se pide:\n\nCalcular la resistencia de rotura y el límite elástico.\nCalcular el alargamiento de rotura en % y la estricción de rotura.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 29\n\n\n\n\n\n\nCon S0=π82/4S_0=\\pi8^2/4, R=30000/S0=596,83R=30000/S_0=596,83 MPa y σE=23000/S0=457,57\\sigma_E=23000/S_0=457,57 MPa. Además, A=(30,7−25)/25⋅100=22,8A=(30,7-25)/25\\cdot100=22,8 % y Z=[1−(6,2/8)2]⋅100=39,94Z=[1-(6,2/8)^2]\\cdot100=39,94 %.\n\n\n29. a) R=596,83R=596,83 MPa, σE=457,57\\sigma_E=457,57 MPa; b) A=22,8A=22,8 %, Z=39,94Z=39,94 %.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-29",
+    "href": "traccion.html#section-29",
+    "title": "Colección de problemas de tracción",
+    "section": "30.",
+    "text": "30.\n\nSe sabe que las propiedades de un acero son: módulo de elasticidad 210 GPa; límite elástico 250MPa; resistencia a la rotura 400MPa. Se ensaya una probeta de este material de 50 mm de longitud y 12 mm de diámetro. Se pide:\n\nDeterminar la carga a la que empezará la deformación plástica, y la carga máxima soportada en el ensayo.\nLa deformación en el límite elástico, suponiendo que coincide con el de proporcionalidad.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 30\n\n\n\n\n\n\nS0=π122/4S_0=\\pi12^2/4. La carga al comienzo de plasticidad es FE=250S0=28,274F_E=250S_0=28,274 kN y la máxima FR=400S0=45,239F_R=400S_0=45,239 kN. Si proporcionalidad y límite elástico coinciden, εE=250/210000=0,001190\\varepsilon_E=250/210000=0,001190.\n\n\n30. a) FE=28,274F_E=28,274 kN, FR=45,239F_R=45,239 kN; b) εE=0,001190\\varepsilon_E=0,001190.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-30",
+    "href": "traccion.html#section-30",
+    "title": "Colección de problemas de tracción",
+    "section": "31.",
+    "text": "31.\n\nSe dispone de una chapa de acero de la que se obtiene una probeta de sección rectangular de 300 mm² y 200 mm de longitud. Ensayada a tracción, rompe con una carga de 210 kN. Tras la rotura se midió́ un alargamiento de 10 mm. Se pide:\n\nLa tensión de rotura del material y alargamiento a la rotura en %.\nLa carga a la que rompería y cuál sería el alargamiento sufrido por una probeta obtenida de la misma chapa de 200 mm² de sección y 50mm de longitud.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 31\n\n\n\n\n\n\nR=210000/300=700R=210000/300=700 MPa y A=10/200⋅100=5,0A=10/200\\cdot100=5,0 %. Para otra probeta del mismo material, FR=R⋅200=140F_R=R\\cdot200=140 kN. El alargamiento porcentual se conserva: Δl=0,05⋅50=2,5\\Delta l=0,05\\cdot50=2,5 mm.\n\n\n31. a) R=700R=700 MPa, A=5,0A=5,0 %; b) FR=140F_R=140 kN, Δl=2,5\\Delta l=2,5 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-31",
+    "href": "traccion.html#section-31",
+    "title": "Colección de problemas de tracción",
+    "section": "32.",
+    "text": "32.\n\nUn latón tiene un módulo de elasticidad de 120 GPa y un límite elástico de 250 MPa. A una varilla de este material de sección 10 mm² y 100 cm de longitud, se le aplica una carga de 1500 N. Se pide:\n\nDeterminar si la varilla recuperará su longitud inicial cuando se elimine la carga.\nCalcular el alargamiento unitario en estas condiciones.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 32\n\n\n\n\n\n\nσ=1500/10=150\\sigma=1500/10=150 MPa &lt; 250 MPa, por lo que la varilla recupera su longitud. En la zona elástica, ε=σ/E=0,00125\\varepsilon=\\sigma/E=0,00125.\n\n\n32. a) Sí, recupera; b) ε=0,00125\\varepsilon=0,00125.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-32",
+    "href": "traccion.html#section-32",
+    "title": "Colección de problemas de tracción",
+    "section": "33.",
+    "text": "33.\n\n\n\n\nAlargamiento (mm)\nFuerza (kN)\n\n\n\n\n0,000\n0,00\n\n\n0,023\n1,72\n\n\n0,032\n2,30\n\n\n0,048\n3,49\n\n\n0,210\n7,07\n\n\n0,900\n8,58\n\n\n1,200\n7,63\n\n\n\nEn un ensayo de tracción de una probeta de acero de 6 mm de diámetro y de 30 mm longitud, se han obtenido los datos de la tabla adjunta. Se pide:\n\nDeterminar las tensiones y alargamientos unitarios para cada uno de los puntos obtenidos en el ensayo y dibujar la curva de tracción.\nDeterminar el módulo de elasticidad del acero.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 33\n\n\n\n\n\n\nS0=π62/4=28,274S_0=\\pi6^2/4=28,274 mm². Aplicando σ=F/S0\\sigma=F/S_0 y ε=Δl/30\\varepsilon=\\Delta l/30 se obtienen los puntos: (0,00 MPa; 0,000000); (60,83 MPa; 0,000767); (81,35 MPa; 0,001067); (123,43 MPa; 0,001600); (250,05 MPa; 0,007000); (303,46 MPa; 0,030000); (269,86 MPa; 0,040000). Un ajuste lineal por el origen a los tres primeros puntos no nulos da E=77,21E=77,21 GPa; los restantes definen las zonas plástica y de rotura.\n\n\n33. Curva con los siete puntos calculados; E≈77,21E\\approx77,21 GPa en la zona lineal.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-33",
+    "href": "traccion.html#section-33",
+    "title": "Colección de problemas de tracción",
+    "section": "34.",
+    "text": "34.\n\nUna probeta de sección transversal cuadrada de 2,5 cm de lado se deforma elásticamente a tracción hasta que se alcanza una fuerza de 12 kN. Si se aumenta la fuerza en la probeta se producen deformaciones plásticas. La fuerza máxima durante el ensayo es de 19,2 kN antes de la rotura. Su módulo elástico (E) es de 10 GPa. Se pide:\n\nEl límite elástico y la tensión de rotura.\nEl alargamiento unitario cuando se alcanza el límite elástico\n\n\n\n\n\n\n\n\n\nTipResultado del problema 34\n\n\n\n\n\n\nS0=252=625S_0=25^2=625 mm². Por ello, σE=12000/625=19,20\\sigma_E=12000/625=19,20 MPa y R=19200/625=30,72R=19200/625=30,72 MPa. En el límite, εE=σE/E=0,001920\\varepsilon_E=\\sigma_E/E=0,001920.\n\n\n34. a) σE=19,20\\sigma_E=19,20 MPa, R=30,72R=30,72 MPa; b) εE=0,001920\\varepsilon_E=0,001920.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-34",
+    "href": "traccion.html#section-34",
+    "title": "Colección de problemas de tracción",
+    "section": "35.",
+    "text": "35.\n\nUna cinta métrica de acero de 25 m de longitud tiene una sección de 6 mm de ancho y 0,8 mm de espesor. El módulo de elasticidad del acero es 210 GPa. Se pide:\n\nLa tensión (en MPa) a la que está sometida la cinta cuando se mantiene tirante bajo una fuerza de 60 N.\nEl alargamiento total en las condiciones del apartado anterior.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 35\n\n\n\n\n\n\nS0=6⋅0,8=4,8S_0=6\\cdot0,8=4,8 mm² y σ=60/S0=12,50\\sigma=60/S_0=12,50 MPa. Suponiendo régimen elástico, ε=σ/210000=0,00005952\\varepsilon=\\sigma/210000=\n0,00005952 y Δl=ε⋅25000=1,488\\Delta l=\\varepsilon\\cdot25000=1,488 mm.\n\n\n35. a) σ=12,50\\sigma=12,50 MPa; b) Δl=1,488\\Delta l=1,488 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-35",
+    "href": "traccion.html#section-35",
+    "title": "Colección de problemas de tracción",
+    "section": "36.",
+    "text": "36.\n\nUn metal tiene un módulo de elasticidad de 100 GPa y un límite elástico de 220 MPa. A una probeta de este material, de 12 mm² de sección y 80 cm de longitud, se le aplica una fuerza de tracción de 1500 N. Se pide:\n\nLa deformación unitaria en estas condiciones. ¿Recuperará la barra su longitud primitiva si se elimina la carga? Justiciar la respuesta.\nEl diámetro mínimo que debe tener una barra de este material para que al ser sometida a una carga de 75 kN no experimente deformación permanente\n\n\n\n\n\n\n\n\n\nTipResultado del problema 36\n\n\n\n\n\n\nσ=1500/12=125\\sigma=1500/12=125 MPa &lt; 220 MPa; en consecuencia, ε=σ/100000=0,00125\\varepsilon=\\sigma/100000=0,00125 y la deformación es recuperable. Para 75 kN, Smin=75000/220S_{min}=75000/220 y dmin=20,834d_{min}=20,834 mm.\n\n\n36. a) ε=0,00125\\varepsilon=0,00125 y recuperación elástica; b) dmin=20,834d_{min}=20,834 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-36",
+    "href": "traccion.html#section-36",
+    "title": "Colección de problemas de tracción",
+    "section": "37.",
+    "text": "37.\n\nUna barra de 2,5 cm de diámetro es sometida a una carga de tracción de 30 kN. Se pide:\n\nLa tensión que soporta la probeta, en MPa.\nEl alargamiento unitario de dicha barra si el módulo de Young (E) es de 120 GPa.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 37\n\n\n\n\n\n\nS0=π252/4S_0=\\pi25^2/4 y σ=30000/S0=61,12\\sigma=30000/S_0=61,12 MPa. Suponiendo zona elástica, ε=σ/120000=0,0005093\\varepsilon=\\sigma/120000=0,0005093.\n\n\n37. a) σ=61,12\\sigma=61,12 MPa; b) ε=0,0005093\\varepsilon=0,0005093.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-37",
+    "href": "traccion.html#section-37",
+    "title": "Colección de problemas de tracción",
+    "section": "38.",
+    "text": "38.\n\nUna barra de 5 mm de diámetro y límite elástico 650 MPa se somete a un ensayo de tracción aplicándole una fuerza de 3000 N.\n\nDeterminar, justificadamente, si recuperará su longitud original al cesar la aplicación de la fuerza.\nCalcular el diámetro mínimo que debería tener la barra para que al someterla a la fuerza anterior su deformación no fuera permanente.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 38\n\n\n\n\n\n\nCon d=5d=5 mm, σ=3000/(πd2/4)=152,79\\sigma=3000/(\\pi d^2/4)=152,79 MPa, inferior a 650 MPa; recupera su longitud. Para la sección mínima, Smin=3000/650S_{min}=3000/650 y dmin=2,424d_{min}=2,424 mm.\n\n\n38. a) Sí, σ=152,79\\sigma=152,79 MPa &lt; 650 MPa; b) dmin=2,424d_{min}=2,424 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-38",
+    "href": "traccion.html#section-38",
+    "title": "Colección de problemas de tracción",
+    "section": "39.",
+    "text": "39.\n\nEn un hilo de una aleación de magnesio de 1,05 mm de diámetro, la deformación plástica comienza cuando se carga con 10,5 kp. El módulo de elasticidad de la aleación es E = 45 GPa. Se pide:\n\nEl límite elástico y el alargamiento unitario que experimenta con la carga de 10,5 kp.\nEl alargamiento total que experimenta un hilo del mismo material de 2 mm de diámetro y 20 m de longitud, cuando se carga con 35 Kp.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 39\n\n\n\n\n\n\nSe convierten las cargas con 1 kgf = 9,81 N. Para d=1,05d=1,05 mm, σE=10,5⋅9,81/S0=118,96\\sigma_E=10,5\\cdot9,81/S_0=118,96 MPa y εE=0,002643\\varepsilon_E=0,002643. Para el hilo de 2 mm, σ=35⋅9,81/S0=109,29\\sigma=35\\cdot9,81/S_0=109,29 MPa, ε=0,002429\\varepsilon=0,002429 y Δl=ε⋅20000=48,57\\Delta l=\\varepsilon\\cdot20000=\n48,57 mm. Esta segunda tensión queda por debajo del límite calculado.\n\n\n39. a) σE=118,96\\sigma_E=118,96 MPa, εE=0,002643\\varepsilon_E=0,002643; b) Δl=48,57\\Delta l=48,57 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-39",
+    "href": "traccion.html#section-39",
+    "title": "Colección de problemas de tracción",
+    "section": "40.",
+    "text": "40.\n\nA una probeta de un determinado material de 20 mm de diámetro y 100 mm de longitud se le aplica una fuerza de tracción de 2500 N. La longitud alcanzada es 101,2 mm dentro de la zona elástica. Se pide:\n\nCalcular el alargamiento unitario producido.\nCalcular el módulo de Young del material.\nExplicar en qué consiste la fluencia del material.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 40\n\n\n\n\n\n\nε=(101,2−100)/100=0,012\\varepsilon=(101,2-100)/100=0,012. La tensión es σ=2500/(π202/4)=7,958\\sigma=2500/(\\pi20^2/4)=7,958 MPa y, aceptando que el punto está en zona elástica, E=σ/ε=663,15E=\\sigma/\\varepsilon=663,15 MPa. La fluencia es una etapa de deformación plástica apreciable con tensión aproximadamente constante tras superar el límite elástico.\n\n\n40. a) ε=0,012\\varepsilon=0,012; b) E=663,15E=663,15 MPa; c) fluencia: deformación plástica con tensión casi constante.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-40",
+    "href": "traccion.html#section-40",
+    "title": "Colección de problemas de tracción",
+    "section": "41.",
+    "text": "41.\n\nPara un ensayo de tracción se dispone de una probeta de 20 mm de diámetro y una longitud inicial de 350 mm. Al aplicar una carga de 90 kN la longitud de la probeta es de 350,06 mm dentro de la zona elástica. Sabiendo que el límite elástico del material es de 350 MPa, se pide:\n\nEl módulo de elasticidad en GPa.\nLa carga aplicada y la longitud alcanzada por la probeta en el límite elástico.\nIndicar sobre un diagrama de tracción el límite elástico y la resistencia a la rotura.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 41\n\n\n\n\n\n\nS0=π202/4S_0=\\pi20^2/4; con 90 kN, σ=286,48\\sigma=286,48 MPa y ε=0,06/350=0,00017143\\varepsilon=0,06/350=0,00017143. Hooke da E=1671,13E=1671,13 GPa, un valor físicamente anómalo pero derivado de los datos de la fuente. En el límite elástico, FE=350S0=109,96F_E=350S_0=109,96 kN y lE=350,0733l_E=350,0733 mm. En el diagrama, σE=350\\sigma_E=350 MPa marca el fin de elasticidad; la resistencia a rotura es el máximo posterior, no cuantificable sin otro dato.\n\n\n41. a) E=1671,13E=1671,13 GPa; b) FE=109,96F_E=109,96 kN, lE=350,0733l_E=350,0733 mm; c) σE=350\\sigma_E=350 MPa y RR en el máximo de la curva.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-41",
+    "href": "traccion.html#section-41",
+    "title": "Colección de problemas de tracción",
+    "section": "42.",
+    "text": "42.\n\nUna barra de sección circular de 300 mm de longitud tiene un módulo de elasticidad de 125 000 MPa y un límite elástico de 250 MPa. Se pide:\n\nLa tensión a la que está sometida la barra para que el alargamiento sea de 0,3 mm dentro de la zona elástica.\nEl diámetro que ha de tener la misma barra para que sometida a una carga de tracción de 100 kN no experimente deformaciones permanentes.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 42\n\n\n\n\n\n\nε=0,3/300=0,001\\varepsilon=0,3/300=0,001 y σ=Eε=125\\sigma=E\\varepsilon=125 MPa. Para 100 kN sin deformación permanente, Smin=100000/250=400S_{min}=100000/250=400 mm² y dmin=22,568d_{min}=22,568 mm.\n\n\n42. a) σ=125\\sigma=125 MPa; b) dmin=22,568d_{min}=22,568 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-42",
+    "href": "traccion.html#section-42",
+    "title": "Colección de problemas de tracción",
+    "section": "43.",
+    "text": "43.\n\nUna barra de 20 cm de longitud y sección cuadrada de 1 cm de lado está sometida a una fuerza de tracción de 8000 N, siendo su módulo de elasticidad E = 2·106 N/cm2 y su límite de elasticidad 100 MPa.\n\nCalcular la tensión y el alargamiento de la barra.\nSi la carga fuera 12 000 N, ¿su deformación sería permanente? Justificar la respuesta.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 43\n\n\n\n\n\n\nS0=1S_0=1 cm² = 100 mm² y E=2⋅106E=2\\cdot10^6 N/cm² = 20 000 MPa. Con 8000 N, σ=80\\sigma=80 MPa, ε=0,0040\\varepsilon=0,0040 y Δl=0,8\\Delta l=0,8 mm. Con 12 000 N, σ=120\\sigma=120 MPa &gt; 100 MPa, por lo que la deformación sería permanente.\n\n\n43. a) σ=80\\sigma=80 MPa, Δl=0,8\\Delta l=0,8 mm; b) sí, 120 MPa &gt; 100 MPa.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-43",
+    "href": "traccion.html#section-43",
+    "title": "Colección de problemas de tracción",
+    "section": "44.",
+    "text": "44.\n\nUna probeta cilíndrica maciza de 50 cm de longitud está fabricada con un acero de límite elástico 300 MPa y de módulo de elasticidad 240 GPa.\n\nCalcule el diámetro mínimo para que la probeta no se alargue más de 0,5 mm si se somete a una carga de 12,5 kN.\nDetermine si se producirá́ deformación plástica en otra probeta del mismo material con un diámetro de 10 mm y una carga aplicada de 30 kN.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 44\n\n\n\n\n\n\nPara limitar Δl\\Delta l a 0,5 mm, S0=Fl0/(EΔl)=52,083S_0=Fl_0/(E\\Delta l)=52,083 mm² y dmin=8,143d_{min}=8,143 mm. En la segunda probeta, σ=30000/(π102/4)=381,97\\sigma=30000/(\\pi10^2/4)=381,97 MPa &gt; 300 MPa; se produce deformación plástica.\n\n\n44. a) dmin=8,143d_{min}=8,143 mm; b) sí, σ=381,97\\sigma=381,97 MPa.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-44",
+    "href": "traccion.html#section-44",
+    "title": "Colección de problemas de tracción",
+    "section": "45.",
+    "text": "45.\n\nSe realiza un ensayo de tracción sobre una barra de un material elástico. Al aplicar una tensión de 125 MPa dentro de la zona elástica, se produce un alargamiento unitario de 0,0015.\n\nCalcular el módulo de Young del material.\nDeterminar el diámetro mínimo que debe tener una barra cilíndrica de este material, de 0,75 m de longitud, para que al ser sometida a una fuerza de 8 kN no se alargue más de 25 mm si al cesar la carga la barra recupera su longitud inicial\n\n\n\n\n\n\n\n\n\nTipResultado del problema 45\n\n\n\n\n\n\nE=125/0,0015=83,333E=125/0,0015=83,333 GPa. El límite geométrico pedido es εmax=25/750=0,03333\\varepsilon_{max}=25/750=0,03333. Si se acepta literalmente que toda esa deformación sigue siendo elástica, Hooke da σ=2777,78\\sigma=2777,78 MPa y dmin=1,915d_{min}=1,915 mm. La fuente no da límite elástico y una deformación del 3,33 % hace dudosa esa extrapolación; no puede comprobarse físicamente la hipótesis.\n\n\n45. a) E=83,333E=83,333 GPa; b) formalmente dmin=1,915d_{min}=1,915 mm, bajo la hipótesis elástica no verificable de la fuente.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-45",
+    "href": "traccion.html#section-45",
+    "title": "Colección de problemas de tracción",
+    "section": "46.",
+    "text": "46.\n\nSe quiere diseñar una pieza para un coche de F1 que debe medir 187 mm de largo y tener una sección de 30 mm². La pieza debe soportar una carga de 8200 N sin experimentar deformación plástica.\n\n¿Cuál de las aleaciones propuestas en la tabla adjunta sería la mejor opción?\nDeterminar el precio y el peso de la pieza, si se realiza con el material elegido en el apartado anterior.\nExplicar en qué consiste el fenómeno de fluencia de un material.\n\n\n\n\nMaterial\nLímite elástico (MPa)\nDensidad (g/cm³)\nPrecio (€/kg)\n\n\n\n\nAleación de Al\n250\n2,8\n12\n\n\nAleación de Ti\n850\n4,8\n60\n\n\nAleación de Mg\n170\n1,8\n24\n\n\n\n\n\n\n\n\n\n\n\nTipResultado del problema 46\n\n\n\n\n\n\nLa tensión de servicio es σ=8200/30=273,33\\sigma=8200/30=273,33 MPa. Al (250 MPa) y Mg (170 MPa) fallan; Ti (850 MPa) cumple y es la única opción admisible. El volumen es 30⋅187=5,6130\\cdot187=5,61 cm³, la masa m=Vρ=26,928m=V\\rho=26,928 g y el precio 0,026928kg⋅60=1,620,026928\\ \\text{kg}\\cdot60=1,62 €. La fluencia es deformación plástica apreciable con tensión casi constante.\n\n\n46. a) Aleación de Ti; b) masa 26,928 g y precio 1,62 €; c) fluencia plástica a tensión casi constante.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-46",
+    "href": "traccion.html#section-46",
+    "title": "Colección de problemas de tracción",
+    "section": "47.",
+    "text": "47.\n\nDurante un ensayo de tracción de una probeta de 40 mm² de sección y 250 mm de longitud, al aplicarle una carga de 10 000 N, se mide un alargamiento de 0,05 cm dentro del campo elástico.\n\nCalcular la tensión y el alargamiento unitario al aplicar la carga.\nDeterminar el módulo de elasticidad del material.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 47\n\n\n\n\n\n\nΔl=0,05\\Delta l=0,05 cm = 0,5 mm. σ=10000/40=250\\sigma=10000/40=250 MPa y ε=0,5/250=0,0020\\varepsilon=0,5/250=0,0020. Como el punto está en el campo elástico, E=σ/ε=125E=\\sigma/\\varepsilon=125 GPa.\n\n\n47. a) σ=250\\sigma=250 MPa, ε=0,0020\\varepsilon=0,0020; b) E=125E=125 GPa.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-47",
+    "href": "traccion.html#section-47",
+    "title": "Colección de problemas de tracción",
+    "section": "48.",
+    "text": "48.\n\nUna viga de acero inoxidable de 1 m de longitud deja de tener un comportamiento elástico para esfuerzos superiores a 400 MPa. El módulo de elasticidad de este acero es 189,6 GPa.\n\n﻿﻿﻿Determinar la deformación unitaria en el límite elástico.\nCalcular la longitud máxima a la que puede ser estirada la barra sin que se produzca deformación plástica.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 48\n\n\n\n\n\n\nEn el límite elástico, εE=400/189600=0,0021097\\varepsilon_E=400/189600=0,0021097. La longitud máxima recuperable es lmax=1000(1+εE)=1002,110l_{max}=1000(1+\\varepsilon_E)=1002,110 mm = 1,002110 m.\n\n\n48. a) εE=0,0021097\\varepsilon_E=0,0021097; b) lmax=1002,110l_{max}=1002,110 mm (1,002110 m).",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-49",
+    "href": "traccion.html#section-49",
+    "title": "Colección de problemas de tracción",
+    "section": "49.",
+    "text": "49.\n\nSe realiza un ensayo de tracción sobre una probeta normalizada de 100 mm de longitud y 13,8 mm de diámetro. Al aplicar una carga de 20000 N, la longitud de la probeta aumenta hasta 105 mm.\n\nCalcular la tensión.\nCalcular el alargamiento y la deformación unitaria.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 49\n\n\n\n\n\n\nS0=π13,82/4=149,57S_0=\\pi13,8^2/4=149,57 mm² y σ=20000/S0=133,72\\sigma=20000/S_0=133,72 MPa. El alargamiento es Δl=105−100=5\\Delta l=105-100=5 mm y la deformación unitaria ε=5/100=0,05\\varepsilon=5/100=0,05 (5 %).\n\n\n49. a) σ=133,72\\sigma=133,72 MPa; b) Δl=5\\Delta l=5 mm, ε=0,05\\varepsilon=0,05 (5 %).",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-50",
+    "href": "traccion.html#section-50",
+    "title": "Colección de problemas de tracción",
+    "section": "50.",
+    "text": "50.\n\nUna barra de acero de 16 mm de diámetro, 500 mm de longitud y módulo de elasticidad de 220 GPa está sometida a tracción.\n\nCalcular la fuerza necesaria, expresada en N, para alargar la barra elásticamente hasta una longitud total de 510 mm.\nDeterminar si la barra de acero se deformará plásticamente al aplicarle una fuerza de 100000 N, sabiendo que su límite elástico es 400 MPa.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 50\n\n\n\n\n\n\nErrata SDA03-005: se corrige E=220E=220 MPa a 220 GPa = 220 000 MPa. Para pasar de 500 a 510 mm, ε=0,02\\varepsilon=0,02 y la extrapolación de Hooke daría σ=Eε=4400\\sigma=E\\varepsilon=4400 MPa y F=σS0=884,67F=\\sigma S_0=884,67 kN. Sin embargo, 4400 MPa supera el límite elástico de 400 MPa: no existe una fuerza que produzca ese alargamiento elásticamente; el máximo alargamiento elástico sería 0,909 mm. Con 100 kN, σ=497,36\\sigma=497,36 MPa &gt; 400 MPa, por lo que hay deformación plástica.\n\n\n50. a) No es posible elásticamente; la extrapolación de Hooke sería 884,67 kN y el máximo elástico 0,909 mm; b) sí, σ=497,36\\sigma=497,36 MPa.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-51",
+    "href": "traccion.html#section-51",
+    "title": "Colección de problemas de tracción",
+    "section": "51.",
+    "text": "51.\n\nSe realiza un ensayo de tracción para estudiar las características de una varilla cilíndrica de acero de 120 mm de longitud a la que se le somete a una carga de 40 kN y provoca un alargamiento elástico de 5 mm (Módulo de elasticidad E=250 GPa).\n\nCalcular la deformación unitaria y la tensión.\nCalcular el diámetro de la varilla.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 51\n\n\n\n\n\n\nε=5/120=0,041667\\varepsilon=5/120=0,041667. La aplicación formal de Hooke da σ=250000ε=10416,67\\sigma=250000\\varepsilon=10416,67 MPa. Entonces S0=40000/σ=3,8400S_0=40000/\\sigma=3,8400 mm² y d=2,211d=2,211 mm. La deformación del 4,17 % y la tensión de 10,42 GPa son incompatibles con un comportamiento elástico normal del acero; sin límite elástico no puede cerrarse físicamente mejor el enunciado.\n\n\n51. a) ε=0,041667\\varepsilon=0,041667, formalmente σ=10,42\\sigma=10,42 GPa; b) formalmente d=2,211d=2,211 mm; datos elásticos físicamente incoherentes.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-52",
+    "href": "traccion.html#section-52",
+    "title": "Colección de problemas de tracción",
+    "section": "52.",
+    "text": "52.\n\nSe pretende estudiar el comportamiento de una barra de acero de 80 mm de longitud y 10 mm de diámetro y para ello se somete dicha barra a un ensayo de tracción aplicando una carga de 80000 N que provoca un alargamiento elástico de 5 mm.\n\nCalcular la deformación unitaria.\nCalcular el módulo de elasticidad del acero de la barra.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 52\n\n\n\n\n\n\nε=5/80=0,0625\\varepsilon=5/80=0,0625. Con S0=π102/4S_0=\\pi10^2/4, σ=80000/S0=1018,59\\sigma=80000/S_0=1018,59 MPa y E=σ/ε=16,297E=\\sigma/\\varepsilon=16,297 GPa. El valor es anómalo para acero y la deformación del 6,25 % no parece elástica, pero son los únicos resultados demostrables con los datos de la fuente.\n\n\n52. a) ε=0,0625\\varepsilon=0,0625; b) E=16,297E=16,297 GPa; datos físicamente anómalos para acero.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-53",
+    "href": "traccion.html#section-53",
+    "title": "Colección de problemas de tracción",
+    "section": "53.",
+    "text": "53.\n\n\n\n\nDiagrama tensión-deformación; el punto A marca el límite elástico.\n\n\nEn un ensayo de tracción efectuado a una probeta cilíndrica se ha obtenido el diagrama tensión-deformación que se representa en la figura de la derecha, donde el punto A señala el límite elástico. Determinar:\n\nEl módulo de elasticidad.\nEl alargamiento de la probeta si se aplica una carga de 20000 N, sabiendo que su diámetro es 25 mm y su longitud 75 mm.\nLa carga máxima que soporta esta probeta sin deformarse permanentemente.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 53\n\n\n\n\n\n\nDe la figura se leen σA=150\\sigma_A=150 MPa y εA=0,0025\\varepsilon_A=0,0025; E=150/0,0025=60E=150/0,0025=60 GPa. Con d=25d=25 mm, σ=20000/S0=40,74\\sigma=20000/S_0=40,74 MPa, ε=σ/E=0,0006791\\varepsilon=\\sigma/E=\n0,0006791 y Δl=0,05093\\Delta l=0,05093 mm. La carga máxima sin plasticidad es FE=150S0=73,63F_E=150S_0=73,63 kN.\n\n\n53. a) E=60E=60 GPa; b) Δl=0,05093\\Delta l=0,05093 mm; c) FE=73,63F_E=73,63 kN.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-55",
+    "href": "traccion.html#section-55",
+    "title": "Colección de problemas de tracción",
+    "section": "54.",
+    "text": "54.\n\nA una varilla cilíndrica de latón de 10 mm de diámetro y 1 m de largo se le aplica una fuerza a tracción hasta su rotura. Su límite elástico es 250 MPa, el módulo de Young 120 GPa y el diámetro a la rotura 6,1 mm. Se pide:\n\nDeterminar si la varilla sufrirá una deformación permanente cuando se le aplique una fuerza de 2000 N.\nCalcular su alargamiento unitario para una fuerza de 1000 N.\nCalcular la estricción a la rotura.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 54\n\n\n\n\n\n\nCon S0=π102/4S_0=\\pi10^2/4, 2000 N producen σ=25,46\\sigma=25,46 MPa, menor que 250 MPa: no hay deformación permanente. Para 1000 N, ε=(1000/S0)/120000=0,00010610\\varepsilon=(1000/S_0)/120000=0,00010610. La estricción es Z=[1−(6,1/10)2]⋅100=62,79Z=[1-(6,1/10)^2]\\cdot100=62,79 %.\n\n\n54. a) No; σ=25,46\\sigma=25,46 MPa; b) ε=0,00010610\\varepsilon=0,00010610; c) Z=62,79Z=62,79 %.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-56",
+    "href": "traccion.html#section-56",
+    "title": "Colección de problemas de tracción",
+    "section": "55.",
+    "text": "55.\n\nEn una empresa de fabricación de estructuras metálicas, se realiza un ensayo de tracción con la finalidad de verificar el cumplimiento con la normativa de vigas de acero. Para ello, se aplica una carga de 2000 N a una probeta de dicho material con un diámetro de 12 mm y una longitud inicial de 100 mm. Considerando un límite elástico de 225 MPa, se pide:\n\nDeterminar si la barra experimentará deformación permanente tras retirar la carga aplicada.\nCalcular el módulo de elasticidad considerando un alargamiento total de 0,008 mm.\nDeterminar el diámetro mínimo para que dicha probeta no registre una deformación permanente al duplicar la carga aplicada.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 55\n\n\n\n\n\n\nS0=π122/4S_0=\\pi12^2/4. Con 2000 N, σ=17,68\\sigma=17,68 MPa &lt; 225 MPa, luego recupera su longitud. ε=0,008/100=0,00008\\varepsilon=0,008/100=0,00008 y E=σ/ε=221,05E=\\sigma/\\varepsilon=221,05 GPa. Para 4000 N, dmin=4F/(πσE)=4,758d_{min}=\\sqrt{4F/(\\pi\\sigma_E)}=4,758 mm.\n\n\n55. a) No hay deformación permanente; b) E=221,05E=221,05 GPa; c) dmin=4,758d_{min}=4,758 mm.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-58",
+    "href": "traccion.html#section-58",
+    "title": "Colección de problemas de tracción",
+    "section": "56.",
+    "text": "56.\n\n\n\n\nDiagrama tensión-deformación; el punto A marca el límite elástico.\n\n\nEn un ensayo de tracción efectuado a una probeta cilíndrica de un aluminio que se usará para la fabricación del cuadro de bicicletas, se ha obtenido el diagrama tensión-deformación representado en la figura de la derecha, donde el punto A señala el límite elástico. Determinar:\n\nEl módulo de elasticidad.\nEl alargamiento de la probeta si se aplica una carga de 20.000 N, sabiendo que su diámetro es 25 mm y su longitud 75 mm.\nLa carga máxima que soporta esta probeta sin deformarse permanentemente.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 56\n\n\n\n\n\n\nLa figura da σA=150\\sigma_A=150 MPa y εA=0,0025\\varepsilon_A=0,0025, por lo que E=60E=60 GPa. Para d=25d=25 mm y 20 kN, Δl=(F/S0)l0/E=0,05093\\Delta l=(F/S_0)l_0/E=0,05093 mm. La carga máxima elástica es FE=σES0=73,63F_E=\\sigma_ES_0=73,63 kN.\n\n\n56. a) E=60E=60 GPa; b) Δl=0,05093\\Delta l=0,05093 mm; c) FE=73,63F_E=73,63 kN.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "traccion.html#section-59",
+    "href": "traccion.html#section-59",
+    "title": "Colección de problemas de tracción",
+    "section": "57.",
+    "text": "57.\n\nEn un almacén de envasado de fruta tienen una carretilla transportadora con capacidad para 6 cajas. El dueño del almacén ha detectado que la productividad mejoraría si tuvieran una carretilla para transportar 10 cajas, y encarga un proyecto para modificar la plataforma de la carretilla. El proyectista decide usar barras de acero de sección cuadrada de 2,5 cm de lado y 1 m de longitud, pero para el cálculo de la estructura necesita conocer las propiedades mecánicas del material y realiza un ensayo de tracción. Observa que con una fuerza mayor de 127 kN la barra deja de recuperar su longitud inicial tras el ensayo, pasando del régimen elástico al plástico, y para esta carga su longitud aumenta 0,96 mm. También ha visto que la barra se rompe cuando se le aplica una fuerza de 362 kN. Ayuda al proyectista a calcular los siguientes parámetros mecánicos:\n\nEl módulo elástico del material.\nLa deformación unitaria cuando se le aplica una fuerza de 48 kN.\nLa tensión de rotura.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 57\n\n\n\n\n\n\nS0=25⋅25=625S_0=25\\cdot25=625 mm². En el límite, σE=127000/625=203,2\\sigma_E=127000/625=\n203,2 MPa y εE=0,96/1000=0,00096\\varepsilon_E=0,96/1000=0,00096; por tanto E=σE/εE=211,667E=\\sigma_E/\\varepsilon_E=211,667 GPa. Para 48 kN, σ=76,8\\sigma=76,8 MPa y ε=0,0003628\\varepsilon=0,0003628. La resistencia a rotura es R=362000/625=579,2R=362000/625=579,2 MPa.\n\n\n57. a) E=211,667E=211,667 GPa; b) ε=0,0003628\\varepsilon=0,0003628; c) R=579,2R=579,2 MPa.",
+    "crumbs": [
+      "Colección de problemas de tracción"
+    ]
+  },
+  {
+    "objectID": "estructura_interna.html",
+    "href": "estructura_interna.html",
+    "title": "Colección de problemas de estructura interna",
+    "section": "",
+    "text": "El aluminio cristaliza en el sistema cúbico centrado en las caras (FCC), tiene un radio atómico de 1,43⋅10−101{,}43\\cdot10^{-10} m y una masa atómica de 27 u. Se pide:\n\nDeterminar el número de átomos que contiene su celda unitaria.\nCalcular el volumen de dicha celda unitaria.\nCalcular la densidad del aluminio (nº de Avogadro: 6,022⋅10236{,}022\\cdot10^{23}).\n\n\n\n\n\n\n\n\n\nTipResultado del problema 1\n\n\n\n\n\n\nEn una celda FCC hay un átomo en cada uno de los 8 vértices, que aporta 1/81/8 cada uno, y uno en el centro de cada una de las 6 caras, que aporta 1/21/2: n=8⋅18+6⋅12=1+3=4n=8\\cdot\\frac{1}{8}+6\\cdot\\frac{1}{2}=1+3=4 átomos.\nEn la FCC los átomos son tangentes a lo largo de la diagonal de cada cara, que mide 4R4R, de modo que a2=4Ra\\sqrt{2}=4R y a=4R2=4⋅1,43⋅10−102=4,045⋅10−10a=\\dfrac{4R}{\\sqrt{2}}=\\dfrac{4\\cdot1{,}43\\cdot10^{-10}}{\\sqrt{2}}=4{,}045\\cdot10^{-10} m. El volumen de la celda es V=a3=6,617⋅10−29V=a^{3}=6{,}617\\cdot10^{-29} m³.\nLa masa de la celda es la de sus 4 átomos: m=n⋅MNA=4⋅276,022⋅1023=1,794⋅10−22m=\\dfrac{n\\cdot M}{N_A}=\\dfrac{4\\cdot27}{6{,}022\\cdot10^{23}}=1{,}794\\cdot10^{-22} g. Dividiendo entre el volumen, ρ=n⋅MNA⋅V=2,710\\rho=\\dfrac{n\\cdot M}{N_A\\cdot V}=2{,}710 g/cm³ =2710=2\\,710 kg/m³, coherente con el valor tabulado del aluminio (≈ 2 700 kg/m³).\n\n\n1. a) n=4n=4 átomos; b) a=4,045⋅10−10a=4{,}045\\cdot10^{-10} m y V=6,617⋅10−29V=6{,}617\\cdot10^{-29} m³; c) ρ=2710\\rho=2\\,710 kg/m³ =2,710=2{,}710 g/cm³.",
+    "crumbs": [
+      "Colección de problemas de estructura interna"
+    ]
+  },
+  {
+    "objectID": "estructura_interna.html#section",
+    "href": "estructura_interna.html#section",
+    "title": "Colección de problemas de estructura interna",
+    "section": "",
+    "text": "El aluminio cristaliza en el sistema cúbico centrado en las caras (FCC), tiene un radio atómico de 1,43⋅10−101{,}43\\cdot10^{-10} m y una masa atómica de 27 u. Se pide:\n\nDeterminar el número de átomos que contiene su celda unitaria.\nCalcular el volumen de dicha celda unitaria.\nCalcular la densidad del aluminio (nº de Avogadro: 6,022⋅10236{,}022\\cdot10^{23}).\n\n\n\n\n\n\n\n\n\nTipResultado del problema 1\n\n\n\n\n\n\nEn una celda FCC hay un átomo en cada uno de los 8 vértices, que aporta 1/81/8 cada uno, y uno en el centro de cada una de las 6 caras, que aporta 1/21/2: n=8⋅18+6⋅12=1+3=4n=8\\cdot\\frac{1}{8}+6\\cdot\\frac{1}{2}=1+3=4 átomos.\nEn la FCC los átomos son tangentes a lo largo de la diagonal de cada cara, que mide 4R4R, de modo que a2=4Ra\\sqrt{2}=4R y a=4R2=4⋅1,43⋅10−102=4,045⋅10−10a=\\dfrac{4R}{\\sqrt{2}}=\\dfrac{4\\cdot1{,}43\\cdot10^{-10}}{\\sqrt{2}}=4{,}045\\cdot10^{-10} m. El volumen de la celda es V=a3=6,617⋅10−29V=a^{3}=6{,}617\\cdot10^{-29} m³.\nLa masa de la celda es la de sus 4 átomos: m=n⋅MNA=4⋅276,022⋅1023=1,794⋅10−22m=\\dfrac{n\\cdot M}{N_A}=\\dfrac{4\\cdot27}{6{,}022\\cdot10^{23}}=1{,}794\\cdot10^{-22} g. Dividiendo entre el volumen, ρ=n⋅MNA⋅V=2,710\\rho=\\dfrac{n\\cdot M}{N_A\\cdot V}=2{,}710 g/cm³ =2710=2\\,710 kg/m³, coherente con el valor tabulado del aluminio (≈ 2 700 kg/m³).\n\n\n1. a) n=4n=4 átomos; b) a=4,045⋅10−10a=4{,}045\\cdot10^{-10} m y V=6,617⋅10−29V=6{,}617\\cdot10^{-29} m³; c) ρ=2710\\rho=2\\,710 kg/m³ =2,710=2{,}710 g/cm³.",
+    "crumbs": [
+      "Colección de problemas de estructura interna"
+    ]
+  },
+  {
+    "objectID": "estructura_interna.html#section-1",
+    "href": "estructura_interna.html#section-1",
+    "title": "Colección de problemas de estructura interna",
+    "section": "2.",
+    "text": "2.\n\nLos átomos de un determinado metal cristalizan en el sistema cúbico centrado en el cuerpo y tienen un radio de 0,112 nm. Determinar:\n\nEl índice de coordinación y el número de átomos de cada celdilla.\nEl volumen que ocupan los átomos de la celdilla unitaria.\nLa constante de la red cristalina.\nEl volumen de la celdilla unitaria.\nEl factor de empaquetamiento.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 2\n\n\n\n\n\n\nEn la BCC el átomo central es tangente a los 8 de los vértices, luego el índice de coordinación es i=8i=8. El número de átomos es n=1+8⋅18=2n=1+8\\cdot\\frac{1}{8}=2.\nEl volumen ocupado por los átomos, tratados como esferas de radio RR, es Va=n⋅43πR3=2⋅43π(0,112⋅10−9)3=1,177⋅10−29V_a=n\\cdot\\frac{4}{3}\\pi R^{3}=2\\cdot\\frac{4}{3}\\pi(0{,}112\\cdot10^{-9})^{3}=1{,}177\\cdot10^{-29} m³.\nEn la BCC la tangencia se produce a lo largo de la diagonal del cubo, que mide 4R4R, de modo que a3=4Ra\\sqrt{3}=4R y a=4R3=2,587⋅10−10a=\\dfrac{4R}{\\sqrt{3}}=2{,}587\\cdot10^{-10} m =0,2587=0{,}2587 nm. El volumen de la celda es V=a3=1,730⋅10−29V=a^{3}=1{,}730\\cdot10^{-29} m³.\nEl factor de empaquetamiento es FE=VaV=1,177⋅10−291,730⋅10−29=0,680FE=\\dfrac{V_a}{V}=\\dfrac{1{,}177\\cdot10^{-29}}{1{,}730\\cdot10^{-29}}=0{,}680: el 68 % del volumen de la celda está ocupado por materia. Obsérvese que no depende del radio, sólo de la geometría de la red.\n\n\n2. a) i=8i=8 y n=2n=2; b) Va=1,177⋅10−29V_a=1{,}177\\cdot10^{-29} m³; c) a=0,2587a=0{,}2587 nm; d) V=1,730⋅10−29V=1{,}730\\cdot10^{-29} m³; e) FE=0,680FE=0{,}680.",
+    "crumbs": [
+      "Colección de problemas de estructura interna"
+    ]
+  },
+  {
+    "objectID": "estructura_interna.html#section-2",
+    "href": "estructura_interna.html#section-2",
+    "title": "Colección de problemas de estructura interna",
+    "section": "3.",
+    "text": "3.\n\nPara los sistemas de cristalización cúbico centrado en las caras y cúbico centrado en el cuerpo, indicar en los dos casos:\n\nNúmero de átomos que rodean cada átomo. ¿Cómo se llama este valor?\nNúmero de átomos presente en cada celda unitaria.\nLado de la arista de la celda para un elemento de radio atómico 0,13 nm. ¿Cómo se llama este valor?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 3\n\n\n\n\n\n\nEl número de átomos que rodean a otro se llama índice de coordinación: vale i=12i=12 en la FCC (los átomos de los centros de las caras) e i=8i=8 en la BCC (el átomo central).\nEl número de átomos por celda es n=8⋅18+6⋅12=4n=8\\cdot\\frac{1}{8}+6\\cdot\\frac{1}{2}=4 en la FCC y n=8⋅18+1=2n=8\\cdot\\frac{1}{8}+1=2 en la BCC.\nEl lado de la celda se llama constante reticular o parámetro de red. En la FCC la tangencia va por la diagonal de la cara: a=4R2=4⋅0,132=0,3677a=\\dfrac{4R}{\\sqrt{2}}=\\dfrac{4\\cdot0{,}13}{\\sqrt{2}}=0{,}3677 nm. En la BCC va por la diagonal del cubo: a=4R3=0,3002a=\\dfrac{4R}{\\sqrt{3}}=0{,}3002 nm. Para el mismo radio atómico la celda FCC es mayor, pero contiene el doble de átomos y resulta más compacta (FE=0,74FE=0{,}74 frente a 0,680{,}68).\n\n\n3. a) índice de coordinación: i=12i=12 (FCC) e i=8i=8 (BCC); b) n=4n=4 (FCC) y n=2n=2 (BCC); c) constante reticular: a=0,3677a=0{,}3677 nm (FCC) y a=0,3002a=0{,}3002 nm (BCC).",
+    "crumbs": [
+      "Colección de problemas de estructura interna"
+    ]
+  },
+  {
+    "objectID": "estructura_interna.html#section-3",
+    "href": "estructura_interna.html#section-3",
+    "title": "Colección de problemas de estructura interna",
+    "section": "4.",
+    "text": "4.\n\nEl hierro a temperatura ambiente tiene estructura cúbica centrada en el cuerpo. Se pide:\n\n¿Cuántos átomos rodean a cada átomo?\n¿Cuántos átomos hay en cada celda unitaria?\n¿Cuál es el lado de la arista de la celda si el radio atómico del Fe es 0,124 nm?\nSi el Fe tiene una masa atómica de 55,845 u, ¿cuál será su densidad?\n¿Qué significa que el Fe presenta estados alotrópicos a altas temperaturas?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 4\n\n\n\n\n\n\nEl índice de coordinación de la BCC es i=8i=8 y el número de átomos por celda, n=1+8⋅18=2n=1+8\\cdot\\frac{1}{8}=2.\nLa constante reticular es a=4R3=4⋅0,124⋅10−93=2,864⋅10−10a=\\dfrac{4R}{\\sqrt{3}}=\\dfrac{4\\cdot0{,}124\\cdot10^{-9}}{\\sqrt{3}}=2{,}864\\cdot10^{-10} m =0,2864=0{,}2864 nm, de donde V=a3=2,349⋅10−29V=a^{3}=2{,}349\\cdot10^{-29} m³.\nLa densidad resulta ρ=n⋅MNA⋅V=2⋅55,8456,022⋅1023⋅2,349⋅10−23cm3=7,898\\rho=\\dfrac{n\\cdot M}{N_A\\cdot V}=\\dfrac{2\\cdot55{,}845}{6{,}022\\cdot10^{23}\\cdot2{,}349\\cdot10^{-23}\\ \\mathrm{cm^3}}=7{,}898 g/cm³ =7898=7\\,898 kg/m³, muy próximo al valor tabulado del hierro (7 874 kg/m³).\nLa alotropía es la capacidad de un elemento de cristalizar en redes distintas según la presión y la temperatura. El hierro es BCC a temperatura ambiente (hierro α) y pasa a FCC entre 912 °C y 1 394 °C (hierro γ). Como la FCC es más compacta, ese cambio modifica la densidad y la capacidad de disolver carbono, que es la base de los tratamientos térmicos del acero.\n\n\n4. a) i=8i=8; b) n=2n=2; c) a=0,2864a=0{,}2864 nm; d) ρ=7898\\rho=7\\,898 kg/m³ =7,898=7{,}898 g/cm³; e) cambia de red cristalina con la temperatura (BCC → FCC entre 912 °C y 1 394 °C).",
+    "crumbs": [
+      "Colección de problemas de estructura interna"
+    ]
+  },
+  {
+    "objectID": "estructura_interna.html#section-4",
+    "href": "estructura_interna.html#section-4",
+    "title": "Colección de problemas de estructura interna",
+    "section": "5.",
+    "text": "5.\n\nEl hierro cristaliza a temperatura ambiente en el sistema BCC. Sabiendo que la densidad del hierro es de 7 874 kg/m³ y que su masa atómica es de 55,845 u, calcular su radio atómico.\n\n\n\n\n\n\n\n\nTipResultado del problema 5\n\n\n\n\n\n\nEs el problema anterior recorrido al revés. De ρ=n⋅MNA⋅a3\\rho=\\dfrac{n\\cdot M}{N_A\\cdot a^{3}} se despeja el volumen de la celda:\na3=n⋅MNA⋅ρ=2⋅55,845⋅10−36,022⋅1023⋅7874=2,3555⋅10−29m3a^{3}=\\frac{n\\cdot M}{N_A\\cdot \\rho}=\\frac{2\\cdot55{,}845\\cdot10^{-3}}{6{,}022\\cdot10^{23}\\cdot7\\,874}=2{,}3555\\cdot10^{-29}\\ \\mathrm{m^3}\nde donde a=2,8665⋅10−10a=2{,}8665\\cdot10^{-10} m =0,2867=0{,}2867 nm. Como en la BCC la tangencia va por la diagonal del cubo, a3=4Ra\\sqrt{3}=4R y\nR=a34=1,2413⋅10−10m=0,1241nmR=\\frac{a\\sqrt{3}}{4}=1{,}2413\\cdot10^{-10}\\ \\mathrm{m}=0{,}1241\\ \\mathrm{nm}\nAtención a las unidades: si ρ\\rho va en kg/m³, la masa atómica debe entrar en kg/mol, es decir 55,845⋅10−355{,}845\\cdot10^{-3}.\n\n\n5. a=0,2867a=0{,}2867 nm y R=0,1241R=0{,}1241 nm =1,241=1{,}241 Å.",
+    "crumbs": [
+      "Colección de problemas de estructura interna"
+    ]
+  },
+  {
+    "objectID": "estructura_interna.html#section-5",
+    "href": "estructura_interna.html#section-5",
+    "title": "Colección de problemas de estructura interna",
+    "section": "6.",
+    "text": "6.\n\nComprobar en qué tipo de estructura cristaliza el aluminio, sabiendo los siguientes datos:\n\nRadio atómico: 1,43 Å.\nDensidad: 2 700 kg/m³.\nMasa atómica: 26,9815 u.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 6\n\n\n\n\n\n\nNo se puede despejar la red: hay que calcular la densidad que tendría en cada una y comparar con la medida.\nSi fuera BCC: n=2n=2 y a=4R3=3,3024a=\\dfrac{4R}{\\sqrt{3}}=3{,}3024 Å, luego V=3,602⋅10−29V=3{,}602\\cdot10^{-29} m³ y ρ=2⋅26,9815⋅10−36,022⋅1023⋅3,602⋅10−29=2488\\rho=\\dfrac{2\\cdot26{,}9815\\cdot10^{-3}}{6{,}022\\cdot10^{23}\\cdot3{,}602\\cdot10^{-29}}=2\\,488 kg/m³, un 7,9 % por debajo del valor medido.\nSi fuera FCC: n=4n=4 y a=4R2=4,0447a=\\dfrac{4R}{\\sqrt{2}}=4{,}0447 Å, luego V=6,617⋅10−29V=6{,}617\\cdot10^{-29} m³ y ρ=2709\\rho=2\\,709 kg/m³, a un 0,3 % del valor medido.\nLa red compatible con la densidad medida es por tanto la FCC, que es en efecto la del aluminio. Conviene notar que la FCC, aunque tiene la celda más grande, es más densa porque aloja el doble de átomos y su factor de empaquetamiento es 0,74 frente a 0,68.\n\n\n6. El aluminio cristaliza en FCC: esa red predice ρ=2709\\rho=2\\,709 kg/m³ frente a los 2 700 kg/m³ medidos (0,3 % de desviación), mientras que la BCC predeciría 2 488 kg/m³ (7,9 %).",
+    "crumbs": [
+      "Colección de problemas de estructura interna"
+    ]
+  },
+  {
+    "objectID": "dureza.html",
+    "href": "dureza.html",
+    "title": "Colección de problemas de dureza",
+    "section": "",
+    "text": "En un ensayo Brinell con una bola de 2,5 mm de diámetro se ha obtenido un diámetro de huella de 1,5 mm. Si la constante de ensayo es 30, determinar:\n\nLa carga aplicada en el ensayo.\nEl valor de la dureza del material.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 1\n\n\n\n\n\n\nLa carga se fija mediante F=KD2=30⋅2,52=187,5F=K D^2=30\\cdot2{,}5^2=187,5 kgf. La superficie del casquete es S=πD(D−D2−d2)/2S=\\pi D(D-\\sqrt{D^2-d^2})/2 y la dureza resulta HB=2FπD(D−D2−d2)=2⋅187.5π⋅2,5(2,5−2,52−1,52)=95,49kgf/mm2.HB=\\frac{2F}{\\pi D(D-\\sqrt{D^2-d^2})}=\\frac{2\\cdot187.5}{\\pi\\cdot2{,}5(2{,}5-\\sqrt{2{,}5^2-1{,}5^2})}=95,49\\ \\text{kgf/mm}^2. La huella no cumple D/4≤d≤D/2D/4\\le d\\le D/2: 0,625≤1,5≤1,250,625\\le1,5\\le1,25 es falso.\n\n\n1. a) F=187,5F=187,5 kgf; b) HB=95,49HB=95,49 kgf/mm². Huella no válida por tamaño.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section",
+    "href": "dureza.html#section",
+    "title": "Colección de problemas de dureza",
+    "section": "",
+    "text": "En un ensayo Brinell con una bola de 2,5 mm de diámetro se ha obtenido un diámetro de huella de 1,5 mm. Si la constante de ensayo es 30, determinar:\n\nLa carga aplicada en el ensayo.\nEl valor de la dureza del material.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 1\n\n\n\n\n\n\nLa carga se fija mediante F=KD2=30⋅2,52=187,5F=K D^2=30\\cdot2{,}5^2=187,5 kgf. La superficie del casquete es S=πD(D−D2−d2)/2S=\\pi D(D-\\sqrt{D^2-d^2})/2 y la dureza resulta HB=2FπD(D−D2−d2)=2⋅187.5π⋅2,5(2,5−2,52−1,52)=95,49kgf/mm2.HB=\\frac{2F}{\\pi D(D-\\sqrt{D^2-d^2})}=\\frac{2\\cdot187.5}{\\pi\\cdot2{,}5(2{,}5-\\sqrt{2{,}5^2-1{,}5^2})}=95,49\\ \\text{kgf/mm}^2. La huella no cumple D/4≤d≤D/2D/4\\le d\\le D/2: 0,625≤1,5≤1,250,625\\le1,5\\le1,25 es falso.\n\n\n1. a) F=187,5F=187,5 kgf; b) HB=95,49HB=95,49 kgf/mm². Huella no válida por tamaño.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-1",
+    "href": "dureza.html#section-1",
+    "title": "Colección de problemas de dureza",
+    "section": "2.",
+    "text": "2.\n\nSobre un acero se ha realizado un ensayo Brinell utilizando una bola de 10 mm de diámetro y una carga de 3000 kgf, obteniéndose un valor de 150 HB.\n\nCalcular el diámetro de la huella.\nSi la carga empleada fuera de 187,5 kgf, ¿qué diámetro de bola habría que utilizar?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 2\n\n\n\n\n\n\nDe f=F/(πDHB)f=F/(\\pi D HB) y d=D2−(D−2f)2d=\\sqrt{D^2-(D-2f)^2}: d=102−(10−2⋅3000π⋅10⋅150)2=4,883mm.d=\\sqrt{10^2-\\left(10-\\frac{2\\cdot3000}{\\pi\\cdot10\\cdot150}\\right)^2}=4,883\\ \\text{mm}. Para acero, K=30K=30 y F=KD2F=KD^2; por tanto D=187,5/30=2,50D=\\sqrt{187{,}5/30}=2,50 mm. La primera huella cumple 2,5≤d≤52,5\\le d\\le5 mm.\n\n\n2. a) d=4,883d=4,883 mm (válida); b) D=2,50D=2,50 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-2",
+    "href": "dureza.html#section-2",
+    "title": "Colección de problemas de dureza",
+    "section": "3.",
+    "text": "3.\n\nEn un ensayo de dureza realizado a un material por el método Brinell, se obtuvo un valor de 40 HB. Se desea saber:\n\nLa carga que se ha aplicado en el ensayo si se ha utilizado como penetrador una bola de 5 mm de diámetro y la huella producida fue de 1,2 mm de diámetro.\n¿Cuál fue la constante de ensayo del material?\nCite otro método de medida de dureza en materiales y explique cómo se determina su valor.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 3\n\n\n\n\n\n\nLa huella tiene S=πD(D−D2−d2)/2=1,1477S=\\pi D(D-\\sqrt{D^2-d^2})/2=1,1477 mm². Luego F=HBS=40⋅1,1477=45,91F=HB\\,S=40\\cdot 1,1477=45,91 kgf y K=F/D2=1,836K=F/D^2=1,836 kgf/mm². La huella no alcanza D/4=1,25D/4=1,25 mm, por lo que no cumple el intervalo de validez. En Vickers se presiona una pirámide de diamante y se calcula HV≃1,854F/d2HV\\simeq1,854F/d^2 con la media de las dos diagonales.\n\n\n3. a) F=45,91F=45,91 kgf; b) K=1,836K=1,836 kgf/mm²; c) método Vickers. Huella Brinell no válida por tamaño.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-3",
+    "href": "dureza.html#section-3",
+    "title": "Colección de problemas de dureza",
+    "section": "4.",
+    "text": "4.\n\nSe ha medido la dureza en la superficie y en el núcleo de un engranaje de acero. Los resultados fueron 500 HB y 200 HB, respectivamente.\n\nSuponer que la bola utilizada en el ensayo Brinell fue de 2,5 mm de diámetro y la constante de ensayo 30. Calcular el diámetro de la huella obtenido al alcanzar 500 HB.\nSuponiendo que al hacer un ensayo Vickers con 100 kgf de carga el valor de la dureza obtenida sea el mismo que en el ensayo Brinell, calcular la diagonal de la huella dejada.\nExplique, en función de su aplicación posterior, qué se persigue con la obtención de diferentes durezas en la pieza fabricada.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 4\n\n\n\n\n\n\nF=KD2=30⋅2,52=187,5F=KD^2=30\\cdot2{,}5^2=187,5 kgf. Despejando la huella Brinell se obtiene d=0,684d=0,684 mm, dentro de 0,625≤d≤1,250,625\\le d\\le1,25 mm. Para Vickers, d=1,854F/HV=1,854⋅100/500=0,609d=\\sqrt{1,854F/HV}=\\sqrt{1,854\\cdot100/500}=0,609 mm. Una superficie más dura resiste desgaste y contacto; un núcleo menos duro conserva tenacidad y reduce el riesgo de rotura frágil.\n\n\n4. a) dB=0,684d_B=0,684 mm; b) dV=0,609d_V=0,609 mm; c) superficie resistente al desgaste y núcleo tenaz.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-4",
+    "href": "dureza.html#section-4",
+    "title": "Colección de problemas de dureza",
+    "section": "5.",
+    "text": "5.\n\nPara determinar la dureza Brinell de un material se ha utilizado una bola de 5 mm de diámetro y se ha elegido una constante K = 30. La huella obtenida en el ensayo ha sido de 2,3 mm de diámetro. Se pide:\n\nCalcular la dureza Brinell del material.\nCalcular la profundidad de la huella.\nExplicar las diferencias entre un ensayo Brinell y otro Rockwell.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 5\n\n\n\n\n\n\nF=KD2=30⋅52=750F=KD^2=30\\cdot5^2=750 kgf. Entonces HB=2F/[πD(D−D2−d2)]=170,40HB=2F/[\\pi D(D-\\sqrt{D^2-d^2})]=170,40 kgf/mm² y f=(D−D2−d2)/2=0,2802f=(D-\\sqrt{D^2-d^2})/2=0,2802 mm. La huella cumple 1,25≤2,3≤2,51,25\\le2,3\\le2,5 mm. Brinell mide ópticamente el diámetro de una huella esférica; Rockwell mide directamente profundidad residual bajo precarga y carga mayor, con penetrador y constantes propios de cada escala. Rockwell se considera ampliación, sin cálculo exigible en PAU 2025-26.\n\n\n5. a) HB=170,40HB=170,40 kgf/mm²; b) f=0,2802f=0,2802 mm; c) Brinell mide diámetro y Rockwell profundidad (ampliación).",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-5",
+    "href": "dureza.html#section-5",
+    "title": "Colección de problemas de dureza",
+    "section": "6.",
+    "text": "6.\n\nUna pieza de una determinada aleación se somete a un ensayo de dureza utilizando una carga de 1000 kgf aplicada durante 30 segundos. Tras el ensayo, se mide la huella y resulta ser un casquete esférico de 3 mm de diámetro y 7,23 mm² de superficie. Calcular:\n\nLa dureza del material.\nEl diámetro de la bola utilizada, sabiendo que el ensayo puede considerarse válido.\nExpresar correctamente la dureza del material, explicando cada uno de los términos.\nComprobar la validez del ensayo desde el punto de vista de las medidas de la huella obtenida.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 6\n\n\n\n\n\n\nHB=F/S=1000/7,23=138,31HB=F/S=1000/7,23=138,31 kgf/mm². Al imponer S=πD(D−D2−d2)/2S=\\pi D(D-\\sqrt{D^2-d^2})/2 con d=3d=3 mm se obtiene D=10,15D=10,15 mm; la diferencia respecto de la bola nominal de 10 mm procede del redondeo de SS a dos decimales. La huella es válida. La fuente no identifica el material de la bola; por ello la designación, con diámetro nominal, es 138 HBS/HBW 10/1000/30, eligiendo HBS si fue acero o HBW si fue carburo de tungsteno. Los campos son dureza, penetrador, diámetro/carga y tiempo.\n\n\n6. a) HB=138,31HB=138,31 kgf/mm²; b) D=10,15D=10,15 mm (≈ 10 mm nominales); c) 138 HBS/HBW 10/1000/30 según el material de la bola; d) válida.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-6",
+    "href": "dureza.html#section-6",
+    "title": "Colección de problemas de dureza",
+    "section": "7.",
+    "text": "7.\n\nSobre un acero se ha realizado un ensayo Brinell utilizando una bola de 10 mm de diámetro y una carga de 3000 kgf, obteniéndose un valor de 125. Se pide:\n\nDescribir cómo debe realizarse el ensayo.\nCalcular el diámetro de la huella.\nSi la carga empleada hubiera sido 187,5 kgf, ¿qué otro cambio tendría que haberse hecho?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 7\n\n\n\n\n\n\nSe prepara una superficie plana, se aplica perpendicularmente la bola con la carga fijada durante el tiempo prescrito y se promedian dos diámetros de huella antes de calcular HB. El despeje da d=5,313d=5,313 mm; como supera D/2=5D/2=5 mm, la combinación no cumple la validez geométrica. Manteniendo K=30K=30, con 187,5187,5 kgf corresponde D=187,5/30=2,50D=\\sqrt{187,5/30}=2,50 mm.\n\n\n7. a) ensayo Brinell con medición de dos diámetros; b) d=5,313d=5,313 mm (no válida); c) bola de D=2,50D=2,50 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-7",
+    "href": "dureza.html#section-7",
+    "title": "Colección de problemas de dureza",
+    "section": "8.",
+    "text": "8.\n\nEn relación con el ensayo Vickers:\n\nDibujar un esquema representativo del ensayo Vickers, situando en él una carga de 1000 N. Dibujar la huella obtenida y suponer que dicha huella mide 250 × 10³ µm².\nExplique para qué sirve este ensayo.\nExprese el resultado del ensayo.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 8\n\n\n\n\n\n\nEl esquema debe mostrar la pirámide de diamante de base cuadrada, la carga normal y la huella con sus dos diagonales. 10001000 N equivalen a 1000/9,81=101,941000/9,81=101,94 kgf y 250⋅103250\\cdot10^3 µm² equivalen a 0,2500,250 mm². Interpretando el dato como superficie de huella, HV=F/S=407,75HV=F/S=407,75 kgf/mm² y la diagonal equivalente es d=1,854F/HV=0,681d=\\sqrt{1,854F/HV}=0,681 mm. Vickers sirve para durezas macro y micro con un único penetrador.\n\n\n8. a) esquema de pirámide y huella cuadrada; b) medida de dureza Vickers; c) 408 HV 102 (área interpretada como 250 000 µm²).",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-8",
+    "href": "dureza.html#section-8",
+    "title": "Colección de problemas de dureza",
+    "section": "9.",
+    "text": "9.\n\nEn un ensayo Brinell se ha aplicado una carga de 3000 kgf. El diámetro de la bola del penetrador es 10 mm. El diámetro de huella obtenido es de 4,5 mm y el tiempo de aplicación 15 s. Se pide:\n\nEl valor de la dureza Brinell y su expresión normalizada.\nIndicar la carga que habría que aplicar a una probeta del mismo material si se quiere reducir la dimensión de la bola del penetrador a 5 mm.\nIndicar el tamaño de la huella cuando el penetrador sea de 5 mm de diámetro y el valor de la dureza el mismo que en el apartado a).\n\n\n\n\n\n\n\n\n\nTipResultado del problema 9\n\n\n\n\n\n\nHB=2⋅3000/[π⋅10(10−102−4,52)]=178,54HB=2\\cdot3000/[\\pi\\cdot10(10-\\sqrt{10^2-4,5^2})]=178,54 kgf/mm². La huella es válida. Como K=F/D2=30K=F/D^2=30, para D=5D=5 mm se aplica F=30⋅52=750F=30\\cdot5^2=750 kgf. Al conservar F/D2F/D^2 y HB, la geometría es semejante: d2=2,25d_2=2,25 mm, también válida. La bola no está identificada; la norma exige elegir HBS o HBW.\n\n\n9. a) HB=178,54HB=178,54 kgf/mm², 179 HBS/HBW 10/3000 según penetrador; b) F=750F=750 kgf; c) d=2,25d=2,25 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-9",
+    "href": "dureza.html#section-9",
+    "title": "Colección de problemas de dureza",
+    "section": "10.",
+    "text": "10.\n\nSe desea medir la dureza Brinell de una probeta de acero y de otra de aluminio, cuyas constantes de ensayo son 30 y 5 respectivamente. Se dispone únicamente de penetradores de 5 y 2,5 mm de diámetro y el durómetro solo puede cargarse con 125, 187,5 o 250 kgf.\n\nPara el acero: ¿qué carga y qué penetrador se podrían utilizar? Razonar, con los cálculos correspondientes, si es posible utilizar los dos penetradores.\nResponder a las mismas cuestiones para la pieza de aluminio.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 10\n\n\n\n\n\n\nSe usa F=KD2F=KD^2. Acero: con D=5D=5 mm harían falta 750750 kgf, no disponibles; con D=2,5D=2,5 mm hacen falta 30⋅2,52=187,530\\cdot2,5^2=187,5 kgf, sí disponibles. Aluminio: con D=5D=5 mm hacen falta 5⋅52=1255\\cdot5^2=125 kgf, disponibles; con D=2,5D=2,5 mm serían 31,2531,25 kgf, no disponibles.\n\n\n10. a) acero: bola de 2,5 mm y 187,5 kgf; b) aluminio: bola de 5 mm y 125 kgf.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-10",
+    "href": "dureza.html#section-10",
+    "title": "Colección de problemas de dureza",
+    "section": "11.",
+    "text": "11.\n\nSobre un acero se ha realizado un ensayo Brinell utilizando una bola de 10 mm de diámetro y una carga de 3000 kgf, obteniéndose un valor de 200 HB. Se pide:\n\nCalcular el diámetro de la huella.\nSi la carga empleada hubiera sido 250 kgf, ¿qué otro cambio tendría que haberse hecho?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 11\n\n\n\n\n\n\nd=102−(10−2⋅3000/(π⋅10⋅200))2=4,265d=\\sqrt{10^2-(10-2\\cdot3000/(\\pi\\cdot10\\cdot200))^2}=4,265 mm, dentro de 2,5≤d≤52,5\\le d\\le5. Para conservar K=30K=30, D=250/30=2,887D=\\sqrt{250/30}=2,887 mm.\n\n\n11. a) d=4,265d=4,265 mm; b) bola de D=2,887D=2,887 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-11",
+    "href": "dureza.html#section-11",
+    "title": "Colección de problemas de dureza",
+    "section": "12.",
+    "text": "12.\n\nUna pieza se somete a un ensayo Brinell con constante de proporcionalidad K = 30 y bola de 5 mm de diámetro. La huella producida tiene un diámetro de 1,8 mm. Calcular:\n\nLa carga aplicada.\nLa dureza Brinell.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 12\n\n\n\n\n\n\nF=KD2=30⋅52=750F=KD^2=30\\cdot5^2=750 kgf. Sustituyendo en Brinell, HB=2⋅750/[π⋅5(5−52−1,82)]=284,85HB=2\\cdot750/[\\pi\\cdot5(5-\\sqrt{5^2-1,8^2})]=284,85 kgf/mm². La huella cumple 1,25≤1,8≤2,51,25\\le1,8\\le2,5 mm.\n\n\n12. a) F=750F=750 kgf; b) HB=284,85HB=284,85 kgf/mm².",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-12",
+    "href": "dureza.html#section-12",
+    "title": "Colección de problemas de dureza",
+    "section": "13.",
+    "text": "13.\n\nSobre una pieza de bronce se ha realizado un ensayo Brinell, utilizando una bola de 10 mm de diámetro y una carga de 1000 kgf, obteniéndose un valor de 150.\n\nCalcular el diámetro de la huella.\nSi la carga empleada hubiera sido 250 kgf, ¿qué otro cambio tendría que haberse realizado?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 13\n\n\n\n\n\n\nEl despeje de Brinell da d=2,882d=2,882 mm, válido. En bronce se usa K=F/D2=10K=F/D^2=10; con F=250F=250 kgf corresponde D=250/10=5,00D=\\sqrt{250/10}=5,00 mm.\n\n\n13. a) d=2,882d=2,882 mm; b) bola de D=5,00D=5,00 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-13",
+    "href": "dureza.html#section-13",
+    "title": "Colección de problemas de dureza",
+    "section": "14.",
+    "text": "14.\n\nEn un ensayo de dureza, utilizando una bola de 10 mm de diámetro y una carga de 3000 kgf durante 30 s, se obtiene un valor de 125 HB. Calcular:\n\nEl diámetro de la huella.\n¿Se realizó correctamente el ensayo? ¿Cuál es la expresión normalizada del resultado? Explícalo brevemente.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 14\n\n\n\n\n\n\nd=102−(10−2⋅3000/(π⋅10⋅125))2=5,313d=\\sqrt{10^2-(10-2\\cdot3000/(\\pi\\cdot10\\cdot125))^2}=5,313 mm. Como d&gt;D/2=5d&gt;D/2=5 mm, el ensayo no cumple la condición geométrica. Al durar 30 s, el tiempo debe figurar. La fuente no declara el material de la bola: 125 HBS/HBW 10/3000/30, escogiendo HBS o HBW según corresponda.\n\n\n14. a) d=5,313d=5,313 mm; b) ensayo no válido; 125 HBS/HBW 10/3000/30 según penetrador.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-14",
+    "href": "dureza.html#section-14",
+    "title": "Colección de problemas de dureza",
+    "section": "15.",
+    "text": "15.\n\nEn un ensayo de dureza realizado a un material por el método Brinell, se obtuvo un valor de 40 HB. Se desea saber:\n\nLa carga que se ha aplicado en el ensayo si se ha utilizado como penetrador una bola de 5 mm de diámetro y la huella producida fue de 1,95 mm de diámetro.\n¿Cuál es la constante del ensayo del material?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 15\n\n\n\n\n\n\nS=π⋅5(5−52−1,952)/2=3,1096S=\\pi\\cdot5(5-\\sqrt{5^2-1,95^2})/2=3,1096 mm². Por tanto F=HBS=40⋅3,1096=124,38F=HB\\,S=40\\cdot3,1096=124,38 kgf y K=F/52=4,975K=F/5^2=4,975 kgf/mm². La huella es válida.\n\n\n15. a) F=124,38F=124,38 kgf; b) K=4,975K=4,975 kgf/mm².",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-15",
+    "href": "dureza.html#section-15",
+    "title": "Colección de problemas de dureza",
+    "section": "16.",
+    "text": "16.\n\nEn un ensayo Brinell se ha utilizado una bola de 5 mm de diámetro y una constante K = 30, obteniéndose una huella de 2 mm de diámetro. Se pide:\n\nCalcular la dureza Brinell del material.\nCalcular la profundidad de la huella.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 16\n\n\n\n\n\n\nF=30⋅52=750F=30\\cdot5^2=750 kgf. Así, HB=2F/[πD(D−D2−d2)]=228,77HB=2F/[\\pi D(D-\\sqrt{D^2-d^2})]=228,77 kgf/mm² y f=(5−25−4)/2=0,2087f=(5-\\sqrt{25-4})/2=0,2087 mm. La huella es válida.\n\n\n16. a) HB=228,77HB=228,77 kgf/mm²; b) f=0,2087f=0,2087 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-16",
+    "href": "dureza.html#section-16",
+    "title": "Colección de problemas de dureza",
+    "section": "17.",
+    "text": "17.\n\nEn un ensayo de dureza Brinell se ha utilizado una bola de 10 mm de diámetro. Durante el ensayo se ha elegido una K = 10 y se ha obtenido una huella de 2,5 mm de diámetro. Se pide:\n\nCalcular la dureza del material.\nCalcular el diámetro de la huella producida si al usar una bola de igual diámetro se obtiene una dureza de 300 HB al aplicar una carga de 500 kgf.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 17\n\n\n\n\n\n\nEn el primer caso F=10⋅102=1000F=10\\cdot10^2=1000 kgf y HB=200,48HB=200,48 kgf/mm²; d=2,5d=2,5 mm está justo en el límite inferior válido. En el segundo, d=102−(10−2⋅500/(π⋅10⋅300))2=1,453d=\\sqrt{10^2-(10-2\\cdot500/(\\pi\\cdot10\\cdot300))^2}=1,453 mm, menor que D/4=2,5D/4=2,5 mm y por tanto no válido geométricamente.\n\n\n17. a) HB=200,48HB=200,48 kgf/mm²; b) d=1,453d=1,453 mm (no válida).",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-17",
+    "href": "dureza.html#section-17",
+    "title": "Colección de problemas de dureza",
+    "section": "18.",
+    "text": "18.\n\nEl resultado de un ensayo de dureza es 630 HV 50. Se pide:\n\nCalcular la diagonal de la huella.\nCalcular el valor de la dureza si se ha realizado el mismo ensayo en otro material, utilizando una carga de 20 kgf, y la diagonal de la huella obtenida es de 0,5 mm.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 18\n\n\n\n\n\n\nDe HV=1,854F/d2HV=1,854F/d^2, d=1,854⋅50/630=0,384d=\\sqrt{1,854\\cdot50/630}=0,384 mm. Para el segundo material, HV=1,854⋅20/0,52=148,32HV=1,854\\cdot20/0,5^2=148,32 kgf/mm².\n\n\n18. a) d=0,384d=0,384 mm; b) HV=148,32HV=148,32 kgf/mm².",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-18",
+    "href": "dureza.html#section-18",
+    "title": "Colección de problemas de dureza",
+    "section": "19.",
+    "text": "19.\n\nA un metal se le realiza un ensayo de dureza Vickers aplicando al penetrador una carga de 120 kgf, obteniéndose una huella de 1,125 mm de diagonal. Se pide:\n\nLa dureza del material.\nEl valor de la diagonal obtenida si se utilizara una carga de 60 kgf.\nRealizar un esquema del ensayo.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 19\n\n\n\n\n\n\nHV=1,854⋅120/1,1252=175,79HV=1,854\\cdot120/1,125^2=175,79 kgf/mm². Para el mismo material con 60 kgf, d=1,854⋅60/HV=0,795d=\\sqrt{1,854\\cdot60/HV}=0,795 mm. El esquema debe representar la pirámide de diamante, la fuerza normal y la huella cuadrada con dos diagonales cuya media es dd.\n\n\n19. a) HV=175,79HV=175,79 kgf/mm²; b) d=0,795d=0,795 mm; c) esquema Vickers rotulado.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-19",
+    "href": "dureza.html#section-19",
+    "title": "Colección de problemas de dureza",
+    "section": "20.",
+    "text": "20.\n\nTras un ensayo de dureza Vickers se midió la diagonal de la huella, obteniéndose un valor de 0,63 mm. La dureza medida fue de 140 kgf/mm². Se pide:\n\nLa carga, en newtons, utilizada en el ensayo.\nLa diagonal de la huella para una probeta del mismo material si la carga aplicada fuese de 50 kgf.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 20\n\n\n\n\n\n\nF=HVd2/1,854=140⋅0,632/1,854=29,971F=HV\\,d^2/1,854=140\\cdot0,63^2/1,854=29,971 kgf, que equivale a 294,01294,01 N. Con 50 kgf, d=1,854⋅50/140=0,814d=\\sqrt{1,854\\cdot50/140}=0,814 mm.\n\n\n20. a) F=294,01F=294,01 N; b) d=0,814d=0,814 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-20",
+    "href": "dureza.html#section-20",
+    "title": "Colección de problemas de dureza",
+    "section": "21.",
+    "text": "21.\n\nEn un ensayo Vickers en el que la carga se aplicó durante 15 s se obtuvo una huella de 0,6 mm de diagonal, siendo la dureza obtenida 247 kgf/mm². Se pide:\n\nCalcular la carga en kN que se aplicó.\nCalcular la dureza HV de otro material distinto al aplicar la misma carga si la diagonal de la huella obtenida fue de 0,45 mm.\nExpresar la dureza del apartado a) según la norma y explicar el significado de cada término.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 21\n\n\n\n\n\n\nF=247⋅0,62/1,854=47,961F=247\\cdot0,6^2/1,854=47,961 kgf =0,4705=0,4705 kN. En el segundo material, HV=1,854F/0,452=439,11HV=1,854F/0,45^2=439,11 kgf/mm². La designación es 247 HV 48: valor de dureza, método Vickers y carga nominal; 15 s está dentro de 10–15 s y no se añade.\n\n\n21. a) F=0,4705F=0,4705 kN; b) HV=439,11HV=439,11 kgf/mm²; c) 247 HV 48.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-21",
+    "href": "dureza.html#section-21",
+    "title": "Colección de problemas de dureza",
+    "section": "22.",
+    "text": "22.\n\nEl resultado de un ensayo de dureza Vickers es de 685 kgf/mm². La carga aplicada ha sido de 132 kgf. Se pide:\n\nLa superficie de la huella producida en el ensayo.\nLa diagonal de la huella.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 22\n\n\n\n\n\n\nComo HV=F/SHV=F/S, S=132/685=0,1927S=132/685=0,1927 mm². Además, d=1,854F/HV=1,854⋅132/685=0,598d=\\sqrt{1,854F/HV}=\\sqrt{1,854\\cdot132/685}=0,598 mm.\n\n\n22. a) S=0,1927S=0,1927 mm²; b) d=0,598d=0,598 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-22",
+    "href": "dureza.html#section-22",
+    "title": "Colección de problemas de dureza",
+    "section": "23.",
+    "text": "23.\n\nEn un ensayo de dureza Brinell se utiliza una bola de 1 cm de diámetro y una carga de 3000 kgf. El diámetro de la huella producida es de 3,5 mm. Se pide:\n\nLa dureza Brinell del material.\nLa constante de ensayo utilizada.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 23\n\n\n\n\n\n\nD=1D=1 cm =10=10 mm. HB=2⋅3000/[π⋅10(10−102−3,52)]=301,95HB=2\\cdot3000/[\\pi\\cdot10(10-\\sqrt{10^2-3,5^2})]=301,95 kgf/mm² y K=F/D2=30K=F/D^2=30 kgf/mm². La huella es válida.\n\n\n23. a) HB=301,95HB=301,95 kgf/mm²; b) K=30K=30 kgf/mm².",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-23",
+    "href": "dureza.html#section-23",
+    "title": "Colección de problemas de dureza",
+    "section": "24.",
+    "text": "24.\n\nEn un ensayo Brinell con una bola de 10 mm de diámetro, se aplica una carga de 3000 kgf durante 20 s. Se obtiene una huella de 5 mm de diámetro. Se pide:\n\nLa dureza Brinell del material.\nLa fuerza que se aplicaría en otro ensayo Brinell al mismo material con una bola de 5 mm de diámetro y con una constante de ensayo de 10.\nExpresar la dureza Brinell del apartado a) según la norma y explicar el significado de cada término.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 24\n\n\n\n\n\n\nHB=2⋅3000/[π⋅10(10−102−52)]=142,55HB=2\\cdot3000/[\\pi\\cdot10(10-\\sqrt{10^2-5^2})]=142,55 kgf/mm²; la huella está en el límite superior válido. El apartado b fija expresamente K=10K=10, luego F=10⋅52=250F=10\\cdot5^2=250 kgf. La designación es 143 HBS/HBW 10/3000/20, eligiendo HBS/HBW según una bola que la fuente no identifica; 20 s sí debe constar.\n\n\n24. a) HB=142,55HB=142,55 kgf/mm²; b) F=250F=250 kgf; c) 143 HBS/HBW 10/3000/20 según penetrador.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-24",
+    "href": "dureza.html#section-24",
+    "title": "Colección de problemas de dureza",
+    "section": "25.",
+    "text": "25.\n\nEn un ensayo de dureza Brinell, se aplica una carga de 3000 kgf durante 15 s. El diámetro de la bola utilizada es de 10 mm. El diámetro de la huella producida es de 4,5 mm. Se pide:\n\nEl valor de la dureza Brinell.\nEl diámetro de la huella si se ensaya sobre el mismo material con una bola de 5 mm de diámetro y una carga de 750 kgf.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 25\n\n\n\n\n\n\nHB=2⋅3000/[π⋅10(10−102−4,52)]=178,54HB=2\\cdot3000/[\\pi\\cdot10(10-\\sqrt{10^2-4,5^2})]=178,54 kgf/mm². Con D=5D=5 mm y F=750F=750 kgf se conserva F/D2=30F/D^2=30 y el mismo HB, de modo que d=2,25d=2,25 mm. Ambas huellas cumplen D/4≤d≤D/2D/4\\le d\\le D/2.\n\n\n25. a) HB=178,54HB=178,54 kgf/mm²; b) d=2,25d=2,25 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-25",
+    "href": "dureza.html#section-25",
+    "title": "Colección de problemas de dureza",
+    "section": "26.",
+    "text": "26.\n\nSobre un material se realiza un ensayo Brinell con una esfera de 2,5 mm de diámetro aplicando una carga durante 15 s. La constante de ensayo del material es 10 kgf/mm² y el diámetro de la huella obtenida es 2,1 mm.\n\nCalcular la dureza y expresarla de forma normalizada.\nCalcular la profundidad de la huella producida en el material.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 26\n\n\n\n\n\n\nF=KD2=10⋅2,52=62,5F=KD^2=10\\cdot2,5^2=62,5 kgf. HB=13,92HB=13,92 kgf/mm² y f=(2,5−2,52−2,12)/2=0,5718f=(2,5-\\sqrt{2,5^2-2,1^2})/2=0,5718 mm. La huella no es válida porque 2,1&gt;D/2=1,252,1&gt;D/2=1,25 mm. La designación formal sería 14 HBS/HBW 2.5/62.5 según el material de la bola; 15 s no se añade.\n\n\n26. a) HB=13,92HB=13,92 kgf/mm², 14 HBS/HBW 2.5/62.5 según penetrador; b) f=0,5718f=0,5718 mm. Ensayo no válido.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-26",
+    "href": "dureza.html#section-26",
+    "title": "Colección de problemas de dureza",
+    "section": "27.",
+    "text": "27.\n\nPara determinar la dureza Brinell de un material se ha utilizado un penetrador de 10 mm de diámetro aplicándole una fuerza de 500 kgf. El diámetro de la huella tras realizar el ensayo ha sido 2,79 mm.\n\nCalcular la dureza del material.\nSi se repite el ensayo al mismo material con una bola de 5 mm de diámetro, calcule cuál debería ser la fuerza que aplicar y el diámetro de la huella resultante.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 27\n\n\n\n\n\n\nHB=2⋅500/[π⋅10(10−102−2,792)]=80,16HB=2\\cdot500/[\\pi\\cdot10(10-\\sqrt{10^2-2,79^2})]=80,16 kgf/mm² y K=500/102=5K=500/10^2=5. Para D=5D=5 mm, F=KD2=125F=KD^2=125 kgf y, por semejanza, d=1,395d=1,395 mm. Ambas huellas son válidas.\n\n\n27. a) HB=80,16HB=80,16 kgf/mm²; b) F=125F=125 kgf y d=1,395d=1,395 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-27",
+    "href": "dureza.html#section-27",
+    "title": "Colección de problemas de dureza",
+    "section": "28.",
+    "text": "28.\n\nEn un ensayo de dureza Vickers se aplica al penetrador una carga de 200 kgf, provocando una huella de 1,25 mm de diagonal sobre la probeta. Tras realizar un tratamiento térmico, se observa que al aplicar la misma carga la diagonal de la huella se duplica respecto a la del primer ensayo.\n\nObtenga la dureza Vickers normalizada de la probeta antes del tratamiento.\nObtenga la dureza Vickers normalizada de la probeta después del tratamiento térmico.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 28\n\n\n\n\n\n\nAntes: HV=1,854⋅200/1,252=237,31HV=1,854\\cdot200/1,25^2=237,31 kgf/mm². Después d=2⋅1,25=2,50d=2\\cdot1,25=2,50 mm y HV=1,854⋅200/2,502=59,33HV=1,854\\cdot200/2,50^2=59,33 kgf/mm². Sin tiempo declarado, las designaciones son 237 HV 200 y 59 HV 200.\n\n\n28. a) 237 HV 200; b) 59 HV 200.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-28",
+    "href": "dureza.html#section-28",
+    "title": "Colección de problemas de dureza",
+    "section": "29.",
+    "text": "29.\n\nSe realiza un ensayo Brinell sobre una pieza metálica con una bola de 6 mm de diámetro y una constante de 40 kgf/mm², produciendo una huella de diámetro 1,8 mm.\n\nCalcule la carga aplicada.\nDetermine la dureza Brinell.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 29\n\n\n\n\n\n\nF=KD2=40⋅62=1440F=KD^2=40\\cdot6^2=1440 kgf. HB=2F/[π⋅6(6−62−1,82)]=552,85HB=2F/[\\pi\\cdot6(6-\\sqrt{6^2-1,8^2})]=552,85 kgf/mm². La huella cumple 1,5≤1,8≤31,5\\le1,8\\le3 mm. La constante 40 no pertenece a la tabla K usual dada para acero, cobre o aluminio, pero se conserva porque el enunciado la fija.\n\n\n29. a) F=1440F=1440 kgf; b) HB=552,85HB=552,85 kgf/mm².",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-29",
+    "href": "dureza.html#section-29",
+    "title": "Colección de problemas de dureza",
+    "section": "30.",
+    "text": "30.\n\nEn un ensayo de dureza Brinell se ha obtenido un valor de 150 HB. En dicho ensayo se utiliza como penetrador una bola de 10 mm de diámetro. La huella producida tiene un diámetro de 2,88 mm.\n\nCalcule la carga aplicada en el ensayo.\nDetermine la constante de ensayo del material.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 30\n\n\n\n\n\n\nS=π⋅10(10−102−2,882)/2=6,6554S=\\pi\\cdot10(10-\\sqrt{10^2-2,88^2})/2=6,6554 mm². F=HBS=150⋅6,6554=998,31F=HB\\,S=150\\cdot6,6554=998,31 kgf y K=F/102=9,983K=F/10^2=9,983 kgf/mm². La huella es válida.\n\n\n30. a) F=998,31F=998,31 kgf; b) K=9,983K=9,983 kgf/mm².",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-30",
+    "href": "dureza.html#section-30",
+    "title": "Colección de problemas de dureza",
+    "section": "31.",
+    "text": "31.\n\nSe realiza un ensayo Brinell con una bola de acero de 5 mm de diámetro sobre una pieza que tiene una constante de proporcionalidad de 35 kgf/mm², produciendo una huella con un diámetro de 3 mm.\n\nCalcule el área del casquete esférico producido.\nDetermine la carga aplicada.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 31\n\n\n\n\n\n\nS=π⋅5(5−52−32)/2=7,8540S=\\pi\\cdot5(5-\\sqrt{5^2-3^2})/2=7,8540 mm² y F=KD2=35⋅52=875F=KD^2=35\\cdot5^2=875 kgf. Aunque los cálculos cierran, d=3&gt;D/2=2,5d=3&gt;D/2=2,5 mm: la huella no es válida por tamaño.\n\n\n31. a) S=7,8540S=7,8540 mm²; b) F=875F=875 kgf. Huella no válida.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-31",
+    "href": "dureza.html#section-31",
+    "title": "Colección de problemas de dureza",
+    "section": "32.",
+    "text": "32.\n\nSobre un material se ha realizado un ensayo de dureza Brinell con una bola de acero de 10 mm de diámetro y una constante de ensayo de 30 kgf/mm². Al aplicar la carga durante 15 segundos se provoca sobre dicho material una huella de 3,5 mm de diámetro.\n\nDeterminar la carga aplicada en el ensayo.\nCalcular el valor de la dureza Brinell y expresarla de forma normalizada.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 32\n\n\n\n\n\n\nF=KD2=30⋅102=3000F=KD^2=30\\cdot10^2=3000 kgf. HB=2F/[π⋅10(10−102−3,52)]=301,95HB=2F/[\\pi\\cdot10(10-\\sqrt{10^2-3,5^2})]=301,95 kgf/mm². La huella es válida. Al declararse bola de acero se usa HBS; 15 s no se añade: 302 HBS 10/3000.\n\n\n32. a) F=3000F=3000 kgf; b) HB=301,95HB=301,95 kgf/mm², 302 HBS 10/3000.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-32",
+    "href": "dureza.html#section-32",
+    "title": "Colección de problemas de dureza",
+    "section": "33.",
+    "text": "33.\n\nAl realizar un ensayo de dureza Brinell sobre una probeta con un penetrador de 6 mm de diámetro, se produce una huella de 2,5 mm de diámetro. El material tiene una constante de proporcionalidad K = 35 kgf/mm² y el ensayo tarda 30 segundos en completarse.\n\nCalcular la carga aplicada y el área del casquete esférico que se produce sobre la muestra.\nDeterminar la dureza Brinell, expresándola en forma normalizada.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 33\n\n\n\n\n\n\nF=35⋅62=1260F=35\\cdot6^2=1260 kgf y S=π⋅6(6−62−2,52)/2=5,1426S=\\pi\\cdot6(6-\\sqrt{6^2-2,5^2})/2=5,1426 mm². HB=F/S=245,01HB=F/S=245,01 kgf/mm²; la huella es válida. Como la fuente no dice acero o carburo, 245 HBS/HBW 6/1260/30 debe concretarse como HBS o HBW; 30 s sí aparece.\n\n\n33. a) F=1260F=1260 kgf y S=5,1426S=5,1426 mm²; b) HB=245,01HB=245,01 kgf/mm², 245 HBS/HBW 6/1260/30 según penetrador.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-33",
+    "href": "dureza.html#section-33",
+    "title": "Colección de problemas de dureza",
+    "section": "34.",
+    "text": "34.\n\nEn un ensayo Brinell de un acero se utiliza un penetrador de bola de 10 mm de diámetro. Se obtiene una huella de 5 mm de diámetro, la carga aplicada ha sido 4000 kgf y el tiempo de aplicación 12 segundos.\n\nCalcular el valor de la dureza Brinell del material.\nExpresar en forma normalizada el valor de la dureza Brinell.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 34\n\n\n\n\n\n\nHB=2⋅4000/[π⋅10(10−102−52)]=190,07HB=2\\cdot4000/[\\pi\\cdot10(10-\\sqrt{10^2-5^2})]=190,07 kgf/mm². La huella está en el límite superior válido. Doce segundos quedan en el intervalo ordinario y no se indican; como el material de la bola no consta, la expresión es 190 HBS/HBW 10/4000 escogiendo HBS o HBW.\n\n\n34. a) HB=190,07HB=190,07 kgf/mm²; b) 190 HBS/HBW 10/4000 según penetrador.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-34",
+    "href": "dureza.html#section-34",
+    "title": "Colección de problemas de dureza",
+    "section": "35.",
+    "text": "35.\n\nPara realizar un ensayo de dureza Brinell de un material se ha utilizado una bola de 8 mm de diámetro, obteniéndose una huella de 3 mm de diámetro. La constante de ensayo K es 10 kgf/mm².\n\nObtener la dureza Brinell del material.\nCalcular el valor promedio de las diagonales de la huella que se obtendría en un ensayo Vickers con una carga de 20 kgf, suponiendo que esta dureza coincide con la dureza Brinell anterior.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 35\n\n\n\n\n\n\nF=KD2=10⋅82=640F=KD^2=10\\cdot8^2=640 kgf y HB=87,24HB=87,24 kgf/mm²; la huella Brinell es válida. Igualando HV=HBHV=HB, d=1,854⋅20/HB=0,652d=\\sqrt{1,854\\cdot20/HB}=0,652 mm.\n\n\n35. a) HB=87,24HB=87,24 kgf/mm²; b) dV=0,652d_V=0,652 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-35",
+    "href": "dureza.html#section-35",
+    "title": "Colección de problemas de dureza",
+    "section": "36.",
+    "text": "36.\n\nEn un ensayo Vickers sobre una muestra, el resultado de la dureza tras aplicar una carga de 49 kgf es 439 HV.\n\nCalcular la superficie de la huella producida durante el ensayo.\nDeterminar la diagonal de la huella anterior.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 36\n\n\n\n\n\n\nS=F/HV=49/439=0,1116S=F/HV=49/439=0,1116 mm². La diagonal media es d=1,854F/HV=1,854⋅49/439=0,455d=\\sqrt{1,854F/HV}=\\sqrt{1,854\\cdot49/439}=0,455 mm.\n\n\n36. a) S=0,1116S=0,1116 mm²; b) d=0,455d=0,455 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-37",
+    "href": "dureza.html#section-37",
+    "title": "Colección de problemas de dureza",
+    "section": "37.",
+    "text": "37.\n\nPara conocer la dureza de una pieza de acero se realiza el ensayo Vickers. Se aplica una carga de 20 kgf durante 15 segundos. La diagonal de la huella formada tiene una longitud de 0,22 mm.\n\nCalcular el valor de la dureza del acero y escribir la expresión normalizada de la dureza Vickers.\nCalcular la diagonal de la huella si se aplica una carga de 30 kgf durante 15 segundos al mismo material.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 37\n\n\n\n\n\n\nHV=1,854⋅20/0,222=766,12HV=1,854\\cdot20/0,22^2=766,12 kgf/mm², que se expresa 766 HV 20; 15 s no se indica. Para la misma dureza con 30 kgf, d=1,854⋅30/HV=0,269d=\\sqrt{1,854\\cdot30/HV}=0,269 mm.\n\n\n37. a) 766 HV 20; b) d=0,269d=0,269 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-38",
+    "href": "dureza.html#section-38",
+    "title": "Colección de problemas de dureza",
+    "section": "38.",
+    "text": "38.\n\nUna probeta de un determinado material se somete a un ensayo de dureza Vickers. Al aplicar al penetrador una carga de 120 kgf se produce una huella cuya diagonal es 0,773 mm.\n\nObtener la dureza Vickers y su expresión normalizada.\nDeterminar la carga, expresada en N, que se ha aplicado al penetrador si la diagonal de la huella es 0,1 mm.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 38\n\n\n\n\n\n\nHV=1,854⋅120/0,7732=372,33HV=1,854\\cdot120/0,773^2=372,33 kgf/mm², es decir 372 HV 120. Para el mismo material y d=0,1d=0,1 mm, F=HVd2/1,854=2,0083F=HV\\,d^2/1,854=2,0083 kgf =19,70=19,70 N.\n\n\n38. a) 372 HV 120; b) F=19,70F=19,70 N.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-39",
+    "href": "dureza.html#section-39",
+    "title": "Colección de problemas de dureza",
+    "section": "39.",
+    "text": "39.\n\nPara determinar la dureza Brinell de un material se ha utilizado una bola de 5 mm de diámetro y se ha elegido una constante K = 30 kgf/mm², obteniéndose una huella de 2 mm de diámetro.\n\nDeterminar la profundidad de la huella.\nCalcular la dureza Brinell.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 39\n\n\n\n\n\n\nF=30⋅52=750F=30\\cdot5^2=750 kgf. La profundidad es f=(5−52−22)/2=0,2087f=(5-\\sqrt{5^2-2^2})/2=0,2087 mm y HB=F/(πDf)=228,77HB=F/(\\pi Df)=228,77 kgf/mm². La huella es válida.\n\n\n39. a) f=0,2087f=0,2087 mm; b) HB=228,77HB=228,77 kgf/mm².",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-40",
+    "href": "dureza.html#section-40",
+    "title": "Colección de problemas de dureza",
+    "section": "40.",
+    "text": "40.\n\nEn un ensayo Brinell de dureza se aplica una carga de 250 kgf con un penetrador de 5 mm de diámetro. Tras un tiempo de aplicación de 15 s, se genera una huella de 2 mm de diámetro.\n\nObtener la dureza Brinell y su expresión normalizada.\nSi se cambia el penetrador por uno de 10 mm de diámetro, calcular la carga aplicada y el diámetro de la huella para obtener el mismo valor de dureza.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 40\n\n\n\n\n\n\nHB=2⋅250/[π⋅5(5−52−22)]=76,26HB=2\\cdot250/[\\pi\\cdot5(5-\\sqrt{5^2-2^2})]=76,26 kgf/mm². La designación es 76 HBS/HBW 5/250 según el material no indicado de la bola; 15 s no se añade. K=250/52=10K=250/5^2=10, por lo que para D=10D=10 mm, F=1000F=1000 kgf y, por semejanza, d=4,00d=4,00 mm. Ambas huellas son válidas.\n\n\n40. a) HB=76,26HB=76,26 kgf/mm², 76 HBS/HBW 5/250 según penetrador; b) F=1000F=1000 kgf y d=4,00d=4,00 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-41",
+    "href": "dureza.html#section-41",
+    "title": "Colección de problemas de dureza",
+    "section": "41.",
+    "text": "41.\n\nSe estudia la dureza de dos piezas: una de acero normal y otra de acero templado.\n\nDeterminar la dureza Brinell de la pieza de acero normal si se usa una bola de 12 mm de diámetro, se obtiene una huella de 4,5 mm y la constante es K = 30 kgf/mm².\nCalcular la dureza Vickers de la pieza de acero templado si se aplica una carga de 65 kgf y se obtiene una huella de diagonal 0,372 mm.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 41\n\n\n\n\n\n\nPara Brinell, F=30⋅122=4320F=30\\cdot12^2=4320 kgf y HB=2F/[π⋅12(12−122−4,52)]=261,71HB=2F/[\\pi\\cdot12(12-\\sqrt{12^2-4,5^2})]=261,71 kgf/mm²; la huella es válida. Para Vickers, HV=1,854⋅65/0,3722=870,84HV=1,854\\cdot65/0,372^2=870,84 kgf/mm².\n\n\n41. a) HB=261,71HB=261,71 kgf/mm²; b) HV=870,84HV=870,84 kgf/mm².",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-43",
+    "href": "dureza.html#section-43",
+    "title": "Colección de problemas de dureza",
+    "section": "42.",
+    "text": "42.\n\nEn un laboratorio se pretende realizar un ensayo de dureza Brinell y otro de dureza Vickers para una misma muestra de acero:\n\nDeterminar la expresión normalizada de la dureza Brinell si se obtiene una huella de 2,5 mm aplicando una carga de 725 kgf con un penetrador de 5 mm durante 20 segundos.\nDeterminar la expresión normalizada de la dureza Vickers si se aplica una carga de 120 kgf durante 10 segundos y se obtiene una huella con diagonales de 1,25 mm y 1,23 mm.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 42\n\n\n\n\n\n\nBrinell: HB=2⋅725/[π⋅5(5−52−2,52)]=137,80HB=2\\cdot725/[\\pi\\cdot5(5-\\sqrt{5^2-2,5^2})]=137,80 kgf/mm²; d=D/2d=D/2 es válido. Como la bola no se identifica y 20 s supera 15 s, la designación es 138 HBS/HBW 5/725/20 según HBS/HBW. Vickers: d=(1,25+1,23)/2=1,24d=(1,25+1,23)/2=1,24 mm y HV=1,854⋅120/d2=144,69HV=1,854\\cdot120/d^2=144,69 kgf/mm²; a 10 s no se añade tiempo: 145 HV 120.\n\n\n42. a) 138 HBS/HBW 5/725/20 según penetrador; b) 145 HV 120.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-44",
+    "href": "dureza.html#section-44",
+    "title": "Colección de problemas de dureza",
+    "section": "43.",
+    "text": "43.\n\nEn un ensayo Brinell se emplea una bola de 2,5 mm de diámetro y se aplica una carga que produce una huella de 1,2 mm. La constante de ensayo para este material es 30 kgf/mm². Se pide:\n\nDeterminar la carga aplicada y calcular la dureza Brinell del material.\nSi se usara una bola de 5 mm de diámetro, ¿cuál sería el diámetro de la huella?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 43\n\n\n\n\n\n\nF=30⋅2,52=187,5F=30\\cdot2,5^2=187,5 kgf y HB=2F/[π⋅2,5(2,5−2,52−1,22)]=155,61HB=2F/[\\pi\\cdot2,5(2,5-\\sqrt{2,5^2-1,2^2})]=155,61 kgf/mm². Para D=5D=5 mm, F=30⋅52=750F=30\\cdot5^2=750 kgf y la huella semejante mide d=2,40d=2,40 mm. Ambas huellas son válidas.\n\n\n43. a) F=187,5F=187,5 kgf y HB=155,61HB=155,61 kgf/mm²; b) d=2,40d=2,40 mm.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-46",
+    "href": "dureza.html#section-46",
+    "title": "Colección de problemas de dureza",
+    "section": "44.",
+    "text": "44.\n\nEn un laboratorio se realiza un ensayo de dureza Brinell y otro de dureza Vickers a una misma muestra de acero que se utilizará para la fabricación de rastrillos de jardinería. Se pide:\n\nDeterminar la expresión normalizada de la dureza Vickers si se aplica una carga de 120 kgf durante 10 segundos y se obtiene una huella con diagonales de 1,25 mm y 1,23 mm.\nDeterminar la expresión normalizada de la dureza Brinell si se obtiene una huella de 2,5 mm aplicando una carga de 725 kgf con un penetrador de 5 mm durante 20 segundos.\nA la vista de los datos y del resultado del ensayo Brinell, ¿se puede considerar válido dicho resultado?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 44\n\n\n\n\n\n\nVickers: d=(1,25+1,23)/2=1,24d=(1,25+1,23)/2=1,24 mm y HV=1,854⋅120/d2=144,69HV=1,854\\cdot120/d^2=144,69 kgf/mm²; a 10 s se escribe 145 HV 120. Brinell: HB=137,80HB=137,80 kgf/mm²; como no se identifica la bola y el tiempo es 20 s, 138 HBS/HBW 5/725/20 según HBS/HBW. La huella cumple D/4≤d≤D/2D/4\\le d\\le D/2: 1,25≤2,5≤2,51,25\\le2,5\\le2,5 mm.\n\n\n44. a) 145 HV 120; b) 138 HBS/HBW 5/725/20 según penetrador; c) ensayo Brinell válido.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-47",
+    "href": "dureza.html#section-47",
+    "title": "Colección de problemas de dureza",
+    "section": "45.",
+    "text": "45.\n\nPara medir la dureza de una plancha de acero se realiza un ensayo Vickers aplicando una carga de 40 kgf durante 20 s, obteniéndose la huella de la figura.\n\n\n\nHuella Vickers ampliada cincuenta veces, con una diagonal de 30 mm en la escala de la imagen.\n\n\n\nSi la imagen está aumentada 50 veces, ¿cuánto mide la diagonal de la huella que se necesita para calcular la dureza Vickers?\nCalcular la dureza Vickers de la plancha y escribir su valor normalizado.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 45\n\n\n\n\n\n\nEn la figura, los vértices opuestos están en 0 y 30 mm, por lo que la diagonal ampliada es 3030 mm. La diagonal real es d=30/50=0,60d=30/50=0,60 mm. Así, HV=1,854⋅40/0,602=206,00HV=1,854\\cdot40/0,60^2=206,00 kgf/mm². Como 20 s queda fuera de 10–15 s, se designa 206 HV 40/20.\n\n\n45. a) d=0,60d=0,60 mm; b) 206 HV 40/20.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-48",
+    "href": "dureza.html#section-48",
+    "title": "Colección de problemas de dureza",
+    "section": "46.",
+    "text": "46.\n\nTras realizar un ensayo de dureza Brinell a un acero se certifica como 160 HB 5 650 20. Cuando se le aplica un tratamiento de templado, el valor de la dureza de este acero aumenta al doble.\n\nCalcular el diámetro de la huella en el acero sin el tratamiento de templado.\n¿Qué fuerza habrá que aplicar al acero templado para que el ensayo de dureza Brinell deje una huella igual que en el acero sin templar?\n\n\n\n\n\n\n\n\n\nTipResultado del problema 46\n\n\n\n\n\n\nDe la designación se toman HB=160HB=160 kgf/mm², D=5D=5 mm y F=650F=650 kgf. f=F/(πDHB)=0,2586f=F/(\\pi D HB)=0,2586 mm y d=D2−(D−2f)2=2,215mm.d=\\sqrt{D^2-(D-2f)^2}=2,215\\ \\text{mm}. La huella es válida: 1,25≤2,215≤2,501,25\\le2,215\\le2,50. Su superficie es S=πDf=4,0625S=\\pi Df=4,0625 mm². Al duplicarse la dureza, Ft=320S=1300F_t=320S=1300 kgf =12753=12753 N. El certificado antiguo omite HBS/HBW; el cálculo no permite deducir el material de la bola.\n\n\n46. a) d=2,215d=2,215 mm; b) Ft=1300F_t=1300 kgf (≈ 12 753 N).",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  },
+  {
+    "objectID": "dureza.html#section-49",
+    "href": "dureza.html#section-49",
+    "title": "Colección de problemas de dureza",
+    "section": "47.",
+    "text": "47.\n\nEn un ensayo de dureza se analizan dos probetas metálicas. En la probeta A se realiza un ensayo Brinell utilizando una bola de carburo de tungsteno de diámetro 10 mm, aplicando una fuerza de 3000 kgf, y se obtiene un diámetro medio de huella de 4,0 mm. En la probeta B se realiza un ensayo Vickers empleando una punta piramidal aplicando una fuerza de 160 kgf, midiéndose una huella con diagonales de 0,44 mm y 0,46 mm. Determinar:\n\nLa expresión normalizada de la dureza Brinell de la probeta A para una duración del ensayo de 20 segundos.\nLa expresión normalizada de la dureza Vickers de la probeta B para una duración del ensayo de 10 segundos.\n\n\n\n\n\n\n\n\n\nTipResultado del problema 47\n\n\n\n\n\n\nPara A, HB=2⋅3000/[π⋅10(10−102−42)]=228,77≈229HB=2\\cdot3000/[\\pi\\cdot10(10-\\sqrt{10^2-4^2})]=228,77\\approx229 kgf/mm². La huella es válida y, al ser carburo con 20 s, la designación es 229 HBW 10/3000/20. Para B, d=(0,44+0,46)/2=0,450d=(0,44+0,46)/2=0,450 mm y HV=1,854⋅160/d2=1464,89≈1465HV=1,854\\cdot160/d^2=1464,89\\approx1 465 kgf/mm². Diez segundos no se indican: 1 465 HV 160.\n\n\n47. a) 229 HBW 10/3000/20; b) 1 465 HV 160.",
+    "crumbs": [
+      "Colección de problemas de dureza"
+    ]
+  }
+]
