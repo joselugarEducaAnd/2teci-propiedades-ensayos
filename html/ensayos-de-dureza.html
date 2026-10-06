@@ -166,11 +166,9 @@
 <p>Por ejemplo, si nos dan un valor de dureza con la expresión:</p>
 <p style="text-align: center;"><strong>120 HBW 10/3000/30</strong></p>
 <p>Significa que el material tiene una dureza de 120 kgf/mm<sup>2</sup> que se ha medido mediante un ensayo Brinell, utilizando una bola de carburo de tungsteno de 10 mm de diámetro y aplicando una fuerza de 3000 kgf durante 30 s.</p>
-<h3><span style="color: #0000ff;">Simulador de ensayo Brinell</span></h3>
-<p>Os dejo un pequeño simulador de ensayo Brinell hecho con Snap! (un lenguaje parecido a Scratch). Se puede elegir un material a ensayar (lo que establece la K del ensayo) y un diámetro de bola normalizado (esto también establecerá automáticamente la F a utilizar). Modificando la dureza del material con el deslizador, se puede ver cómo cambia el diámetro de la huella dejada por el penetrador.</p>
-<figure class="exe-figure exe-media position-center license-CC-BY-NC-SA" style="width: 615px;"><iframe width="615" height="400" src="https://snap.berkeley.edu/embed?projectname=Brinell&username=joselugar&showTitle=true&showAuthor=true" allowfullscreen="allowfullscreen"></iframe>
-<figcaption class="figcaption"><span class="author">Elaboración propia</span>. <span class="title"><em>Simulador de ensayos Brinell</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/licenses/?lang=es" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-NC-SA">CC BY-NC-SA</a><span class="sep">)</span></span></figcaption>
-</figure>
+<h3><span style="color: #0000ff;">Simulador de ensayos de dureza</span></h3>
+<p>Con este simulador puedes hacer el ensayo Brinell: elige el material (que fija la constante K) y un diámetro de bola normalizado (que fija la fuerza F = K·D²) y cambia la dureza del material con el deslizador para ver cómo cambia la huella. Al terminar, mide el diámetro d de la huella con el microscopio y comprueba la dureza que se obtiene. Con los botones de la parte superior puedes hacer también los ensayos Vickers y Rockwell.</p>
+<iframe class="sda02-dureza3d" src="../content/resources/ensayos_dureza_3d.html" title="Simulador 3D de los ensayos de dureza Brinell, Vickers y Rockwell" width="100%" height="1500" loading="lazy" style="display: block; width: 100%; max-width: 1120px; margin: 1rem auto; border: 0; border-radius: 14px; background: #ffffff;"></iframe>
 <h2>Ensayo Vickers</h2>
 <p>Al igual que el ensayo Brinell, se busca crear una indentación en el material a ensayar apretando un penetrador sobre la superficie del mismo con una fuerza controlada. La dureza se calcula exactamente igual, dividiendo la fuerza, expresada en kgf, entre la superficie de la huella, expresada en mm<sup>2</sup>:</p>
 <table border="1" style="width: 0%; border-style: none; margin-left: auto; margin-right: auto;">
@@ -302,6 +300,7 @@
 </ul>
 
 </div>
+<script>(function(){function ajusta(){var fs=document.querySelectorAll("iframe.sda02-dureza3d");for(var i=0;i<fs.length;i++){var f=fs[i];if(!f.getBoundingClientRect().width)continue;try{var d=f.contentDocument,b=d&&d.body;if(!b)continue;var h=Math.ceil(b.getBoundingClientRect().height+16);if(h>300&&Math.abs(h-f.clientHeight)>4)f.style.height=h+"px";}catch(e){}}}document.addEventListener("click",function(){setTimeout(ajusta,120);setTimeout(ajusta,600);},true);window.addEventListener("load",function(){ajusta();setTimeout(ajusta,400);});setInterval(ajusta,1000);})();</script>
 <p></p>
 </div>
 </div>
