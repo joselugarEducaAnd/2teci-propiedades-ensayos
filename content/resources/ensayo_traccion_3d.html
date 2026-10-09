@@ -52,7 +52,7 @@ header h1{font-size:17px;margin:0;color:var(--acc)}
 .controls button:disabled{opacity:.45;cursor:not-allowed}
 .controls label{font-size:12px;color:var(--sub);display:flex;align-items:center;gap:6px}
 .timeline{position:relative;margin-top:10px;height:26px;user-select:none;border-radius:4px;overflow:hidden}
-.tl-band{position:absolute;top:0;height:24px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;cursor:pointer;border-right:2px solid #fff;overflow:hidden;white-space:nowrap}
+.tl-band{position:absolute;top:0;height:24px;line-height:1;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;cursor:pointer;border-right:2px solid #fff;overflow:hidden;white-space:nowrap}
 .tl-cursor{position:absolute;top:0;width:3px;height:26px;background:var(--ink);border-radius:2px;pointer-events:none}
 .tl-band .tl-s{display:none}@media (max-width:820px){.tl-band .tl-l{display:none}.tl-band .tl-s{display:inline}}
 input[type=range]{accent-color:var(--acc)}
@@ -62,6 +62,13 @@ button:focus-visible,input:focus-visible,.tl-band:focus-visible{outline:3px soli
 .note{font-size:11px;color:var(--sub);margin-top:6px;line-height:1.35}
 @media (max-width:560px){.kv{grid-template-columns:repeat(2,minmax(0,1fr))}.seg button{padding:6px 9px}}
 .chwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.calc{font-size:12px;line-height:1.5;background:#fff7ec;border:1px solid #f0d2a8;border-radius:6px;padding:5px 8px;margin-bottom:6px;font-variant-numeric:tabular-nums}
+.calc div{overflow-wrap:anywhere}
+.calc .cr{color:#8f2420}.calc .ct{color:#7a4a00}
+.seg.sm button{padding:3px 9px;font-size:12px}
+.opts select{font:inherit;font-size:12px;padding:1px 4px}
+.opts label.dis{opacity:.5;cursor:not-allowed}
+button.tl-band{border:0;border-right:2px solid #fff;padding:0;margin:0;font-family:inherit}
 @media (max-width:460px){.chwrap .ch{min-width:430px}}
 </style>
 </head>
@@ -92,7 +99,7 @@ button:focus-visible,input:focus-visible,.tl-band:focus-visible{outline:3px soli
       <div class="legend3d">Arrastra para girar la vista</div>
       <div class="nowebgl" id="nowebgl">Este equipo no puede mostrar gráficos 3D (WebGL). La curva y los controles siguen funcionando.</div>
     </div>
-    <div class="timeline" id="timeline" aria-hidden="true"></div>
+    <div class="timeline" id="timeline" role="group" aria-label="Zonas del ensayo: ir directamente a cada una"></div>
     <input type="range" id="prog" min="0" max="1000" step="1" value="0" aria-label="Avance del ensayo">
     <div class="controls">
       <button id="bPrev" aria-label="Retroceder">◀︎</button>
@@ -116,13 +123,22 @@ button:focus-visible,input:focus-visible,.tl-band:focus-visible{outline:3px soli
       <div><b id="vS">0</b><span>σ (MPa)</span></div>
       <div><b id="vE">0,000</b><span>ε (%)</span></div>
     </div>
+    <div class="calc" id="calc" aria-live="off"></div>
     <div class="res" id="res"></div>
     <p class="chtitle">Diagrama σ–ε completo</p>
     <div class="chwrap"><svg id="chMain" class="ch" viewBox="0 0 480 306" role="img" aria-labelledby="cmT cmD">
       <title id="cmT">Diagrama tensión-deformación del ensayo</title>
       <desc id="cmD">La curva se dibuja a medida que avanza el ensayo, coloreada por zonas.</desc>
     </svg></div>
-    <div class="opts"><label><input type="checkbox" id="cmp"> Comparar con los otros materiales</label></div>
+    <div class="opts">
+      <div class="seg sm" role="group" aria-label="Escala del eje de deformaciones"><button id="escR" type="button" aria-pressed="true">Escala real</button><button id="escA" type="button" aria-pressed="false">Escala ampliada</button></div>
+      <label id="lReal"><input type="checkbox" id="real"> Tensión real (F/S del cuello)</label>
+      <label id="lCmp"><input type="checkbox" id="cmp"> Comparar con los otros materiales</label>
+    </div>
+    <div class="opts">
+      <label><input type="checkbox" id="ct"> Tensión máxima de trabajo σ<sub>t</sub></label>
+      <label>Coeficiente de seguridad C<sub>S</sub> <select id="cs" aria-label="Coeficiente de seguridad"><option value="1.5">1,5</option><option value="2" selected>2</option><option value="2.5">2,5</option><option value="3">3</option><option value="3.5">3,5</option><option value="4">4</option></select></label>
+    </div>
     <p class="chtitle" id="detTitle">Detalle de la zona elástica (ε de 0 a 0,8 %)</p>
     <div class="chwrap"><svg id="chDet" class="ch" viewBox="0 0 480 186" role="img" aria-labelledby="cdT cdD">
       <title id="cdT">Detalle ampliado del comienzo de la curva</title>
@@ -201,9 +217,9 @@ const ZONES={
  op:{name:'Proporcional (O–P)',short:'O–P',col:'--z-op'},
  pe:{name:'Elástica no proporcional (P–E)',short:'P–E',col:'--z-pe'},
  flu:{name:'Fluencia',short:'Fluencia',col:'--z-flu'},
- end:{name:'Plástica uniforme (E–R) · endurecimiento por deformación',short:'E–R',col:'--z-end',tl:'Endurecimiento (E–R)'},
+ end:{name:'Plástica uniforme (E–R) · endurecimiento por deformación',short:'E–R',col:'--z-end'},
  est:{name:'Estricción (R–S)',short:'R–S',col:'--z-est'},
- rot:{name:'Rotura (S)',short:'Rotura',col:'--z-rot'},
+ rot:{name:'Rotura (S)',short:'S',col:'--z-rot',tl:'Rotura'},
  casi:{name:'Casi elástica, sin plasticidad apreciable (O–R)',short:'O–R',col:'--z-casi',tl:'Casi elástica (O–R)'},
  frag:{name:'Rotura frágil (R = S)',short:'Rotura',col:'--z-rot',tl:'Rotura frágil'},
  des:{name:'Descarga',short:'Descarga',col:'--z-des'}
@@ -281,9 +297,11 @@ const REC={op:'Al retirar la carga: recupera su forma.',pe:'Al retirar la carga:
 let mat='acero', C=buildStages(mat), S=0, playing=false, speed=1;
 let des={on:false,u:0,target:0,base:null,run:false};
 let three=null;
+let realOn=false, ampl=false, ctOn=false, CS=2, XMAP=null;
 window.__traccion={MATS,sigma,plastic,stateAt,geom,finalMeasures,buildStages,yAt,L0,S0,D0,L0_FORM,
   get mat(){return mat},get C(){return C},get S(){return S},get playing(){return playing},get des(){return des},
-  get parts(){return three?three.parts:null},cur:null};
+  get parts(){return three?three.parts:null},cur:null,
+  get realOn(){return realOn},get ampl(){return ampl},get ctOn(){return ctOn},get CS(){return CS},get XMAP(){return XMAP}};
 
 /* ================= GRÁFICAS ================= */
 const NS='http://www.w3.org/2000/svg';
@@ -291,7 +309,15 @@ function el(t,a,parent){const e=document.createElementNS(NS,t);for(const k in a)
 function sub(parent,x,y,base,s,o){const t=el('text',Object.assign({x,y},o||{}),parent);t.textContent=base;if(s){const ts=el('tspan',{'font-size':'0.72em',dy:'3'},t);ts.textContent=s;}return t;}
 const MAINF={X0:56,X1:462,Y0:266,Y1:30,EM:0.30,SM:500};
 let DETF={X0:56,X1:462,Y0:156,Y1:28,ea:0,eb:0.008,SM:500};
-const Xm=e=>MAINF.X0+(MAINF.X1-MAINF.X0)*e/MAINF.EM, Ym=s=>MAINF.Y0-(MAINF.Y0-MAINF.Y1)*s/MAINF.SM;
+/* escala ampliada: el tramo O–P–E se estira (como en el diagrama genérico); el resto, lineal */
+function setXMap(){const M=MATS[mat];if(!ampl){XMAP=null;return;}
+  XMAP=mat==='fund'?[[0,0],[M.eF,0.55],[MAINF.EM,1]]:[[0,0],[M.eP,0.14],[M.eE,0.25],[MAINF.EM,1]];}
+function mapE(e){if(!XMAP)return e/MAINF.EM;for(let i=1;i<XMAP.length;i++){const a=XMAP[i-1],b=XMAP[i];if(e<=b[0]||i===XMAP.length-1)return a[1]+(b[1]-a[1])*(e-a[0])/(b[0]-a[0]);}return 1;}
+const Xm=e=>MAINF.X0+(MAINF.X1-MAINF.X0)*mapE(e), Ym=s=>MAINF.Y0-(MAINF.Y0-MAINF.Y1)*s/MAINF.SM;
+/* tensión real: F entre la sección mínima (cuello). S = S0/(1+εp) en el centro de la probeta */
+function eplC(m,e,s){const M=MATS[m],ep=plastic(m,e,s);if(m==='fund')return ep;return Math.min(ep,M.Agp)+Math.max(0,ep-M.Agp)*L0/M.Ig;}
+function sigReal(m,e,s){return s*(1+eplC(m,e,s));}
+const sigT=()=>{const M=MATS[mat];return (mat==='fund'?M.Rm:M.sE)/CS;};
 const Xd=e=>DETF.X0+(DETF.X1-DETF.X0)*(e-DETF.ea)/(DETF.eb-DETF.ea), Yd=s=>DETF.Y0-(DETF.Y0-DETF.Y1)*s/DETF.SM;
 function stagePts(m,g,eTo,n){const pts=[];const e1=Math.min(eTo,g.e1);if(e1<g.e0)return pts;n=n||Math.max(8,Math.round(90*(e1-g.e0)/(g.e1-g.e0||1)));
   for(let i=0;i<=n;i++){const e=g.e0+(e1-g.e0)*i/n;pts.push([e,sigma(m,e)]);}return pts;}
@@ -307,15 +333,25 @@ function axes(svg,F,X,Y,xt,yt,xl){
   el('text',{x:F.X0-6,y:F.Y1-10,'text-anchor':'end','font-size':12,fill:'#1f2433'},g).textContent='σ (MPa)';
   el('text',{x:F.X1+10,y:F.Y0+30,'text-anchor':'end','font-size':12,fill:'#1f2433'},g).textContent=xl;
   return g;}
+function lineaT(g,F,X,Y){const st=sigT(),y=Y(st),M=MATS[mat];
+  el('line',{x1:F.X0,x2:F.X1,y1:y,y2:y,stroke:'#c26a00','stroke-width':1.6,'stroke-dasharray':'8 4'},g);
+  const t=el('text',{x:F.X1,y:y-5,'text-anchor':'end','font-size':11,'font-weight':'bold',fill:'#7a4a00'},g);
+  t.innerHTML='σ<tspan font-size="8" dy="3">t</tspan><tspan dy="-3"> = σ</tspan><tspan font-size="8" dy="3">'+(mat==='fund'?'R':'E')+'</tspan><tspan dy="-3">/C</tspan><tspan font-size="8" dy="3">S</tspan><tspan dy="-3"> = '+fmt(st,0)+' MPa</tspan>';}
 function pointLbl(g,x,y,t,dx,dy){el('circle',{cx:x,cy:y,r:3,fill:'#1f2433'},g);el('text',{x:x+dx,y:y+dy,'font-size':12,'font-weight':'bold',fill:'#1f2433'},g).textContent=t;}
 function guide(g,X0,x,y,label,anchorX,dy){el('line',{x1:X0,x2:x,y1:y,y2:y,stroke:'#8a93a6','stroke-dasharray':'4 4'},g);
-  const t=el('text',{x:anchorX,y:y+(dy||-4),'font-size':11,fill:'#2b3142'},g);t.innerHTML=label;}
+  const t=el('text',{x:anchorX,y:y+(dy||-4),'font-size':11,fill:'#2b3142',style:'paint-order:stroke;stroke:#fff;stroke-width:3px'},g);t.innerHTML=label;}
 
 function drawMain(){
   const svg=$('chMain');svg.querySelectorAll('.st,.dyn').forEach(e=>e.remove());
   const M=MATS[mat];
-  const xt=[];for(let p=0;p<=30;p+=5)xt.push([p/100,String(p)]);
-  const g=axes(svg,MAINF,Xm,Ym,xt,[100,200,300,400,500],'ε (%)');
+  setXMap();MAINF.SM=(realOn&&mat!=='fund')?1000:500;
+  const xt=[];
+  if(!XMAP){for(let p=0;p<=30;p+=5)xt.push([p/100,String(p)]);}
+  else{xt.push([0,'0']);if(mat!=='fund'){xt.push([M.eP,fmt(M.eP*100,2)]);xt.push([M.eE,fmt(M.eE*100,2)]);}else xt.push([M.eF,fmt(M.eF*100,1)]);
+    for(let p=5;p<=30;p+=5){if(Xm(p/100)-Xm(XMAP[XMAP.length-2][0])>30)xt.push([p/100,String(p)]);}}
+  const yt=MAINF.SM>500?[200,400,600,800,1000]:[100,200,300,400,500];
+  const g=axes(svg,MAINF,Xm,Ym,xt,yt,'ε (%)');
+  if(XMAP){const xb=Xm(XMAP[XMAP.length-2][0])+6;el('path',{d:`M${xb-4},${MAINF.Y0+5} l4,-10 M${xb+1},${MAINF.Y0+5} l4,-10`,stroke:'#1f2433','stroke-width':1.4},g);}
   /* fantasmas de los otros materiales */
   const gh=el('g',{id:'ghosts',style:'display:none'},g);
   for(const m of Object.keys(MATS)){if(m===mat)continue;const Cm=buildStages(m);let pts=[];for(const s of Cm.stages){if(!s.rot)pts=pts.concat(stagePts(m,s,s.e1,120));}
@@ -324,24 +360,31 @@ function drawMain(){
   /* curva completa tenue */
   for(const s of C.stages){if(!s.rot)el('path',{d:toD(stagePts(mat,s,s.e1,140),Xm,Ym),fill:'none',stroke:'#c4c9d4','stroke-width':3},g);}
   /* guías y rótulos */
-  if(mat==='acero'){guide(g,MAINF.X0,Xm(M.eE),Ym(M.sE),'σ<tspan font-size="8" dy="3">E</tspan><tspan dy="-3"> = 300 MPa</tspan>',Xm(0.022),14);}
-  if(mat==='al'){guide(g,MAINF.X0,Xm(M.eE),Ym(M.sE),'σ<tspan font-size="8" dy="3">E</tspan><tspan dy="-3"> = 280 MPa</tspan>',Xm(0.012),30);}
+  if(mat==='acero'){guide(g,MAINF.X0,Xm(M.eE),Ym(M.sE),'σ<tspan font-size="8" dy="3">E</tspan><tspan dy="-3"> = 300 MPa</tspan>',XMAP?MAINF.X0+4:Xm(0.022),XMAP?-4:14);}
+  if(mat==='al'){guide(g,MAINF.X0,Xm(M.eE),Ym(M.sE),'σ<tspan font-size="8" dy="3">E</tspan><tspan dy="-3"> = 280 MPa</tspan>',XMAP?MAINF.X0+4:Xm(0.012),XMAP?-4:30);}
   {const xr=Xm(mat==='fund'?M.eF:M.Ag);guide(g,MAINF.X0,xr,Ym(M.Rm),'σ<tspan font-size="8" dy="3">R</tspan><tspan dy="-3"> = '+M.Rm+' MPa</tspan>',mat==='fund'?xr+8:xr+12,mat==='fund'?16:(mat==='al'?-22:-6));}
   if(mat!=='fund'){pointLbl(g,Xm(0),Ym(0),'O',-16,5);pointLbl(g,Xm(M.eE),Ym(M.sE),'E',6,-7);pointLbl(g,Xm(M.Ag),Ym(M.Rm),'R',-4,-8);pointLbl(g,Xm(M.eS),Ym(M.sS),'S',6,-4);}
   else{pointLbl(g,Xm(0),Ym(0),'O',-16,5);pointLbl(g,Xm(M.eF),Ym(M.Rm),'R = S',6,-6);
-    el('text',{x:Xm(0.03),y:Ym(150),'font-size':11,fill:'#2b3142'},g).textContent='Rotura casi sin deformación: ε ≈ 0,6 %';}
+    el('text',{x:MAINF.X1,y:Ym(330),'text-anchor':'end','font-size':11,fill:'#2b3142'},g).textContent='Rotura casi sin deformación: ε ≈ 0,6 %';}
   /* rótulos de zona sobre la curva */
   const zl=[];
-  if(mat==='acero') {zl.push(['flu',Xm(0.068),Ym(222),'Fluencia'],['end',Xm(0.095),Ym(409)+34,'Endurecimiento'],['est',Xm(0.235),Ym(424)+28,'Estricción']);
-    el('path',{d:`M${Xm(0.044)},${Ym(226)} L${Xm(0.008)},${Ym(281)}`,stroke:css('--z-flu'),'stroke-width':1},g);}
-  if(mat==='al') zl.push(['end',Xm(0.038),Ym(300)+18,'E–R'],['est',Xm(0.092),Ym(290)+18,'R–S']);
-  for(const [z,x,y,t,an] of zl) el('text',{x,y,'font-size':11,'font-weight':'bold',fill:css(ZONES[z].col),'text-anchor':an||'middle'},g).textContent=t;
-  el('text',{x:MAINF.X0+8,y:MAINF.Y1+2,'font-size':10,fill:'#6b7385'},g).textContent=mat==='fund'?'Detalle de la zona inicial: abajo':'O–P y P–E: en el detalle de abajo';
+  if(XMAP&&mat!=='fund'){zl.push(['op',Xm(M.eP*0.5)+8,Ym(M.sP*0.5)+12,'O–P','start'],['pe',Xm((M.eP+M.eE)/2),Ym(M.sE)-16,'P–E']);}
+  else if(mat==='acero') {zl.push(['flu',Xm(0.068),Ym(M.ReL)+30,'Fluencia'],['end',Xm(0.095),Ym(409)+34,'Endurecimiento'],['est',Xm(0.235),Ym(424)+28,'Estricción']);
+    el('path',{d:`M${Xm(0.044)},${Ym(M.ReL)+28} L${Xm(0.008)},${Ym(M.ReL)+2}`,stroke:css('--z-flu'),'stroke-width':1},g);}
+  else if(mat==='al') zl.push(['end',Xm(0.038),Ym(300)+18,'E–R'],['est',Xm(0.092),Ym(290)+18,'R–S']);
+  for(const [z,x,y,t,an] of zl) el('text',{x,y,'font-size':11,'font-weight':'bold',fill:css(ZONES[z].col),'text-anchor':an||'middle',style:'paint-order:stroke;stroke:#fff;stroke-width:3px'},g).textContent=t;
+  el('text',{x:MAINF.X0+8,y:MAINF.Y1+2,'font-size':10,fill:'#6b7385'},g).textContent=XMAP?'Escala ampliada: el primer tramo del eje está estirado; no es proporcional':(mat==='fund'?'Detalle de la zona inicial: abajo':'O–P y P–E: en el detalle de abajo');
+  if(XMAP&&mat!=='fund')pointLbl(g,Xm(M.eP),Ym(M.sP),'P',8,10);
+  /* tensión real: curva completa tenue */
+  if(realOn&&mat!=='fund'){for(const s of C.stages){if(!s.rot)el('path',{d:toD(stagePts(mat,s,s.e1,140).map(p=>[p[0],sigReal(mat,p[0],p[1])]),Xm,Ym),fill:'none',stroke:'#e7b9b6','stroke-width':2,'stroke-dasharray':'2 3'},g);}
+    const eS=M.eS,rS=sigReal(mat,eS,M.sS);el('text',{x:Xm(eS)-4,y:Ym(rS)-8,'font-size':11,'font-weight':'bold','text-anchor':'end',fill:'#8f2420'},g).textContent='σ real = F/S';}
+  if(ctOn)lineaT(g,MAINF,Xm,Ym);
   dynM={paths:C.stages.map(s=>el('path',{class:'dyn',fill:'none','stroke-width':4,'stroke-linecap':'round',stroke:css(ZONES[s.zone].col)},svg)),
         drop:el('path',{class:'dyn',fill:'none','stroke-width':2.5,'stroke-dasharray':'5 4',stroke:css('--z-rot')},svg),
         des:el('path',{class:'dyn',fill:'none','stroke-width':3,stroke:css('--z-des')},svg),
+        real:el('path',{class:'dyn',fill:'none','stroke-width':2.5,stroke:'#b2302b'},svg),
         dot:el('circle',{class:'dyn',r:6,fill:'#fff','stroke-width':3},svg)};
-  $('ghosts').style.display=$('cmp').checked?'':'none';
+  $('ghosts').style.display=($('cmp').checked&&!XMAP)?'':'none';
 }
 function drawDet(){
   const svg=$('chDet');svg.querySelectorAll('.st,.dyn').forEach(e=>e.remove());
@@ -367,6 +410,7 @@ function drawDet(){
       guide(gc,DETF.X0,Xd(M.eE),Yd(M.sE),'σ<tspan font-size="8" dy="3">E</tspan><tspan dy="-3"> = Rp0,2</tspan>',DETF.X0+4,-4);}
     if(mat==='fund'){pointLbl(gc,Xd(M.eF),Yd(M.Rm),'R = S',-44,-6);
       el('text',{x:Xd(0.0005),y:Yd(420),'font-size':10,fill:'#2f6d42'},gc).textContent='La curva se separa de la recta desde el principio';}
+    if(ctOn)lineaT(gc,DETF,Xd,Yd);
     $('detTitle').textContent='Detalle de la zona elástica (ε de 0 a 0,8 %)';
   }else{$('detTitle').textContent='Detalle de la descarga (misma escala que el detalle elástico)';}
   dynD={paths:C.stages.map(s=>el('path',{class:'dyn',fill:'none','stroke-width':4,'stroke-linecap':'round',stroke:css(ZONES[s.zone].col),'clip-path':`url(#${cid})`},svg)),
@@ -386,6 +430,8 @@ function updateCharts(st){
   });
   const M=MATS[mat];
   if(st.g.rot){dynM.drop.setAttribute('d',`M${Xm(M.eS)},${Ym(M.sS)} L${Xm(M.eS)},${Ym(st.sig)}`);}else dynM.drop.setAttribute('d','');
+  if(realOn&&mat!=='fund'){let rp=[];for(const g of C.stages){if(!g.rot&&st.s>=g.s0)rp=rp.concat(stagePts(mat,g,st.g===g?st.e:g.e1));}
+    dynM.real.setAttribute('d',rp.length>1?toD(rp.map(p=>[p[0],sigReal(mat,p[0],p[1])]),Xm,Ym):'');}else dynM.real.setAttribute('d','');
   let e=st.e,s=st.sig;
   dynD.desLbl.innerHTML='';
   if(des.on){const b=des.base, s2=b.sig*(1-des.u), e2=b.e-(b.sig-s2)/M.E; e=e2; s=s2;
@@ -430,9 +476,9 @@ function updateLupa(st){
 /* ================= LÍNEA DE ZONAS ================= */
 function drawTimeline(){const tl=$('timeline');tl.innerHTML='';const bands=[];
   for(const s of C.stages){const last=bands[bands.length-1];if(last&&last.zone===s.zone){last.s1=s.s1;}else bands.push({zone:s.zone,s0:s.s0,s1:s.s1});}
-  for(const b of bands){const d=document.createElement('div');d.className='tl-band';d.style.left=(b.s0/C.total*100)+'%';d.style.width=((b.s1-b.s0)/C.total*100)+'%';
+  for(const b of bands){const d=document.createElement('button');d.type='button';d.className='tl-band';d.style.left=(b.s0/C.total*100)+'%';d.style.width=((b.s1-b.s0)/C.total*100)+'%';
     d.style.background=css(ZONES[b.zone].col);const Z=ZONES[b.zone];d.innerHTML='<span class="tl-l">'+(Z.tl||Z.short)+'</span><span class="tl-s">'+Z.short+'</span>';
-    d.title=Z.name;d.onclick=()=>{stopAll();exitDes();setS((b.s0+b.s1)/2);};tl.appendChild(d);}
+    d.title=Z.name;d.setAttribute('aria-label','Ir a la zona: '+Z.name);d.onclick=()=>{stopAll();exitDes();setS((b.s0+b.s1)/2);};tl.appendChild(d);}
   const cur=document.createElement('div');cur.className='tl-cursor';cur.id='tlc';tl.appendChild(cur);}
 
 /* ================= 3D ================= */
@@ -602,13 +648,19 @@ function results(st){
   else if(des.on){const M=MATS[mat],b=des.base;h+='Desde σ = '+fmt(b.sig,0)+' MPa: deformación recuperable σ/E = '+fmt(b.sig/M.E*100,3)+' % · permanente = '+fmt((b.e-b.sig/M.E)*100,2)+' %';}
   else h+='A = (l_f − l₀)/l₀·100 y Z = (S₀ − S_f)/S₀·100 se miden al romper la probeta.';
   $('res').innerHTML=h;}
+function calc(st,r){const M=MATS[mat];let h='σ = F/S<sub>0</sub> = '+fmt(r.F,2)+' kN / '+fmt(S0,2)+' mm² = <b>'+fmt(r.s,1)+' MPa</b>';
+  if(!des.on&&st.g.zone==='op'&&r.e>1e-9)h+='<div>E = σ/ε = '+fmt(r.s,1)+' MPa / '+fmt(r.e,6)+' = <b>'+fmt(r.s/r.e/1000,0)+' GPa</b></div>';
+  if(realOn&&mat!=='fund'&&!st.broken){const eb=des.on?des.base.e:r.e, sb=des.on?des.base.sig:r.s, Sr=S0/(1+eplC(mat,eb,sb));
+    h+='<div class="cr">σ real = F/S = '+fmt(r.F,2)+' kN / '+fmt(Sr,2)+' mm² = <b>'+fmt(r.F*1000/Sr,1)+' MPa</b></div>';}
+  if(ctOn)h+='<div class="ct">σ<sub>t</sub> = σ<sub>'+(mat==='fund'?'R':'E')+'</sub>/C<sub>S</sub> = '+fmt(mat==='fund'?M.Rm:M.sE,0)+' MPa / '+fmt(CS,1).replace(/,0$/,'')+' = <b>'+fmt(sigT(),1)+' MPa</b>'+(mat==='fund'?' (la fundición no tiene límite elástico definido: se parte de σ<sub>R</sub>)':'')+'</div>';
+  $('calc').innerHTML=h;}
 function canDes(st){const M=MATS[mat];if(st.g.rot)return false;if(mat==='fund')return st.sig>=0.4*M.Rm;return st.e>=M.eE+1e-7;}
 function render(){
   const st=stateAt(mat,C,S);window.__traccion.cur=st;
   const z=zoneOf(st);
   $('phase').style.borderLeftColor=css(ZONES[z].col);
   if(z!==lastZone){fillPhase(z,mat);lastZone=z;$('live').textContent='Zona: '+ZONES[z].name;}
-  window.__traccion.read=readouts(st);results(st);
+  window.__traccion.read=readouts(st);calc(st,window.__traccion.read);results(st);
   updateCharts(st);updateLupa(st);
   $('prog').value=Math.round(S/C.total*1000);$('tlc').style.left=`calc(${S/C.total*100}% - 1px)`;
   const bd=$('bDes');bd.disabled=!(des.on||canDes(st));
@@ -621,7 +673,7 @@ function stopAll(){playing=false;des.run=false;setPlayUI(false);}
 function exitDes(){if(!des.on)return;des={on:false,u:0,target:0,base:null,run:false};drawDet();lastZone='';}
 function setMat(m){stopAll();exitDes();mat=m;C=buildStages(m);S=0;lastKey='';
   for(const [id,k] of [['mAcero','acero'],['mAl','al'],['mFund','fund']]) $(id).setAttribute('aria-pressed',k===m);
-  drawMain();drawDet();drawTimeline();fixPhaseHeight();
+  syncOpts();drawMain();drawDet();drawTimeline();fixPhaseHeight();
   const M=MATS[m];
   $('note').innerHTML='Modelo didáctico con valores orientativos: '+M.spec+'. '
    +'La probeta y la máquina están a escala real: la deformación elástica (menos del 1 %) no se aprecia a simple vista; la lupa del extensómetro y el detalle de la curva la amplían. '
@@ -642,9 +694,19 @@ $('bDes').onclick=()=>{
   des.target=des.target===1?0:1;des.run=true;setPlayUI(true);render();};
 $('prog').oninput=e=>{stopAll();exitDes();setS(+e.target.value/1000*C.total);};
 $('speed').oninput=e=>{speed=+e.target.value;$('speedOut').textContent=fmt(speed,2).replace(/,?0+$/,'')+'×';};
-$('cmp').onchange=e=>{$('ghosts').style.display=e.target.checked?'':'none';};
+$('cmp').onchange=e=>{$('ghosts').style.display=(e.target.checked&&!ampl)?'':'none';};
+function syncOpts(){$('escR').setAttribute('aria-pressed',!ampl);$('escA').setAttribute('aria-pressed',ampl);
+  $('cmp').disabled=ampl;$('lCmp').classList.toggle('dis',ampl);$('lCmp').title=ampl?'Solo con la escala real: en la ampliada cada material estira su tramo elástico de forma distinta':'';
+  $('real').disabled=mat==='fund';$('lReal').classList.toggle('dis',mat==='fund');$('lReal').title=mat==='fund'?'En la fundición no hay cuello: la tensión real coincide prácticamente con la del diagrama':'';}
+function redraw(){syncOpts();drawMain();drawDet();lastZone='';render();}
+$('escR').onclick=()=>{ampl=false;redraw();};$('escA').onclick=()=>{ampl=true;redraw();};
+$('real').onchange=e=>{realOn=e.target.checked;redraw();};
+$('ct').onchange=e=>{ctOn=e.target.checked;redraw();};
+$('cs').onchange=e=>{CS=+e.target.value;if(!ctOn){ctOn=true;$('ct').checked=true;}redraw();};
 $('mAcero').onclick=()=>setMat('acero');$('mAl').onclick=()=>setMat('al');$('mFund').onclick=()=>setMat('fund');
-document.addEventListener('keydown',e=>{if(e.target.tagName==='INPUT'&&e.target.type!=='checkbox')return;
+document.addEventListener('keydown',e=>{const t=e.target,tg=t.tagName;
+  if(tg==='SELECT'||tg==='TEXTAREA'||(tg==='INPUT'&&t.type!=='checkbox'))return;
+  if((tg==='BUTTON'||tg==='INPUT')&&(e.code==='Space'||e.key==='Enter'))return; /* el control enfocado se activa solo */
   if(e.code==='Space'){e.preventDefault();togglePlay();}
   else if(e.key==='ArrowRight'){e.preventDefault();step(1);}
   else if(e.key==='ArrowLeft'){e.preventDefault();step(-1);}
@@ -659,7 +721,7 @@ function loop(now){
   else if(three){update3D(window.__traccion.cur||stateAt(mat,C,S));}
   requestAnimationFrame(loop);
 }
-Object.assign(window.__traccion,{setS:v=>{stopAll();exitDes();setS(v);},setMat});
+Object.assign(window.__traccion,{setS:v=>{stopAll();exitDes();setS(v);},setMat,sigReal,eplC,mapE,sigT});
 mats();three=init3D();if(three)buildMachine(three);drawLupa();setMat('acero');requestAnimationFrame(loop);
 </script>
 </body>

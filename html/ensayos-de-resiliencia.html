@@ -54,11 +54,10 @@
 <div class="box-content">
 <div id="idevice-mr8adz4b-7ygxnrdii" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mr8adz4b-7ygxnrdii&quot;}">
 <style>.exe-content{--chrome:#22425c;--chrome-osc:#163049;--chrome-tinte:#eaeef2;--chrome-linea:#cdd6de;}</style>
-<p>El ensayo de resiliencia se utiliza para medir la <span style="color: #008000;"><strong>tenacidad</strong></span> de un material. Esto es, su <strong>resistencia ante los impactos</strong>. </p>
+<p>El ensayo de resiliencia se utiliza para medir la <strong>tenacidad</strong> de un material. Esto es, su <strong>resistencia ante los impactos</strong>. </p>
 <p>Se denomina ensayo de resiliencia porque se mide una magnitud, denominada <strong>resiliencia</strong>, que es la <strong>energía absorbida por un material al romperse, dividida entre la sección de rotura.</strong> Es necesario dividir la energía entre la sección para que el valor no dependa del tamaño de la pieza, sino sólo del material del que está hecha.</p>
 <p>Además de cuantificar la resiliencia (y permitirnos saber la tenacidad del material), este ensayo permite estudiar la rotura para ver si se produce con deformación plástica o de manera frágil.</p>
-<p>Para llevar a cabo este ensayo se utiliza un dispositivo denominado <span style="color: #008000;"><strong>péndulo de Charpy.</strong></span></p>
-<p></p>
+<p>Para llevar a cabo este ensayo se utiliza un dispositivo denominado <strong>péndulo de Charpy.</strong></p>
 </div>
 </div>
 </article><article id="block-mr8adz4b-05sdxyp33" class="box">
@@ -75,21 +74,9 @@
 </figure>
 <p>Consiste, como su nombre indica, en un péndulo con una masa pesada en el extremo (martillo), que se deja caer desde una altura inicial (h<sub>i</sub>) para que golpee a la probeta y la rompa. En el punto desde el que se suelta el péndulo, la energía del martillo es únicamente energía potencial (lo soltamos desde una posición de reposo), que podemos conocer sabiendo la masa del martillo y la altura (\(E_{i}=m\cdot g\cdot h_{i}\)). Tras romper la probeta, el péndulo sigue moviéndose hasta que se detiene de nuevo a una altura final (h<sub>f</sub>). En ese punto vuelve a tener únicamente energía potencial, que podemos calcular análogamente (\(E_{f}=m\cdot g\cdot h_{f}\))</p>
 <p>La energía empleada en romper la probeta será la diferencia entre la energía inicial y la energía final (salvo una pequeña parte de energía que se disipará por el rozamiento del péndulo, pero que puede ser fácilmente compensada en los cálculos).</p>
-<table border="1" style="width: 0%; border-style: none; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="width: 100%; border-style: none;">\[E_{absorbida}=E_{i}-E_{f}=m\cdot g\cdot (h_{i}-h_{f})\]</td>
-</tr>
-</tbody>
-</table>
-<p>Como ya dijimos, la energía absorbida no depende sólo del material sino del tamaño de la probeta. Para eliminar esa dependencia del tamaño, dividimos esa energía entre la sección de rotura. La magnitud resultante se denomina <span style="color: #008000;"><strong>resiliencia</strong></span>, se denota por la letra griega <span style="color: #008000;"><strong>ρ</strong></span> y tiene la siguiente expresión:</p>
-<table border="1" style="width: 0%; border-style: none; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="width: 100%; background-color: #ffe3c2; border-color: #db6600; border-style: solid; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; box-shadow: 5px 5px 5px gray;">\[\rho =\frac{E_{i}-E_{f}}{S}=\frac{m\cdot g\cdot (h_{i}-h_{f})}{S}\]</td>
-</tr>
-</tbody>
-</table>
+<p class="formula-bloque">\[E_{absorbida}=E_{i}-E_{f}=m\cdot g\cdot (h_{i}-h_{f})\]</p>
+<p>Como ya dijimos, la energía absorbida no depende sólo del material sino del tamaño de la probeta. Para eliminar esa dependencia del tamaño, dividimos esa energía entre la sección de rotura. La magnitud resultante se denomina <strong>resiliencia</strong>, se denota por la letra griega <strong>ρ</strong> y tiene la siguiente expresión:</p>
+<div class="marco-formula"><p class="formula-bloque">\[\rho =\frac{E_{i}-E_{f}}{S}=\frac{m\cdot g\cdot (h_{i}-h_{f})}{S}\]</p></div>
 <p>Aunque es posible expresarla en unidades del SI (J/m<sup>2</sup>), la resiliencia suele expresarse en <strong>J/mm<sup>2</sup></strong> o en <strong>J/cm<sup>2</sup></strong>, por lo que las unidades a utilizar serán: m en kg, g en m/s<sup>2</sup>, h en m y S en mm<sup>2</sup> o en cm<sup>2</sup>. </p>
 </div>
 </div>
@@ -102,17 +89,13 @@
 <div class="box-content">
 <div id="idevice-mr8adz4b-am81mnjn6" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mr8adz4b-am81mnjn6&quot;}">
 <p>Leer la altura inicial y la altura final del péndulo podría ser complicado si intentamos medirlas directamente. Sin embargo, es muy sencillo leer el ángulo girado por el péndulo en un dial colocado en la parte superior. Sabiendo el ángulo en el que está colocado el péndulo y conociendo su longitud, es fácil deducir la altura a la que se encuentra su extremo mediante trigonometría básica.</p>
+<p>Si el ángulo θ se mide desde la vertical (la posición de reposo del péndulo), la altura del martillo sobre su punto más bajo es:</p>
+<div class="marco-formula"><p class="formula-bloque">\[h=L\cdot (1-\cos \theta)\]</p></div>
 <p>En este simulador puedes hacer el ensayo completo y ver cómo se obtienen las alturas a partir de los ángulos: en la pestaña <strong>Ángulos y alturas</strong>, la vista <strong>Cómo se calcula h</strong> lo deduce paso a paso.</p>
 <iframe class="sda02-charpy3d" src="../content/resources/ensayo_charpy_3d.html" title="Simulador 3D del ensayo de resiliencia con el péndulo de Charpy" width="100%" height="1700" loading="lazy" style="display: block; width: 100%; max-width: 1120px; margin: 1rem auto; border: 0; border-radius: 14px; background: #ffffff;"></iframe>
 <script>(function(){function ajusta(){var fs=document.querySelectorAll("iframe.sda02-charpy3d");for(var i=0;i<fs.length;i++){var f=fs[i];if(!f.getBoundingClientRect().width)continue;try{var d=f.contentDocument,b=d&&d.body;if(!b)continue;var h=Math.ceil(b.getBoundingClientRect().height+16);if(h>300&&Math.abs(h-f.clientHeight)>4)f.style.height=h+"px";}catch(e){}}}document.addEventListener("click",function(){setTimeout(ajusta,120);setTimeout(ajusta,600);},true);window.addEventListener("load",function(){ajusta();setTimeout(ajusta,400);});setInterval(ajusta,1000);})();</script>
 <p>Podemos entonces obtener una fórmula para calcular la resiliencia sabiendo los ángulos inicial y final del péndulo en vez de sus alturas:</p>
-<table border="1" style="height: 10px; width: 0%; border-style: none; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr style="height: 10px;">
-<td style="width: 100%; background-color: #ffe3c2; border-color: #db6600; border-style: solid; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; box-shadow: 5px 5px 5px gray;">\[\rho =\frac{m\cdot g\cdot (h_{i}-h_{f})}{S}=\frac{m\cdot g\cdot L\cdot (\cos \theta _{f}-\cos \theta _{i})}{S}\]</td>
-</tr>
-</tbody>
-</table>
+<div class="marco-formula"><p class="formula-bloque">\[\rho =\frac{m\cdot g\cdot (h_{i}-h_{f})}{S}=\frac{m\cdot g\cdot L\cdot (\cos \theta _{f}-\cos \theta _{i})}{S}\]</p></div>
 <p>Por supuesto, la longitud del péndulo (L) se pone en metros, para que la resiliencia siga expresándose en J/mm<sup>2</sup>. </p>
 <p>Normalmente, los diales de los péndulos Charpy ya tienen este cálculo hecho para la diferencia de energía potencial (no para la resiliencia, porque podrían emplearse probetas con diferentes secciones de rotura). Por lo tanto, <strong>se puede leer directamente la energía absorbida en el dial del</strong> péndulo, sin necesidad de realizar cálculos.</p>
 <p>El valor de la <strong>sección de rotura</strong> se conoce antes incluso de realizar el ensayo, pues las probetas tienen una entalla para que se rompan siempre por el mismo sitio. De esta manera, dada una probeta, ya tenemos el valor de S conocido de antemano. Las probetas más usuales en los ensayos Charpy tienen forma de prisma de sección cuadrada con una entalla en forma de V. La sección mide 10x10 mm y la entalla tiene una profundidad de 2 mm, por lo que la sección de rotura es de 10x8 mm, es decir, 80 mm<sup>2</sup>. La longitud de las probetas suele ser de 55 mm.</p>
@@ -122,7 +105,6 @@
 <figure class="exe-figure exe-media position-center license-standard-youtube" style="width: 560px;"><iframe width="560" height="314" src="https://www.youtube.com/embed/tpGhqQvftAo" data-mce-fragment="1" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 <figcaption class="figcaption"><span class="author">MaterialsScience2000</span>. <span class="title"><em>Charpy Impact Test</em></span> <span class="license"><span class="sep">(</span><a href="https://www.youtube.com/static?template=terms" rel="license nofollow noopener" target="_blank">Licencia estándar de YouTube</a><span class="sep">)</span></span></figcaption>
 </figure>
-<p></p>
 </div>
 </div>
 </article><article id="block-mr8adz4b-6kylv07l8" class="box">
