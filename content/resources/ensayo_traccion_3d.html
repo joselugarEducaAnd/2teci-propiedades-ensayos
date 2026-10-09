@@ -119,7 +119,7 @@ button.tl-band{border:0;border-right:2px solid #fff;padding:0;margin:0;font-fami
     </div>
     <div class="kv">
       <div><b id="vF">0,00</b><span>F (kN)</span></div>
-      <div><b id="vDL">0,000</b><span>ΔL (mm)</span></div>
+      <div><b id="vDL">0,000</b><span>Δl (mm)</span></div>
       <div><b id="vS">0</b><span>σ (MPa)</span></div>
       <div><b id="vE">0,000</b><span>ε (%)</span></div>
     </div>
@@ -158,6 +158,7 @@ button.tl-band{border:0;border-right:2px solid #fff;padding:0;margin:0;font-fami
 </script>
 <script>
 "use strict";
+/* DOCA-102 · tanda b: unidades del cálculo en vivo, subíndices y rótulos de la escala ampliada */
 const $=id=>document.getElementById(id);
 const SHORTN={acero:"Acero",al:"Aluminio",fund:"Fundición"};
 /* ================= MODELO: probeta y curvas sigma-epsilon ================= */
@@ -269,6 +270,8 @@ function finalMeasures(m){const M=MATS[m];const G=geom(m,plastic(m,M.eS,M.sS),0)
   return {lf,df,A:(lf-L0)/L0,Z:1-(df*df)/(D0*D0)};}
 
 const fmt=(x,d)=>x.toLocaleString('es-ES',{minimumFractionDigits:d,maximumFractionDigits:d});
+/* miles con espacio fino (norma SI), no con punto */
+const fmtN=x=>{const n=Math.round(x);return n>=10000?String(n).replace(/\B(?=(\d{3})+(?!\d))/g,' '):String(n);};
 const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
 
 /* ---- textos de la ficha ---- */
@@ -279,13 +282,13 @@ const TXT={
   flu:'La tensión cae de golpe y la probeta se alarga a tensión casi constante: es la meseta de fluencia (límite inferior, ReL en la norma). Desde aquí las deformaciones ya son permanentes.',
   end:'Para seguir alargando la probeta hay que aumentar la tensión: el material se endurece al deformarse. La sección se reduce por igual en toda la probeta. En R se alcanza la tensión máxima: la resistencia a la tracción σR (Rm en la norma).',
   est:'La deformación se concentra en una zona y aparece el cuello. Como σ se calcula con la sección inicial S₀, la tensión del diagrama baja, aunque en el cuello la tensión real siga subiendo.',
-  rot:'La probeta rompe por el cuello. En el acero la fractura es dúctil, «en copa y cono». Al romper se recupera la parte elástica; juntando los trozos se miden l_f y d_f.'},
+  rot:'La probeta rompe por el cuello. En el acero la fractura es dúctil, «en copa y cono». Al romper se recupera la parte elástica; juntando los trozos se miden l<sub>f</sub> y d<sub>f</sub>.'},
  al:{
   op:'Se cumple la ley de Hooke, σ = E·ε, pero con E ≈ 70 GPa: el aluminio es unas tres veces menos rígido que el acero, y con la misma tensión se deforma el triple.',
   pe:'La curva se separa poco a poco de la recta, sin escalón de fluencia. Como no hay un punto E nítido, se toma como límite elástico convencional la tensión que deja una deformación permanente del 0,2 %: se traza una paralela a la recta de Hooke desde ε = 0,2 % y se corta con la curva (Rp0,2 en la norma).',
   end:'El material se endurece al deformarse y la sección se reduce por igual en toda la probeta, hasta alcanzar en R la resistencia a la tracción σR (Rm en la norma).',
   est:'Aparece el cuello, más corto que en el acero: esta aleación es menos dúctil. La tensión del diagrama baja porque se sigue dividiendo entre S₀.',
-  rot:'Rotura dúctil en copa y cono, con menos estricción que el acero. Al romper se recupera la parte elástica; juntando los trozos se miden l_f y d_f.'},
+  rot:'Rotura dúctil en copa y cono, con menos estricción que el acero. Al romper se recupera la parte elástica; juntando los trozos se miden l<sub>f</sub> y d<sub>f</sub>.'},
  fund:{
   casi:'La curva es casi recta, pero se curva un poco desde el principio: la fundición gris no tiene una zona proporcional clara ni un límite elástico definido. Apenas se alarga antes de romper.',
   frag:'Rotura frágil al alcanzar σR, sin fluencia ni cuello. La fractura es plana, perpendicular al eje y de aspecto granuloso y gris. A y Z son casi nulos.'},
@@ -351,7 +354,7 @@ function drawMain(){
     for(let p=5;p<=30;p+=5){if(Xm(p/100)-Xm(XMAP[XMAP.length-2][0])>30)xt.push([p/100,String(p)]);}}
   const yt=MAINF.SM>500?[200,400,600,800,1000]:[100,200,300,400,500];
   const g=axes(svg,MAINF,Xm,Ym,xt,yt,'ε (%)');
-  if(XMAP){const xb=Xm(XMAP[XMAP.length-2][0])+6;el('path',{d:`M${xb-4},${MAINF.Y0+5} l4,-10 M${xb+1},${MAINF.Y0+5} l4,-10`,stroke:'#1f2433','stroke-width':1.4},g);}
+  if(XMAP){const xb=Xm(XMAP[XMAP.length-2][0])+16;el('path',{d:`M${xb-4},${MAINF.Y0+5} l4,-10 M${xb+1},${MAINF.Y0+5} l4,-10`,stroke:'#1f2433','stroke-width':1.4},g);}
   /* fantasmas de los otros materiales */
   const gh=el('g',{id:'ghosts',style:'display:none'},g);
   for(const m of Object.keys(MATS)){if(m===mat)continue;const Cm=buildStages(m);let pts=[];for(const s of Cm.stages){if(!s.rot)pts=pts.concat(stagePts(m,s,s.e1,120));}
@@ -368,7 +371,7 @@ function drawMain(){
     el('text',{x:MAINF.X1,y:Ym(330),'text-anchor':'end','font-size':11,fill:'#2b3142'},g).textContent='Rotura casi sin deformación: ε ≈ 0,6 %';}
   /* rótulos de zona sobre la curva */
   const zl=[];
-  if(XMAP&&mat!=='fund'){zl.push(['op',Xm(M.eP*0.5)+8,Ym(M.sP*0.5)+12,'O–P','start'],['pe',Xm((M.eP+M.eE)/2),Ym(M.sE)-16,'P–E']);}
+  if(XMAP&&mat!=='fund'){zl.push(['op',Xm(M.eP*0.5)+8,Ym(M.sP*0.5)+12,'O–P','start'],['pe',Xm((M.eP+M.eE)/2)+10,Ym(M.sP)+26,'P–E','start']);}
   else if(mat==='acero') {zl.push(['flu',Xm(0.068),Ym(M.ReL)+30,'Fluencia'],['end',Xm(0.095),Ym(409)+34,'Endurecimiento'],['est',Xm(0.235),Ym(424)+28,'Estricción']);
     el('path',{d:`M${Xm(0.044)},${Ym(M.ReL)+28} L${Xm(0.008)},${Ym(M.ReL)+2}`,stroke:css('--z-flu'),'stroke-width':1},g);}
   else if(mat==='al') zl.push(['end',Xm(0.038),Ym(300)+18,'E–R'],['est',Xm(0.092),Ym(290)+18,'R–S']);
@@ -377,7 +380,7 @@ function drawMain(){
   if(XMAP&&mat!=='fund')pointLbl(g,Xm(M.eP),Ym(M.sP),'P',8,10);
   /* tensión real: curva completa tenue */
   if(realOn&&mat!=='fund'){for(const s of C.stages){if(!s.rot)el('path',{d:toD(stagePts(mat,s,s.e1,140).map(p=>[p[0],sigReal(mat,p[0],p[1])]),Xm,Ym),fill:'none',stroke:'#e7b9b6','stroke-width':2,'stroke-dasharray':'2 3'},g);}
-    const eS=M.eS,rS=sigReal(mat,eS,M.sS);el('text',{x:Xm(eS)-4,y:Ym(rS)-8,'font-size':11,'font-weight':'bold','text-anchor':'end',fill:'#8f2420'},g).textContent='σ real = F/S';}
+    const eS=M.eS,rS=sigReal(mat,eS,M.sS);el('text',{x:Xm(eS)-4,y:Ym(rS)-(mat==='al'?24:8),'font-size':11,'font-weight':'bold','text-anchor':'end',fill:'#8f2420'},g).textContent='σ real = F/S';}
   if(ctOn)lineaT(g,MAINF,Xm,Ym);
   dynM={paths:C.stages.map(s=>el('path',{class:'dyn',fill:'none','stroke-width':4,'stroke-linecap':'round',stroke:css(ZONES[s.zone].col)},svg)),
         drop:el('path',{class:'dyn',fill:'none','stroke-width':2.5,'stroke-dasharray':'5 4',stroke:css('--z-rot')},svg),
@@ -625,7 +628,7 @@ function update3D(st){
 let lastZone='';
 function zoneOf(st){return des.on?'des':st.g.zone;}
 function fillPhase(z,m){const Z=ZONES[z];$('phTitle').textContent=Z.name;
-  $('phText').textContent=z==='des'?TXT.des:TXT[m][z];$('phRec').textContent=REC[z];}
+  $('phText').innerHTML=z==='des'?TXT.des:TXT[m][z];$('phRec').textContent=REC[z];}
 function fixPhaseHeight(){const card=$('phase');card.style.minHeight='0px';let h=0;
   for(const m of Object.keys(MATS)){for(const z of Object.keys(TXT[m])){fillPhase(z,m);h=Math.max(h,card.getBoundingClientRect().height);}}
   fillPhase('des',mat);h=Math.max(h,card.getBoundingClientRect().height);
@@ -644,14 +647,14 @@ function readouts(st){
 function results(st){
   let h='d₀ = 10 mm · S₀ = '+fmt(S0,2)+' mm² · l₀ = 5,65·√S₀ ≈ 50 mm<br>';
   if(st.g.rot&&st.k>=1){const fm=finalMeasures(mat);
-    h+='Trozos juntos: l_f = '+fmt(fm.lf,2)+' mm · d_f = '+fmt(fm.df,2)+' mm → <b>A = '+fmt(fm.A*100,1)+' %</b> · <b>Z = '+fmt(fm.Z*100,1)+' %</b>';}
+    h+='Trozos juntos: l<sub>f</sub> = '+fmt(fm.lf,2)+' mm · d<sub>f</sub> = '+fmt(fm.df,2)+' mm → <b>A = '+fmt(fm.A*100,1)+' %</b> · <b>Z = '+fmt(fm.Z*100,1)+' %</b>';}
   else if(des.on){const M=MATS[mat],b=des.base;h+='Desde σ = '+fmt(b.sig,0)+' MPa: deformación recuperable σ/E = '+fmt(b.sig/M.E*100,3)+' % · permanente = '+fmt((b.e-b.sig/M.E)*100,2)+' %';}
-  else h+='A = (l_f − l₀)/l₀·100 y Z = (S₀ − S_f)/S₀·100 se miden al romper la probeta.';
+  else h+='A = (l<sub>f</sub> − l<sub>0</sub>)/l<sub>0</sub>·100 y Z = (S<sub>0</sub> − S<sub>f</sub>)/S<sub>0</sub>·100 se miden al romper la probeta.';
   $('res').innerHTML=h;}
-function calc(st,r){const M=MATS[mat];let h='σ = F/S<sub>0</sub> = '+fmt(r.F,2)+' kN / '+fmt(S0,2)+' mm² = <b>'+fmt(r.s,1)+' MPa</b>';
-  if(!des.on&&st.g.zone==='op'&&r.e>1e-9)h+='<div>E = σ/ε = '+fmt(r.s,1)+' MPa / '+fmt(r.e,6)+' = <b>'+fmt(r.s/r.e/1000,0)+' GPa</b></div>';
+function calc(st,r){const M=MATS[mat];let h='σ = F/S<sub>0</sub> = '+fmtN(r.F*1000)+' N / '+fmt(S0,2)+' mm² = <b>'+fmt(r.s,1)+' MPa</b>';
+  if(!des.on&&st.g.zone==='op'&&r.e>1e-9)h+='<div>E = σ/ε = '+fmt(r.s,1)+' MPa / '+fmt(r.e,6)+' (ε en tanto por uno) = <b>'+fmt(r.s/r.e/1000,0)+' GPa</b></div>';
   if(realOn&&mat!=='fund'&&!st.broken){const eb=des.on?des.base.e:r.e, sb=des.on?des.base.sig:r.s, Sr=S0/(1+eplC(mat,eb,sb));
-    h+='<div class="cr">σ real = F/S = '+fmt(r.F,2)+' kN / '+fmt(Sr,2)+' mm² = <b>'+fmt(r.F*1000/Sr,1)+' MPa</b></div>';}
+    h+='<div class="cr">σ real = F/S = '+fmtN(r.F*1000)+' N / '+fmt(Sr,2)+' mm² = <b>'+fmt(r.F*1000/Sr,1)+' MPa</b></div>';}
   if(ctOn)h+='<div class="ct">σ<sub>t</sub> = σ<sub>'+(mat==='fund'?'R':'E')+'</sub>/C<sub>S</sub> = '+fmt(mat==='fund'?M.Rm:M.sE,0)+' MPa / '+fmt(CS,1).replace(/,0$/,'')+' = <b>'+fmt(sigT(),1)+' MPa</b>'+(mat==='fund'?' (la fundición no tiene límite elástico definido: se parte de σ<sub>R</sub>)':'')+'</div>';
   $('calc').innerHTML=h;}
 function canDes(st){const M=MATS[mat];if(st.g.rot)return false;if(mat==='fund')return st.sig>=0.4*M.Rm;return st.e>=M.eE+1e-7;}
