@@ -12,8 +12,7 @@
 <script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
 <script src="../idevices/relate/relate.js"></script><link rel="stylesheet" href="../idevices/relate/relate.css">
 <script src="../libs/jquery-ui/jquery-ui.min.js"> </script>
-<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script>
-<script src="../theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
 <script src="../libs/exe_math/tex-mml-svg.js"> </script>
 </head>
 <body class="exe-export exe-web-site">
@@ -99,7 +98,7 @@
 <script>(function(){function ajusta(){var fs=document.querySelectorAll("iframe.sda02-charpy3d");for(var i=0;i<fs.length;i++){var f=fs[i];if(!f.getBoundingClientRect().width)continue;try{var d=f.contentDocument,b=d&&d.body;if(!b)continue;var h=Math.ceil(b.getBoundingClientRect().height+16);if(h>300&&Math.abs(h-f.clientHeight)>4)f.style.height=h+"px";}catch(e){}}}document.addEventListener("click",function(){setTimeout(ajusta,120);setTimeout(ajusta,600);},true);window.addEventListener("load",function(){ajusta();setTimeout(ajusta,400);});setInterval(ajusta,1000);})();</script>
 <p>Podemos entonces obtener una fórmula para calcular la resiliencia sabiendo los ángulos inicial y final del péndulo en vez de sus alturas:</p>
 <div class="marco-formula"><p class="formula-bloque">\[\rho =\frac{m\cdot g\cdot (h_{i}-h_{f})}{S}=\frac{m\cdot g\cdot L\cdot (\cos \theta _{f}-\cos \theta _{i})}{S}\]</p></div>
-<p>Por supuesto, la longitud del péndulo (L) se pone en metros, para que la resiliencia siga expresándose en J/mm<sup>2</sup>. </p>
+<p>La longitud del péndulo (L) se pone en metros, igual que las alturas, para que la energía salga en julios. La unidad de la resiliencia la fija la sección: con S en cm<sup>2</sup> se obtiene J/cm<sup>2</sup>, que es la unidad más habitual; con S en mm<sup>2</sup>, J/mm<sup>2</sup>.</p>
 <p>Normalmente, los diales de los péndulos Charpy ya tienen este cálculo hecho para la diferencia de energía potencial (no para la resiliencia, porque podrían emplearse probetas con diferentes secciones de rotura). Por lo tanto, <strong>se puede leer directamente la energía absorbida en el dial del</strong> péndulo, sin necesidad de realizar cálculos.</p>
 <p>El valor de la <strong>sección de rotura</strong> se conoce antes incluso de realizar el ensayo, pues las probetas tienen una entalla para que se rompan siempre por el mismo sitio. De esta manera, dada una probeta, ya tenemos el valor de S conocido de antemano. Las probetas más usuales en los ensayos Charpy tienen forma de prisma de sección cuadrada con una entalla en forma de V. La sección mide 10x10 mm y la entalla tiene una profundidad de 2 mm, por lo que la sección de rotura es de 10x8 mm, es decir, 80 mm<sup>2</sup>. La longitud de las probetas suele ser de 55 mm.</p>
 <p>En la pestaña <strong>Probeta</strong> del simulador tienes la probeta acotada, partida por la entalla, y su sección de rotura de 10 mm × 8 mm.</p>
